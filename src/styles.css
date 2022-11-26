@@ -1,0 +1,373 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+.card-body{
+    padding: 10px;
+}
+
+
+/*Card centered*/
+
+.ft-card-center {
+    float: none;
+    margin-top: 30px;
+    filter: drop-shadow(4px 4px 10px rgba(223, 223, 223, 0.3)) drop-shadow(-4px -4px 10px rgba(223, 223, 223, 0.3));
+    border: none;
+}
+.page-container{
+    margin-bottom: 100px;
+    margin-left: 75px;
+}
+.ft-head{
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color:#8950FC;
+  }
+  .ft-desc{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(111, 111, 111, 0.7);
+        /* padding-left: 5px; */
+  }
+  .ft-select{
+    border: none;
+    background-color: #F5F8FA;
+    border-radius: 5px;
+    height: 30px;
+    outline: none;
+  }
+  .ft-select1{
+    border: none;
+    background-color: #F5F8FA;
+    border-radius: 5px;
+    height: 30px;
+    outline: none;
+    width: 100%;
+    padding-left: 5px;
+  }
+
+  .ft-header {
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  transition: all 0.3s ease;
+  background-color: #8950FC !important;
+  border-bottom: 1px solid #eff0f6;
+  /* background-image: #8950FC !important; */
+}
+.ft-sub-heading{
+    color: #8950FC;
+    margin-top: 10px;
+    /* border-bottom: 1px solid #EEE5FF; */
+}
+.ft-header__brand-logo-default{
+    background-color: white;
+}
+.ft-header__brand-logo{
+    margin-left: 100px;
+    color: white;
+}
+.sidebar{
+    position: fixed;
+    width:75px;
+    height: 100% !important;
+    background-color: #9A96A0;
+    top: 0px !important;
+}
+.sidebar ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* icon styles */
+.sidenav-iocn{
+    color: white;
+    font-size: 27px;
+    margin-left: -20px;
+    margin-top: 20px;
+}
+.header-profile-icon{
+    color: white;
+    padding: 8px;
+    font-size: 37px;
+}
+.sidenav-icon-settings{
+    position: absolute;
+    color: white;
+    font-size: 27px;
+    margin-left: -20px;
+    bottom: 54px;
+}
+.upload-icon{
+    background-color: #EEE5FF;
+    padding: 3px;
+    border-radius: 5px;
+    float: right;
+    color: blue;
+}
+
+/* table */
+.old {
+    background-color: #0000FF;
+    color: white;
+    font-size: 13px;
+    padding: 2px 10px 7px 11px;
+    border-radius: 10px;
+}
+.middleaged {
+    background-color: green;
+    color: white;
+    font-size: 13px;
+    padding: 2px 10px 7px 11px;
+    border-radius: 10px;
+}
+.young {
+    background-color: #90EE90;
+    color: white;
+    font-size: 13px;
+    padding: 2px 10px 7px 11px;
+    border-radius: 10px;
+}
+label{
+    float: right;
+    margin-right: 10px;
+}
+
+.dataTables_length  {
+    word-wrap: normal;
+    position: absolute;
+    bottom: 0px;
+    right: 229px;
+    border: none;
+    border-radius: 5px;
+    padding: 1px;
+    color: #8950FC;
+    /* background-color: #EEE5FF; */
+    outline: none;
+}
+.dataTables_length select {
+  
+    background-color: #EEE5FF;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 1px;
+}
+.ft-action{
+    background-color: #EEE5FF;
+    border: none;
+    outline: none;
+    width: 99px;
+    padding-left: 5px;
+    height: 29px;
+    border-radius: 5px;
+    color: #8950FC;
+}
+.dataTables_info{
+    float: right;
+    color: #8950FC;
+}
+.previous{
+    background-color: #EEE5FF;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+.paginate_button {
+    background-color:#EEE5FF ;
+    padding:5px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.next{
+    background-color: #EEE5FF;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: black;
+}
+
+input{
+    background-color: #EEE5FF;
+    border: none;
+    border-radius: 5px;
+    height: 32px;
+    outline: none;
+}
+.ft-input-value{
+    background-color: #F5F8FA;
+    border: none;
+    border-radius: 5px;
+    height: 32px;
+    outline: none;
+    width: 100%;
+}
+.ft-button{
+    border: none;
+    background-color: #8950FC;
+    border-radius: 5px;
+    color: white;
+    padding: -8px;
+    font-size: 14px;
+}
+
+/* note heading */
+.ft-note-heading {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #103566;
+}
+.ft-note-desc{
+    margin-left: 13px;
+    margin-top: -23px;
+    font-size: 14px;
+}
+.ft-note-desc1{
+    margin-top:7px;
+    color:  rgba(0, 0, 0, 0.56);;
+}
+
+/* radio button */
+
+.ft-radio-custom{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    padding-left: -10px;
+    padding-right: -10px;
+    color:  rgba(0, 0, 0, 0.56);
+}
+
+.ft-heading-md{
+    font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 13px;
+    color: rgba(0, 0, 0, 0.56);
+}
+.ft-form-value{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    margin-left: 0px !important;
+    color:  #000000;;
+}
+
+/* checkbox */
+.checkbox{
+    width: 16px;
+    height: 19px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+}
+
+/* Tab View */
+.p-tabview-title {
+    line-height:24px;
+    white-space: nowrap;
+    color: gray;
+    margin-left: 149px;
+}
+
+
+/* Drawer */
+::ng-deep :ng-sidebar{
+    background-color: yellow;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5);
+}
+
+.side{
+    background-color: yellow;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5);
+}
+
+/* footer */
+.ft-footer{
+    justify-content: center;
+    width: 95%;
+    padding: 25px;
+    position: absolute;
+    bottom: 0px;
+    margin-left:80px;
+    background-color: #8950FC;
+    color: white;
+}
+
+/*media query for responsive web design*/
+
+@media only screen and (max-width: 1150px) {
+   
+}
+
+@media only screen and (max-width: 1100px) {
+    .card-body {
+        padding:20px !important;
+    }
+ 
+}
+
+@media only screen and (max-width: 720px) {
+    .card-body {
+        padding:10px !important;
+    }
+    .ft-card-center {
+        margin-top: 0px;
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+  
+}
+
+@media only screen and (max-width: 765px) {
+    body {
+        background-color: #ffffff;
+    }
+   
+   
+}
+
+@media only screen and (max-width: 600px) {
+   
+}
+
+
+/*media queries for mobile responsiveness*/
+
+@media only screen and (max-width: 365px) {
+ 
+}
+
+@media only screen and (max-width: 320px) {
+   
+}
