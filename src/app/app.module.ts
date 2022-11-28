@@ -17,6 +17,7 @@ import {FormsModule} from "@angular/forms";
 import { BasicdetailComponent } from './basicdetail/basicdetail.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,8 @@ import { BasicdetailComponent } from './basicdetail/basicdetail.component';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
