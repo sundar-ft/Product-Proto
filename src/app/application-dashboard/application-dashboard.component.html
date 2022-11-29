@@ -4,7 +4,6 @@
 
 
 
-
 <div class="row justify-content-center page-container">
     <div class="col-md-10 border-0 card ft-card-center p-0" style="margin-top:20px;">
        
@@ -18,7 +17,8 @@
 
             <span class="material-icons upload-icon">backup</span>
 
-            <table id="example" class="display nowrap table pb-3" style="width:100%">
+            <table 
+            id="example" class="display nowrap table pb-3" style="width:100%">
     <thead>
         <tr>
             <th>PAN</th>
@@ -832,10 +832,26 @@
    
 </table>
 
-
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
 
 
 </div>
 </div>
 </div>
 <app-footer></app-footer>
+
+<!-- Modal -->
+
+<ng-template #content let-c="close" let-d="dismiss">
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Hi there!</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<p>Hello, World!</p>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
+	</div>
+</ng-template>
+

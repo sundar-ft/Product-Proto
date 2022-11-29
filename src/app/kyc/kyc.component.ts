@@ -1,26 +1,30 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-kyc',
   templateUrl: './kyc.component.html',
-  encapsulation: ViewEncapsulation.None,
-	styles: [
-		
-	],
+  
 })
 export class KycComponent {
+	isdelete: boolean = false;
 
-  closeResult !: string;
 
-	constructor(private modalService: NgbModal) {}
-
-	openBackDropCustomClass(content:any) {
-		this.modalService.open(content, { backdropClass: 'light-blue-backdrop' });
+	constructor(config: NgbModalConfig, private modalService: NgbModal) {
+		// customize default values of modals used by this component tree
+		config.backdrop = 'static';
+		config.keyboard = false;
 	}
 
-	openWindowCustomClass(content:any) {
-		this.modalService.open(content, { windowClass: 'dark-modal' });
+	open(content:any) {
+		this.modalService.open(content);
+	}
+	close(){
+		this.isdelete=!this.isdelete
+	  }
+
+	  open1(content1:any) {
+		this.modalService.open(content1);
 	}
 
 }

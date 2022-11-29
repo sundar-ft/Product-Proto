@@ -15,6 +15,7 @@ import { BasicdetailComponent } from './basicdetail/basicdetail.component';
 import { KycComponent } from './kyc/kyc.component';
 import { ApplicationDashboardComponent } from './application-dashboard/application-dashboard.component';
 import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+import { PermissionRequestComponent } from './permission-request/permission-request.component';
 
 
 
@@ -27,7 +28,7 @@ import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
     BasicdetailComponent,
     KycComponent,
     ApplicationDashboardComponent,
-  
+    PermissionRequestComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,6 @@ import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     NgbPaginationModule,
     NgbAlertModule
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
