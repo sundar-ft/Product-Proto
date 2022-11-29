@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SumanComponent } from './suman.component';
+import { KycComponent } from './kyc.component';
 
-describe('SumanComponent', () => {
-  let component: SumanComponent;
-  let fixture: ComponentFixture<SumanComponent>;
+describe('KycComponent', () => {
+  let component: KycComponent;
+  let fixture: ComponentFixture<KycComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SumanComponent ]
+      declarations: [ KycComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SumanComponent);
+    fixture = TestBed.createComponent(KycComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

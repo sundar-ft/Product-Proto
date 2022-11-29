@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ApplicationDashboardComponent } from './application-dashboard/application-dashboard.component';
 import { BasicdetailComponent } from './basicdetail/basicdetail.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeadernavbarComponent } from './headernavbar/headernavbar.component';
+import { KycComponent } from './kyc/kyc.component';
 import { SidenavbarComponent } from './sidenavbar/sidenavbar.component';
-import { SumanComponent } from './suman/suman.component';
-import { TestComponent } from './test/test.component';
+
+
 
 const routes: Routes = [
   {
-    path: 'test',
-    component: TestComponent,
+    path: 'dashboard',
+    component: ApplicationDashboardComponent,
   }, 
-  {
-    path: 'suman',
-    component:SumanComponent,
-  }, 
+ 
   {
     path: 'header',
     component:HeadernavbarComponent,
@@ -31,6 +30,10 @@ const routes: Routes = [
   {
     path:"basicdetail",
     component : BasicdetailComponent
+  },
+  {
+    path:"kyc",
+    component : KycComponent
   }
 ];
 
