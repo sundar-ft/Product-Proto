@@ -13,9 +13,145 @@ body {
     background-color: #F2F2F2;
 }
 .card-body{
-    padding: 10px;
+    padding: 30px;
 }
 
+/* stepper */
+
+  
+  :root {
+    --circle-size: clamp(1.5rem, 5vw, 3rem);
+    --spacing: clamp(0.25rem, 2vw, 0.5rem);
+}
+.c-stepper {
+    display: flex;
+}
+.c-stepper__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+}
+.c-stepper__item:before {
+    --size: 3rem;
+    content: "";
+    display: block;
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    background-color:  rgba(111, 111, 111, 0.75);;
+    background-color:  rgba(111, 111, 111, 0.75);;
+    opacity: 0.5;
+    margin: 0 auto 1rem;
+}
+.c-stepper__item:not(:last-child):after {
+    width: 92px;
+    content: "";
+    position: relative;
+    top: 9px;
+    /* width: calc(100% - var(--circle-size) - calc(var(--spacing) * 2)); */
+    /* left: calc(50% + calc(var(--circle-size) / 2 + var(--spacing))); */
+    height: 2px;
+    background-color: rgba(111, 111, 111, 0.75);
+    order: -1;
+    left: 59px;
+}
+.c-stepper__title {
+    font-weight: bold;
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    margin-bottom: 0.5rem;
+    color: #8950FC;
+    font-size: 14px;
+}
+.c-stepper__desc {
+    color: grey;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+}
+/*** Non-demo CSS ***/
+.wrapper {
+    max-width: 459px;
+    margin: 2rem auto 0;
+}
+
+/* stepper 2 */
+
+
+
+/* OTP Field */
+
+.otp-field  {
+  text-align: center;
+    margin-top: 16px;
+}
+.ng-valid{
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 24px !important;
+}
+
+/* tab */
+
+
+
+.p-tabview-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    flex: 1 1 auto;
+    margin-left: -63px !important;
+    font-size: 14px;
+}
+.p-tabview-nav-content {
+    margin-top: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overscroll-behavior: contain auto;
+}
+.p-tabview-nav-link {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    margin-left: -38px;
+}
+.p-tabview-nav-link :hover {
+   color: #8950FC;
+}
+.p-tabview-title {
+    line-height: 24px;
+    white-space: nowrap;
+    color: gray;
+    margin-left: 133px;
+}
+.p-tabview-nav-content {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overscroll-behavior: contain auto;
+    margin-left: -37px;
+    /* font-size: 9px; */
+}
+
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040 !important;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
 
 /*Card centered*/
 
@@ -73,11 +209,14 @@ body {
   transition: all 0.3s ease;
   background-color: #8950FC !important;
   border-bottom: 1px solid #eff0f6;
+  width: 100%;
+  margin-top: -25px;
   /* background-image: #8950FC !important; */
 }
 .ft-sub-heading{
     color: #8950FC;
     margin-top: 10px;
+    font-size: 14px;
     /* border-bottom: 1px solid #EEE5FF; */
 }
 .ft-header__brand-logo-default{
@@ -229,6 +368,53 @@ input{
     color: white;
     padding: -8px;
     font-size: 14px;
+    width: 119px;
+}
+
+/* option heading */
+.ft-desc-option{
+    padding-left: 40px;
+}
+.ft-desc-border{
+    background-color: #F5F8FA;
+    height: 89px;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+/* table-head */
+.table-head{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.56);
+}
+.table-body{
+   font-style: normal;
+   font-weight: 600;
+   font-size: 13px;
+   line-height: 19px;
+   color: #000000;
+}
+
+/* modal */
+.modal-content {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 166%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    right: -184px;
 }
 
 /* note heading */
@@ -317,10 +503,12 @@ input{
     padding: 25px;
     position: absolute;
     bottom: 0px;
-    margin-left:80px;
+    margin-left:60px;
     background-color: #8950FC;
     color: white;
 }
+
+
 
 /*media query for responsive web design*/
 

@@ -14,8 +14,9 @@ import {FormsModule} from "@angular/forms";
 import { BasicdetailComponent } from './basicdetail/basicdetail.component';
 import { KycComponent } from './kyc/kyc.component';
 import { ApplicationDashboardComponent } from './application-dashboard/application-dashboard.component';
-import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbPaginationModule, NgbAlertModule,NgbAccordionModule} from '@ng-bootstrap/ng-bootstrap';
 import { PermissionRequestComponent } from './permission-request/permission-request.component';
+import { NgOtpInputModule } from  'ng-otp-input';
 
 
 
@@ -40,7 +41,10 @@ import { PermissionRequestComponent } from './permission-request/permission-requ
     MatInputModule,
     FormsModule,
     NgbPaginationModule,
-    NgbAlertModule
+    NgbAlertModule,
+    NgOtpInputModule,
+    NgbAccordionModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
