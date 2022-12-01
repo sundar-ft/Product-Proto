@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ApplicationDashboardComponent } from './application-dashboard/application-dashboard.component';
+import { ApplicationQuickViewComponent } from './application-quick-view/application-quick-view.component';
 import { BasicdetailComponent } from './basicdetail/basicdetail.component';
+import { DocumentComponent } from './document/document.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormValidationComponent } from './form-validation/form-validation.component';
 import { HeadernavbarComponent } from './headernavbar/headernavbar.component';
 import { KraVerificationComponent } from './kra-verification/kra-verification.component';
 import { KycInformationComponent } from './kyc-information/kyc-information.component';
@@ -52,8 +55,20 @@ const routes: Routes = [
     component : KycInformationComponent
   },
   {
+    path:"document",
+    component : DocumentComponent
+  },
+  {
+    path:"form",
+    component : FormValidationComponent
+  },
+  {
     path:"permission",
     component : PermissionRequestComponent
+  },
+  {
+    path:"quickview",
+    component : ApplicationQuickViewComponent
   }
 ];
 

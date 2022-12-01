@@ -10,7 +10,7 @@ import { TabViewModule } from "primeng/tabview";
 import {MatStepperModule} from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
-import {FormsModule} from "@angular/forms";
+import {FormsModule,ReactiveFormsModule} from "@angular/forms";
 import { BasicdetailComponent } from './basicdetail/basicdetail.component';
 import { KycComponent } from './kyc/kyc.component';
 import { ApplicationDashboardComponent } from './application-dashboard/application-dashboard.component';
@@ -20,6 +20,9 @@ import { NgOtpInputModule } from  'ng-otp-input';
 import { Kyc1Component } from './kyc1/kyc1.component';
 import { KraVerificationComponent } from './kra-verification/kra-verification.component';
 import { KycInformationComponent } from './kyc-information/kyc-information.component';
+import { DocumentComponent } from './document/document.component';
+import { FormValidationComponent } from './form-validation/form-validation.component';
+import { ApplicationQuickViewComponent } from './application-quick-view/application-quick-view.component';
 
 
 
@@ -36,6 +39,9 @@ import { KycInformationComponent } from './kyc-information/kyc-information.compo
     Kyc1Component,
     KraVerificationComponent,
     KycInformationComponent,
+    DocumentComponent,
+    FormValidationComponent,
+    ApplicationQuickViewComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +56,7 @@ import { KycInformationComponent } from './kyc-information/kyc-information.compo
     NgbAlertModule,
     NgOtpInputModule,
     NgbAccordionModule,
-    
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
