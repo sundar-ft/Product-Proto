@@ -28,6 +28,33 @@ body {
     padding: 30px;
 }
 
+.ft-input-edit{
+    margin-top: -17px;
+}
+
+.mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: black !important;
+}
+.mdc-text-field--invalid .mdc-text-field__input {
+    color: black !important;
+}
+.ft-new-input{
+    width: 100% !important;
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #fff !important;
+}
+.mat-mdc-form-field-focus-overlay {
+    background-color: #dfdfdf !important;
+}
+
+.mat-mdc-form-field-bottom-align::before {
+    content: "";
+    display:none !important;
+    height: 0px !important;
+    width: 100% !important;
+}
+
 /* stepper */
 
   
