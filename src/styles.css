@@ -1,5 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
+a {
+    color: #000000 !important;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: 500 !important;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 
 
@@ -44,6 +56,8 @@ body {
     opacity: 0.5;
     margin: 0 auto 1rem;
 }
+
+
 .c-stepper__item:not(:last-child):after {
     width: 92px;
     content: "";
@@ -105,7 +119,8 @@ body {
     font-size: 14px;
 }
 .p-tabview-nav-content {
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -184,6 +199,7 @@ body {
         line-height: 24px;
         color: rgba(111, 111, 111, 0.7);
         /* padding-left: 5px; */
+        text-align: center;
   }
   .ft-select{
     border: none;
@@ -217,6 +233,7 @@ body {
     color: #8950FC;
     margin-top: 10px;
     font-size: 14px;
+    font-weight: 500;
     /* border-bottom: 1px solid #EEE5FF; */
 }
 .ft-header__brand-logo-default{
@@ -266,31 +283,50 @@ body {
 }
 
 /* table */
-.old {
+.badge {
+    width: 91px;
+    padding: 2px 5px 5px 5px !important;
+    font-size: 13px !important;
+    font-weight: normal;
+}
+
+.in-progress{background-color: #3d3de7; color: #fff;}
+.completed{background-color: rgb(4, 167, 4); color: #fff;}
+.approved{background-color: #614003; color: #fff;}
+
+
+
+/* .old {
     background-color: #0000FF;
     color: white;
     font-size: 13px;
     padding: 2px 10px 7px 11px;
     border-radius: 10px;
-}
-.middleaged {
+} */
+/* .middleaged {
     background-color: green;
     color: white;
     font-size: 13px;
     padding: 2px 10px 7px 11px;
     border-radius: 10px;
-}
-.young {
+} */
+/* .young {
     background-color: #90EE90;
     color: white;
     font-size: 13px;
     padding: 2px 10px 7px 11px;
     border-radius: 10px;
-}
+} */
+
 label{
     float: right;
     margin-right: 10px;
 }
+
+td:nth-child(2) {
+    text-transform: uppercase;
+}
+
 
 .dataTables_length {
     word-wrap: normal;
@@ -498,17 +534,17 @@ input{
 }
 
 /* footer */
-.ft-footer{
+.ft-footer {
     justify-content: center;
     width: 95%;
-    padding: 25px;
+    padding: 6px 25px;
     position: absolute;
     bottom: 0px;
-    margin-left:60px;
+    margin-left: 60px;
     background-color: #8950FC;
     color: white;
+    font-size: 14px;
 }
-
 
 
 /*media query for responsive web design*/
