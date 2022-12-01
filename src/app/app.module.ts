@@ -17,6 +17,9 @@ import { ApplicationDashboardComponent } from './application-dashboard/applicati
 import {NgbPaginationModule, NgbAlertModule,NgbAccordionModule} from '@ng-bootstrap/ng-bootstrap';
 import { PermissionRequestComponent } from './permission-request/permission-request.component';
 import { NgOtpInputModule } from  'ng-otp-input';
+import { Kyc1Component } from './kyc1/kyc1.component';
+import { KraVerificationComponent } from './kra-verification/kra-verification.component';
+import { KycInformationComponent } from './kyc-information/kyc-information.component';
 
 
 
@@ -30,6 +33,9 @@ import { NgOtpInputModule } from  'ng-otp-input';
     KycComponent,
     ApplicationDashboardComponent,
     PermissionRequestComponent,
+    Kyc1Component,
+    KraVerificationComponent,
+    KycInformationComponent,
   ],
   imports: [
     BrowserModule,

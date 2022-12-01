@@ -292,11 +292,11 @@ label{
     margin-right: 10px;
 }
 
-.dataTables_length  {
+.dataTables_length {
     word-wrap: normal;
     position: absolute;
-    bottom: 0px;
-    right: 229px;
+    bottom: 20px;
+    right: 238px;
     border: none;
     border-radius: 5px;
     padding: 1px;
@@ -360,6 +360,7 @@ input{
     height: 32px;
     outline: none;
     width: 100%;
+    padding-left: 10px;
 }
 .ft-button{
     border: none;
