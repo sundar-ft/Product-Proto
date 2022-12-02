@@ -101,7 +101,7 @@
     <div class="modal-body">
 
       <div class="text-center">
-        <span class="ft-dot-complete">●</span>
+        <span class="ft-dot-complete" >●</span>
         <span class="ft-dot" (click)="Addressdetail()">●</span>
         <span class="ft-incomplete-dot" (click)="Contact()">●</span>
      </div>
@@ -248,11 +248,16 @@
               
         </div>
     </div>
-     
+ 
+
+    <div class="text-center pt-3" >
+        <button type="next" class="ft-button-primary"   (click)="Addressdetail()">NEXT</button>
+    </div>
+   
 
    </div>
 
-        <!-- <div class="ft-button-primary " *ngIf="!address" (click)="Addressdetail()">Next</div> -->
+       
 
     
    <div *ngIf="address">
@@ -539,7 +544,9 @@
 
   </div>
 
-      <!-- <div class="ft-primary-button" *ngIf="!contact" (click)="Contact()">Next</div> -->
+      <div class="text-center pt-3" >
+        <button type="next" class="ft-button-primary"  *ngIf="address"  (click)="Contact()">NEXT</button>
+    </div>
 
   <div *ngIf="contact">
     <div class="ft-sub-heading pb-2" style="border-bottom:1px solid #EEE5FF;">
@@ -637,9 +644,9 @@
 
      </div>
 
-    <!-- <div class="text-center pt-4">
-        <button class="ft-button-primary"><a href="kyc">Save & Next</a></button>
-    </div> -->
+    <div class="text-center pt-4">
+        <button class="ft-button-primary" *ngIf="contact"><a href="kyc">Save & Next</a></button>
+    </div>
 
 
         <hr />

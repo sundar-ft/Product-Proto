@@ -481,6 +481,12 @@ input{
     text-align: center;
     cursor: pointer;
 }
+.ft-share{
+    margin-left: 229px !important;
+}
+.ft-link{
+    margin-left: 10px !important;
+}
 
 .ft-button-primary:hover{
     background-color: #7537f1;
