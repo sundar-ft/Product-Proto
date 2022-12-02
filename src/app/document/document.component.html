@@ -15,7 +15,7 @@
 
 
             <div class="ft-sub-heading">
-                DOCUMENT UPLOAD<span class='material-icons' style="float: right;">add</span>
+                DOCUMENT UPLOAD<span class='material-icons' style="float: right;" (click)="open2(content2)">add</span>
             </div>
             <hr />
 
@@ -63,7 +63,7 @@
               </table>
 
               <div class="text-center pt-4">
-                <button class="ft-button" > Next</button>
+                <button class="ft-button-primary" > Next</button>
             </div>
 
             <hr />
@@ -72,11 +72,58 @@
                 Note:
             </div>
             <div class="ft-note-desc1">
-                Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than ## KB/MB.
+                Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
             </div>
 
         </div>
     </div>
 </div>
+
+
+<ng-template #content2 let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" class="ft-sub-heading">DOCUMENT UPLOAD</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" (click)="close()">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+
+      <div class="row pt-3 justify-content-center">
+        <div class="col-md-4">
+            <div class="group">
+                <div class="ft-heading-md">  BRIEF DETAILS OF OCCUPATION <span class="red-required text-danger"> *</span></div>
+               
+                <div class="ft-input-edit">
+                    <select class="ft-select1">
+                        <option>5 - 10 LACS</option>
+                        <option>4- 10 LACS</option>
+                    </select>
+                </div>
+    </div>
+</div>
+        
+      </div>
+
+        
+
+          <div class="text-center pt-4">
+              <button class="ft-button-primary">Upload</button>
+          </div>
+
+          <hr />
+
+          <div class="ft-note-heading">
+            Note:
+        </div>
+        <div class="ft-note-desc1">
+            Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
+        </div>
+          
+
+      </div>
+
+</ng-template>
 
 <app-footer></app-footer>

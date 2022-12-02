@@ -4,7 +4,7 @@
 
   <!-- Stepper 2 -->
 
-  <div class="wrapper option-1 option-1-1">
+  <!-- <div class="wrapper option-1 option-1-1">
     <ol class="c-stepper">
       <li class="c-stepper__item">
         <h3 class="c-stepper__title">Basic Details</h3>
@@ -23,7 +23,7 @@
      
       </li>
     </ol>
-  </div>
+  </div> -->
 
   
 
@@ -38,7 +38,7 @@
                  with the bank or from KYC Registered Agency
             </div>
 
-            <div class="col-md-7 mx-auto bg-light mt-2 mb-2">
+            <!-- <div class="col-md-7 mx-auto bg-light mt-2 mb-2"> -->
                 <div class="row justify-content-center pt-3">
            
                     <div class="col-md-4 ft-heading-md">
@@ -58,7 +58,7 @@
                        20-05-1996
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
 
             <div class="row justify-content-center m-auto pt-3">
                 <div class="col-md-12 ft-checkbox">
@@ -71,7 +71,7 @@
          </div>
 
          <div class="text-center pt-4">
-            <button class="ft-button"><a href="kycinfo">Select</a></button>
+            <button class="ft-button-primary"><a (click)="open(content)">Select</a></button>
         </div>
 
          <hr />
@@ -87,5 +87,573 @@
         </div>
     </div>
 </div>
+
+
+<ng-template #content let-c="close" let-d="dismiss">
+
+  <div class="modal-header" >
+      <h5 class="modal-title" id="exampleModalLabel" class="ft-sub-heading">DOCUMENT UPLOAD</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+        <span aria-hidden="true" (click)="close()">&times;</span>
+      </button>
+    </div>
+
+    <div class="modal-body">
+
+      <div class="text-center">
+        <span class="ft-dot-complete">●</span>
+        <span class="ft-dot" (click)="Addressdetail()">●</span>
+        <span class="ft-incomplete-dot" (click)="Contact()">●</span>
+     </div>
+
+      <div class="text-center  ft-head">
+        KYC Information
+    </div>
+    <div class="ft-desc pt-3">
+        Please complete the details given below. If the data is already retrived from
+         the KYC database, kindly review the data, and make any necessary changes before proceeding further.
+    </div>
+
+    <div *ngIf="!identify">
+     <div class="ft-sub-heading pb-2">
+        IDENTITY DETAILS<span class='material-icons' style="float: right;" >edit</span>
+     </div>
+
+ 
+     <div class="row  pt-3">
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">PAN <span class="red-required text-danger"> *</span></div>
+                       
+                        <div class="ft-input-edit ft-form-value">
+                            FGH34567MVB
+                        </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+           
+                    <div class="group">
+                        <div class="ft-heading-md">DATE OF BIRTH <span class="red-required text-danger"> *</span>
+                        </div>
+                        <div class="ft-input-edit ft-form-value">
+                           20-05-1996
+                        </div>
+                  
+            </div>
+        </div>
+
+        <div class="col-md-4">
+           
+                    <div class="group">
+                        <div class="ft-heading-md">  NAME<span class="red-required text-danger">
+                                *</span> </div>
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                    </div>
+              
+        </div>
+    </div>
+
+
+    <div class="row  pt-3">
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md"> MAIDEN NAME<span class="red-required text-danger"> *</span></div>
+                       
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+           
+                    <div class="group">
+                        <div class="ft-heading-md"> MOTHER’S MAIDEN NAME <span class="red-required text-danger"> *</span>
+                        </div>
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                  
+            </div>
+        </div>
+
+        <div class="col-md-4">
+           
+                    <div class="group">
+                        <div class="ft-heading-md">FATHER/SPOUSE NAME<span class="red-required text-danger">
+                                *</span> </div>
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                    </div>
+              
+        </div>
+    </div>
+
+
+    <div class="row  pt-3">
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">GENDER<span class="red-required text-danger"> *</span></div>
+                       
+                        <div class="ft-input-edit">
+                            <select class="col-md-12 ft-select1">
+                                <option>MALE</option>
+                                <option>FEMALE</option>
+                            </select>
+                        </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="group">
+                <div class="ft-heading-md">MARITAL STATUS<span class="red-required text-danger"> *</span></div>
+               
+                <div class="ft-input-edit">
+                    <select class="col-md-12 ft-select1">
+                        <option>MARRIED</option>
+                        <option>UNMARRIED</option>
+                    </select>
+                </div>
+    </div>
+</div>
+
+        <div class="col-md-4">
+           
+                    <div class="group">
+                        <div class="ft-heading-md">NATIONALITY<span class="red-required text-danger">
+                                *</span> </div>
+                                <div class="ft-input-edit">
+                                    <div class="row">
+                                       <div class="col-md-4">
+                                        <select class="ft-select1">
+                                            <option>YES</option>
+                                            <option>NO</option>
+                                        </select>
+                                       </div>
+                                       
+                                      <div class="col-md-8">
+                                           <input type="text" class="col-md-12 ft-input-value"/>
+                                      </div>
+                                    </div>
+                                   
+                                </div>
+                    </div>
+              
+        </div>
+    </div>
+     
+
+   </div>
+
+        <!-- <div class="ft-button-primary " *ngIf="!address" (click)="Addressdetail()">Next</div> -->
+
+    
+   <div *ngIf="address">
+
+    <div class="ft-sub-heading pb-2" style="border-bottom:1px solid #EEE5FF;">
+        ADDRESS DETAILS<span class='material-icons' style="float: right;font-size: 20px;" >edit</span>
+     </div>
+
+  
+
+     <div class="ft-sub-heading pb-2">
+        CORRESPONDENCE ADDRESS<span class='material-icons' style="float: right;font-size: 20px;">edit</span>
+     </div>
+
+     <div class="row pt-3 m-auto">
+        <div class="col-md-6 ft-heading-md">
+            ADDRESS TYPE <span class="red-requide text-danger"> *</span>
+        </div>
+
+        <div class="col-md-3 text-center ">
+            <div class="form-check form-check-inline"> 
+                <input  class="form-check-input ft-radio-custom" type="radio" value="FIRSTHOLDER" >
+                <label class="form-check-label ft-radio-custom ">RESIDENTIAL</label><br />
+            </div>
+          
+        </div>
+
+        <div class="col-md-3 text-center">
+            <div class="form-check form-check-inline"> 
+                <input  class="form-check-input ft-radio-custom" type="radio" value="ONEHOLDER"  >
+                <label class="form-check-label ft-radio-custom ">
+                    OFFICE/BUSINESS
+                </label>
+            </div> 
+        </div>
+   
+    </div>
+
+
+    <div class="row  pt-3">
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">ADDRESS LINE 1<span class="red-required text-danger"> *</span></div>
+                       
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+           
+                    <div class="group">
+                        <div class="ft-heading-md">ADDRESS LINE 2 <span class="red-required text-danger"> *</span>
+                        </div>
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                  
+            </div>
+        </div>
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">ADDRESS LINE 3<span class="red-required text-danger">
+                                *</span> </div>
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+   
+    <div class="row  pt-3">
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">CITY/TOWN/VILLAGE<span class="red-required text-danger"> *</span></div>
+                       
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+           
+                    <div class="group">
+                        <div class="ft-heading-md">DISTRICT <span class="red-required text-danger"> *</span>
+                        </div>
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                  
+            </div>
+        </div>
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">PINCODE<span class="red-required text-danger">
+                                *</span> </div>
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                    </div>
+        </div>
+    </div>
+        
+
+    <div class="row  pt-3">
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">STATE<span class="red-required text-danger"> *</span></div>
+                       
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+           
+                    <div class="group">
+                        <div class="ft-heading-md">COUNTRY <span class="red-required text-danger"> *</span>
+                        </div>
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                  
+            </div>
+        </div>
+
+        <div class="col-md-4">
+                    
+        </div>
+    </div>
+    
+
+  
+
+ <!-- <div class="row justify-content-center pt-3"> -->
+    <div class="row pt-4 m-auto">
+    
+    <div class="col-md-9 ft-heading-md">
+        PERMENENT ADDRESS SAME AS CORRESPONDENCE ADDRESS
+    </div>
+    <div class="col-md-3">
+        <input type="checkbox" class="checkbox">
+        <span class="checkmark"></span>
+    </div>
+ </div>
+
+ <div class="row pt-3 m-auto">
+    <div class="col-md-6 ft-heading-md">
+        ADDRESS TYPE <span class="red-requide text-danger"> *</span>
+    </div>
+
+    <div class="col-md-3 text-center ">
+        <div class="form-check form-check-inline"> 
+            <input  class="form-check-input ft-radio-custom" type="radio" value="FIRSTHOLDER" >
+            <label class="form-check-label ft-radio-custom ">RESIDENTIAL</label><br />
+        </div>
+      
+    </div>
+
+    <div class="col-md-3 text-center">
+        <div class="form-check form-check-inline"> 
+            <input  class="form-check-input ft-radio-custom" type="radio" value="ONEHOLDER"  >
+            <label class="form-check-label ft-radio-custom ">
+                OFFICE/BUSINESS
+            </label>
+        </div> 
+    </div>
+
+</div>
+
+    <div class="ft-sub-heading pb-2">
+        PERMANENT ADDRESS<span class='material-icons' style="float: right;">edit</span>
+     </div>
+
+     <div class="row  pt-3">
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">ADDRESS LINE 1<span class="red-required text-danger"> *</span></div>
+                       
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+           
+                    <div class="group">
+                        <div class="ft-heading-md">ADDRESS LINE 2 <span class="red-required text-danger"> *</span>
+                        </div>
+                        <div class="ft-input-edit ft-form-value">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                  
+            </div>
+        </div>
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">ADDRESS LINE 3<span class="red-required text-danger">
+                                *</span> </div>
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+   
+    <div class="row  pt-3">
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">CITY/TOWN/VILLAGE<span class="red-required text-danger"> *</span></div>
+                       
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+           
+                    <div class="group">
+                        <div class="ft-heading-md">DISTRICT <span class="red-required text-danger"> *</span>
+                        </div>
+                        <div class="ft-input-edit ft-form-value">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                  
+            </div>
+        </div>
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">PINCODE<span class="red-required text-danger">
+                                *</span> </div>
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                    </div>
+        </div>
+    </div>
+        
+
+    <div class="row  pt-3">
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">STATE<span class="red-required text-danger"> *</span></div>
+                       
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+           
+                    <div class="group">
+                        <div class="ft-heading-md">COUNTRY <span class="red-required text-danger"> *</span>
+                        </div>
+                        <div class="ft-input-edit ft-form-value">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                  
+            </div>
+        </div>
+
+        <div class="col-md-4">
+                    
+        </div>
+    </div>
+
+  </div>
+
+      <!-- <div class="ft-primary-button" *ngIf="!contact" (click)="Contact()">Next</div> -->
+
+  <div *ngIf="contact">
+    <div class="ft-sub-heading pb-2" style="border-bottom:1px solid #EEE5FF;">
+        CONTACT DETAILS<span class='material-icons' style="float: right;" >edit</span>
+     </div>
+
+    
+
+     <div class="row  pt-3">
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">EMAIL ID<span class="red-required text-danger"> *</span></div>
+                       
+                        <div class="ft-input-edit">
+                            <input type="text" class="col-md-12 ft-input-value" />
+                        </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="group">
+                <div class="ft-heading-md">MOBILE NUMBER<span class="red-required text-danger"> *</span></div>
+               
+                <div class="ft-input-edit">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <select class="ft-select1 col-md-12">
+                                <option>+91</option>
+                                <option>IND</option>
+                            </select>
+                        </div>
+                        
+                       <div class="col-md-8">
+                            <input type="text" class="col-md-12 ft-input-value"/>
+                       </div>
+                     </div>
+                </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="group">
+        <div class="ft-heading-md"> ALTERNATIVE MOBILE NUMBER</div>
+       
+        <div class="ft-input-edit">
+            <div class="row">
+                <div class="col-md-4">
+                    <select class="ft-select1 col-md-12">
+                        <option>+91</option>
+                        <option>IND</option>
+                    </select>
+                </div>
+                
+               <div class="col-md-8">
+                    <input type="text" class="col-md-12 ft-input-value"/>
+               </div>
+             </div>
+        </div>
+</div>
+</div>
+    </div>
+
+
+    
+
+    <div class="row  pt-3">
+
+        <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-heading-md">CITY/TOWN/VILLAGE<span class="red-required text-danger"> *</span></div>
+                       
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+           
+                    <div class="group">
+                        <div class="ft-heading-md">DISTRICT <span class="red-required text-danger"> *</span>
+                        </div>
+                        <div class="ft-input-edit ft-form-value">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                  
+            </div>
+        </div>
+
+        <div class="col-md-4">
+                  
+        </div>
+    </div>
+
+     </div>
+
+    <!-- <div class="text-center pt-4">
+        <button class="ft-button-primary"><a href="kyc">Save & Next</a></button>
+    </div> -->
+
+
+        <hr />
+
+        <div class="ft-note-heading">
+          Note:
+      </div>
+      <div class="ft-note-desc1">
+          Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
+      </div>
+        
+
+   
+  </div>
+</ng-template>
 
 <app-footer></app-footer>

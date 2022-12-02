@@ -23,8 +23,10 @@ import { KycInformationComponent } from './kyc-information/kyc-information.compo
 import { DocumentComponent } from './document/document.component';
 import { FormValidationComponent } from './form-validation/form-validation.component';
 import { ApplicationQuickViewComponent } from './application-quick-view/application-quick-view.component';
-
-
+import {MatTabsModule} from '@angular/material/tabs';
+import {TabModule} from 'angular-tabs-component';
+import { BrowserAnimationsModule } from 
+'@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,10 @@ import { ApplicationQuickViewComponent } from './application-quick-view/applicat
     NgbAlertModule,
     NgOtpInputModule,
     NgbAccordionModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTabsModule,
+    TabModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

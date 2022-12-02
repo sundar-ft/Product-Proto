@@ -4,7 +4,7 @@
 
   <!-- Stepper 2 -->
 
-  <div class="wrapper option-1 option-1-1">
+  <!-- <div class="wrapper option-1 option-1-1">
     <ol class="c-stepper">
       <li class="c-stepper__item">
         <h3 class="c-stepper__title">Basic Details</h3>
@@ -23,7 +23,7 @@
      
       </li>
     </ol>
-  </div>
+  </div> -->
 
   
 
@@ -37,36 +37,77 @@
                 KYC is done to verify the identity of an investor before onboarding with AMC(s) for any financial investments.
             </div>
 
-            <div class="row mt-4 justify-content-center">
-                <div class="col-md-4 text-center">
-                    <div class="form-check form-check-inline"> 
-                        <input  class="form-check-input ft-radio-custom" type="radio" value="FIRSTHOLDER" >
-                        <label class="form-check-label ft-radio-custom">KRA fetch using K1 Widget</label>
-                    </div>
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <div class="form-check form-check-inline"> 
-                        <input  class="form-check-input ft-radio-custom" type="radio" value="FIRSTHOLDER" >
-                        <label class="form-check-label ft-radio-custom ">KRA fetch using CKYC</label><br />
-                    </div>
-                  
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <div class="form-check form-check-inline"> 
-                        <input  class="form-check-input ft-radio-custom" type="radio" value="ONEHOLDER"  >
-                        <label class="form-check-label ft-radio-custom ">
-                            Data fetch for PAN from entity
-                        </label>
-                    </div> 
-                </div>
-           
-               
+            <div class="ft-sub-heading">
+                MODE OF FETCH
             </div>
+            <hr />
+
+
+
+            <table class="table table-borderless">
+                <thead>
+                  <tr class="table-head">
+                    <th scope="col">TYPE</th>
+                    <th scope="col">PAN</th>
+                    <th scope="col">HOLDER NAME</th>
+                    <th scope="col"> BOB</th>
+                    <th scope="col"> STATUS</th>
+                    <th scope="col">ACTION</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+
+                  <tr class="table-body">
+                    <th scope="row">KYC<span class="red-required text-danger"></span></th>
+                    <td>FCVPR6576M</td>
+                    <td>SUNDAR</td>
+                    <td>20-05-1996</td>
+                    <td><a href="kra">PENDING</a></td>
+                    <td><span>
+                        <select class="ft-action">
+                            <option>Action</option>
+                            <option>Action</option>
+                            <option>Action</option>
+                        </select>
+                    </span></td>
+                  </tr>
+
+
+                  <tr class="table-body">
+                    <th scope="row">CKYC<span class="red-required text-danger"></span></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a>[Comming Soon]</a></td>
+                    <td><span>
+                        <select class="ft-action">
+                            <option>Action</option>
+                            <option>Action</option>
+                            <option>Action</option>
+                        </select>
+                    </span></td>
+                  </tr>
+
+                  <tr class="table-body">
+                    <th scope="row">CKYC<span class="red-required text-danger"></span></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a>[Comming Soon]</a></td>
+                    <td><span>
+                        <select class="ft-action">
+                            <option>Action</option>
+                            <option>Action</option>
+                            <option>Action</option>
+                        </select>
+                    </span></td>
+                  </tr>
+                 
+                </tbody>
+              </table>
 
             <div class="text-center pt-4">
-                <button class="ft-button"><a href="kra">Select</a></button>
+                <button class="ft-button-primary"><a>Proceed</a></button>
             </div>
 
             <hr />
