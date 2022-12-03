@@ -1,35 +1,29 @@
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<form>
+			<div class="mb-3">
+				<label for="dateOfBirth">Date of birth</label>
+				<div class="input-group">
+					<input
+						id="dateOfBirth"
+						class="form-control"
+						placeholder="yyyy-mm-dd">
+						
+					<!-- <button class="btn btn-outline-secondary bi bi-calendar3" (click)="dp.toggle()" type="button"></button> -->
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+	</div>
+</ng-template>
 
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
 
-<!-- <form class="example-form text-center" >
-    <mat-form-field class="example-full-width">
-      <mat-label>Email</mat-label>
-      <input type="email" matInput [formControl]="emailFormControl" 
-           >
-      
-    </mat-form-field>
-  </form> -->
+<hr />
 
-
-  <!-- <form>
-    
-     <div class="ft-heading-md">
-      User Name
-     </div>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form> -->
-
-  <div class="row justify-content-center page-container">
-    <div class="col-md-8 border-0 card ft-card-center p-0" style="margin-top:20px;">
-        <div class="card-body mb-3">
-            
-          <form>
-
-   
-    
-       
-           <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-    </div>
-  </div>

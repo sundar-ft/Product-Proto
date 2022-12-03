@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalConfig, NgbModal,ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-document',
@@ -8,7 +8,7 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class DocumentComponent {
   isdelete: boolean = false;
-
+  closeResult =""
 
 	constructor(config: NgbModalConfig, private modalService: NgbModal) {
 		// customize default values of modals used by this component tree
@@ -23,5 +23,27 @@ export class DocumentComponent {
 
 	  open2(content2:any) {
 		this.modalService.open(content2);
+		
+	}
+	open(content:any){
+	this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then(
+		(result) => {
+			this.closeResult = `Closed with: ${result}`;
+		},
+		(reason) => {
+			this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+		},
+	);
+}
+
+
+	private getDismissReason(reason: any): string {
+		if (reason === ModalDismissReasons.ESC) {
+			return 'by pressing ESC';
+		} else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+			return 'by clicking on a backdrop';
+		} else {
+			return `with: ${reason}`;
+		}
 	}
 }

@@ -91,19 +91,21 @@
 
 <ng-template #content let-c="close" let-d="dismiss">
 
-  <div class="modal-header" >
-      <h5 class="modal-title" id="exampleModalLabel" class="ft-sub-heading">DOCUMENT UPLOAD</h5>
+  <!-- <div class="modal-header" >
+    
       <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
-        <span aria-hidden="true" (click)="close()">&times;</span>
+        <span aria-hidden="true" >&times;</span>
       </button>
-    </div>
+    </div> -->
 
     <div class="modal-body">
 
+        <div *ngIf="!isdelete">
+
       <div class="text-center">
+        <span class="ft-dot">●</span>
         <span class="ft-dot-complete" >●</span>
-        <span class="ft-dot" (click)="Addressdetail()">●</span>
-        <span class="ft-incomplete-dot" (click)="Contact()">●</span>
+        <span class="ft-incomplete-dot">●</span>
      </div>
 
       <div class="text-center  ft-head">
@@ -250,18 +252,34 @@
     </div>
  
 
-    <div class="text-center pt-3" >
-        <button type="next" class="ft-button-primary"   (click)="Addressdetail()">NEXT</button>
+    <div class="text-center pt-3" (click)="close()">
+        <button type="next" class="ft-button-primary"  (click)="Addressdetail()">NEXT</button>
     </div>
    
-
+    </div>
    </div>
 
        
 
     
-   <div *ngIf="address">
+ 
+    <div *ngIf="isdelete">
+        <div *ngIf="address">
+    <div class="text-center">
+        <span class="ft-dot-complete" >●</span>
+        <span class="ft-dot" >●</span>
+        <span class="ft-incomplete-dot">●</span>
+     </div>
 
+      <div class="text-center  ft-head">
+        KYC Information
+    </div>
+    <div class="ft-desc pt-3">
+        Please complete the details given below. If the data is already retrived from
+         the KYC database, kindly review the data, and make any necessary changes before proceeding further.
+    </div>
+
+  
     <div class="ft-sub-heading pb-2" style="border-bottom:1px solid #EEE5FF;">
         ADDRESS DETAILS<span class='material-icons' style="float: right;font-size: 20px;" >edit</span>
      </div>
@@ -542,10 +560,31 @@
         </div>
     </div>
 
-  </div>
+ 
 
-      <div class="text-center pt-3" >
-        <button type="next" class="ft-button-primary"  *ngIf="address"  (click)="Contact()">NEXT</button>
+      <div class="text-center pt-3" (click)="close1()"  >
+        <button type="next" class="ft-button-primary" (click)="Contact()">NEXT</button>
+    </div>
+
+    </div>
+</div>
+
+
+   
+<div *ngIf="isdelete1">
+    <div class="text-center">
+
+        <span class="ft-dot-complete" >●</span>
+        <span class="ft-incomplete-dot">●</span>
+        <span class="ft-dot" >●</span>
+     </div>
+
+      <div class="text-center  ft-head">
+        KYC Information
+    </div>
+    <div class="ft-desc pt-3">
+        Please complete the details given below. If the data is already retrived from
+         the KYC database, kindly review the data, and make any necessary changes before proceeding further.
     </div>
 
   <div *ngIf="contact">
@@ -644,9 +683,13 @@
 
      </div>
 
-    <div class="text-center pt-4">
-        <button class="ft-button-primary" *ngIf="contact"><a href="kyc">Save & Next</a></button>
+   
+
+    <div class="text-center pt-4"  (click)="close1()">
+        <button class="ft-button-primary" ><a href="kyc">Save & Next</a></button>
     </div>
+
+</div>
 
 
         <hr />

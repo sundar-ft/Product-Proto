@@ -13,6 +13,7 @@ import { KycComponent } from './kyc/kyc.component';
 import { Kyc1Component } from './kyc1/kyc1.component';
 import { PermissionRequestComponent } from './permission-request/permission-request.component';
 import { SidenavbarComponent } from './sidenavbar/sidenavbar.component';
+import { ViewComponent } from './view/view.component';
 
 
 
@@ -69,7 +70,12 @@ const routes: Routes = [
   {
     path:"quickview",
     component : ApplicationQuickViewComponent
+  },
+  {
+    path:"view",
+    component:ViewComponent
   }
+
 ];
 
 @NgModule({

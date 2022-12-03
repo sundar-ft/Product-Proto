@@ -8,7 +8,7 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
   providers: [NgbModalConfig, NgbModal],
 })
 export class ApplicationDashboardComponent {
-
+   search:boolean=false
   constructor(config: NgbModalConfig, private modalService: NgbModal) {
 		// customize default values of modals used by this component tree
 		config.backdrop = 'static';
@@ -17,6 +17,10 @@ export class ApplicationDashboardComponent {
 
 	open(content:any) {
 		this.modalService.open(content);
+	}
+
+	searchbox(){
+		this.search=!this.search
 	}
 
 }

@@ -27,6 +27,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {TabModule} from 'angular-tabs-component';
 import { BrowserAnimationsModule } from 
 '@angular/platform-browser/animations';
+import { ViewComponent } from './view/view.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { BrowserAnimationsModule } from
     DocumentComponent,
     FormValidationComponent,
     ApplicationQuickViewComponent,
+    ViewComponent,
   ],
   imports: [
     BrowserModule,

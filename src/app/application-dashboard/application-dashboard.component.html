@@ -15,14 +15,29 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae quam euismod, imperdiet erat et, placerat augue. Morbi risus massa, viverra quis elit eu, porttitor hendrerit lectus. Integer suscipit nisl sed purus
             </div>
 
-            <input list="brow" class="ft-search-input">
+            <!-- <input list="brow" class="ft-search-input">
             <datalist id="brow">
               <option value="Internet Explorer">
               <option value="Firefox">
               <option value="Chrome">
               <option value="Opera">
               <option value="Safari">
-            </datalist> 
+            </datalist>  -->
+
+            <div class="search" (click)="searchbox()">
+                <input type="search" class="search-input" placeholder="Enater Pan to Add Investor"/>
+                <span class="material-icons search-icon">search</span>
+            </div>
+
+            <div class="searchbox" *ngIf="search">
+                  <div class="" style="margin-left: 10px;padding-top: 10px;">
+                    <a href="basicdetail" class="pending"> Investor not found.</a>
+                  </div>
+                  <div class="float-right mr-2">
+                    <a href="permission" class="pending">Add Investor</a>
+                  </div>
+            </div>
+      
 
             <span class="material-icons upload-icon">backup</span>
 
@@ -32,7 +47,7 @@
             id="example" class="display nowrap table pb-3" style="width:100%">
     <thead>
         <tr>
-            <th><a href="basicdetail">PAN</a></th>
+            <th>PAN</th>
             <th>NAME</th>
             <th>START DATE</th>
             <th>REL.STATUS</th>

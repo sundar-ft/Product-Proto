@@ -789,7 +789,7 @@
                 </div>
                 
                 </mat-tab>
-                <mat-tab label="Bank Details">
+                <mat-tab label="BANK DETAILS">
                     <div class="ft-desc text-center pt-3">
                         Provide the Bank account(s) details that will be used for this investment
                     </div>
@@ -800,7 +800,7 @@
                     <hr />
         
         
-                    <table class="table table-borderless">
+                    <table class="table">
                         <thead>
                           <tr class="table-head">
                             <th scope="col">NAME</th>
@@ -868,7 +868,7 @@
         
                 
                 </mat-tab>
-                <mat-tab label="Nominee Details"> 
+                <mat-tab label="NOMINEE DETAILS"> 
                     <div class="ft-desc pt-3">
                         Complete the nomination details for the Profile in the section below. 
                         Investor (s) have the option to choose multiple nominee for the profile
@@ -950,7 +950,8 @@
                       </table>
         
                       <div class="text-center pt-4">
-                        <button class="ft-button-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Next</button>
+                        <button class="ft-button-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <a href="document">Next</a></button>
                     </div>
         
                     <hr />
@@ -2063,7 +2064,7 @@
          
 
           <div class="text-center pt-4">
-              <button class="ft-button-primary">Verify</button>
+              <button class="ft-button-primary"><a href="kyc">Verify</a></button>
           </div>
           
 
@@ -2244,242 +2245,13 @@
         
 
           <div class="text-center pt-4">
-              <button class="ft-button-primary">Add Details</button>
+              <button class="ft-button-primary"><a href="kyc">Add Details</a></button>
           </div>
           
 
       </div>
 
 </ng-template>
-
-
-
-
-
-
-
-
- 
-
- 
-
-  <!-- Modal -->
-  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel" class="ft-sub-heading">BANK ACCOUNT DETAILS</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <div class="modal-body">
-             
-            <div class="row justify-content-center pt-3">
-          
-                <div class="col-md-3 ft-heading-md">
-                    FIRST BENEFICIARY NAME   <span class="red-required text-danger"> *</span>
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="ft-input-value" />
-                </div>
-
-            </div>
-
-            <div class="row justify-content-center pt-3">
-          
-                <div class="col-md-3 ft-heading-md">
-                    SECOND BENEFICIARY NAME  <span class="red-required text-danger"> *</span>
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="ft-input-value" />
-                </div>
-
-            </div>
-
-            <div class="row justify-content-center pt-3">
-          
-                <div class="col-md-3 ft-heading-md">
-                    ACCOUNT TYPE   <span class="red-required text-danger"> *</span>
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="ft-input-value" />
-                </div>
-
-            </div>
-
-            <div class="row justify-content-center pt-3">
-          
-                <div class="col-md-3 ft-heading-md">
-                    ACCOUNT NUMBER    <span class="red-required text-danger"> *</span>
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="ft-input-value" />
-                </div>
-
-            </div>
-
-            <div class="row justify-content-center pt-3">
-          
-                <div class="col-md-3 ft-heading-md">
-                    IFSC CODE   <span class="red-required text-danger"> *</span>
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="ft-input-value" />
-                </div>
-
-            </div>
-
-            
-            <div class="row justify-content-center pt-3">
-          
-                <div class="col-md-3 ft-heading-md">
-                    MICR NUMBER  <span class="red-required text-danger"> *</span>
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="ft-input-value" />
-                </div>
-
-            </div>
-
-            <div class="row justify-content-center pt-3">
-          
-                <div class="col-md-3 ft-heading-md">
-                    BANK NAME *  <span class="red-required text-danger"> *</span>
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="ft-input-value" />
-                </div>
-
-            </div>
-
-            <div class="row justify-content-center pt-3">
-          
-                <div class="col-md-3 ft-heading-md">
-                    BANK BRANCH  <span class="red-required text-danger"> *</span>
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="ft-input-value" />
-                </div>
-
-            </div>
-
-            <div class="row justify-content-center pt-3">
-          
-                <div class="col-md-3 ft-heading-md">
-                    BANK ADDRESS   <span class="red-required text-danger"> *</span>
-                </div>
-                <div class="col-md-5">
-                    <input type="text" class="ft-input-value" />
-                </div>
-
-            </div>
-
-            <div class="text-center pt-4">
-                <button class="ft-button-primary">Verify</button>
-            </div>
-            
-
-        </div>
-
-     
-      </div>
-    </div>
-  </div>
-
-
-  <div class="row justify-content-center page-container">
-    <div class="col-md-8 border-0 card ft-card-center p-0" style="margin-top:20px;">
-        <div class="card-body mb-3">
-
-            <div class="text-center  ft-head">
-                PROFILE
-            </div>
-
-           
-           
-
-        </div>
-    </div>
-  </div> -->
-
-
-
-<!-- <div class="row justify-content-center page-container">
-    <div class="col-md-8 border-0 card ft-card-center p-0" style="margin-top:20px;">
-        <div class="card-body mb-3">
- 
-            <div class="text-center  ft-head">
-                DOCUMENTS
-            </div>
-
-            <div class="ft-desc text-center">
-                This section allows you to upload the documents associated to the customer profile.
-            </div>
-
-
-            <div class="ft-sub-heading">
-                DOCUMENT UPLOAD<span class='material-icons' style="float: right;">add</span>
-            </div>
-            <hr />
-
-
-
-            <table class="table table-borderless">
-                <thead>
-                  <tr class="table-head">
-                    <th scope="col">DOCUMENT TYPE</th>
-                    <th scope="col">ID/NUMBER</th>
-                    <th scope="col"> ACTIONS</th>
-                  </tr>
-                </thead>
-                <tbody class="table-group-divider">
-                  <tr class="table-body">
-                    <th scope="row">PAN <span class="red-required text-danger"></span></th>
-                    <td>FCVPR6576M</td>
-                    <td><span>
-                        <select class="ft-action">
-                            <option>Action</option>
-                            <option>Action</option>
-                            <option>Action</option>
-                        </select>
-                    </span></td>
-                  </tr>
-                  <tr class="table-body">
-                    <th scope="row">POI</th>
-                    <td>773JHH2H2H2</td>
-                    <td><span>
-                        <select class="ft-action">
-                            <option>Action</option>
-                            <option>Action</option>
-                            <option>Action</option>
-                        </select>
-                    </span></td>
-                  </tr>
-                 
-                </tbody>
-              </table>
-
-              <div class="text-center pt-4">
-                <button class="ft-button-primary" > SUBMIT</button>
-            </div>
-
-            <hr />
-
-            <div class="ft-note-heading">
-                Note:
-            </div>
-            <div class="ft-note-desc1">
-                Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
-            </div>
-
-            
-
-        </div>
-    </div>
-</div> -->
-
 
 
 

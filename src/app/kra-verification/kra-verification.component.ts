@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalConfig, NgbModal, } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-kra-verification',
   templateUrl: './kra-verification.component.html',
@@ -7,6 +7,7 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class KraVerificationComponent {
   isdelete: boolean = false;
+  isdelete1: boolean = false;
   identify:boolean=false;
   address:boolean=false;
   contact:boolean=false;
@@ -21,6 +22,13 @@ export class KraVerificationComponent {
 	close(){
 		this.isdelete=!this.isdelete
 	  }
+    close1(){
+      this.isdelete1=!this.isdelete1
+      this.identify = !this.identify
+      this.address = !this.address
+      
+ 
+      }
     Identify(){
       this.identify = !this.identify
     }
