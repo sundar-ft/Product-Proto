@@ -18,6 +18,7 @@ export class DocumentComponent {
 
 
 	close(){
+		this.modalService.dismissAll();
 		this.isdelete=!this.isdelete
 	  }
 

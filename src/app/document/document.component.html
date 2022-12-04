@@ -1,9 +1,9 @@
-<app-headernavbar></app-headernavbar>
-<app-sidenavbar></app-sidenavbar>
+<!-- <app-headernavbar></app-headernavbar>
+<app-sidenavbar></app-sidenavbar> -->
 
-<div class="row justify-content-center page-container">
+<!-- <div class="row justify-content-center page-container">
     <div class="col-md-8 border-0 card ft-card-center p-0" style="margin-top:20px;">
-        <div class="card-body mb-3">
+        <div class="card-body mb-3"> -->
  
             <div class="text-center  ft-head">
                 DOCUMENTS
@@ -75,9 +75,9 @@
                 Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
             </div>
 
-        </div>
+        <!-- </div>
     </div>
-</div>
+</div> -->
 
 
 <ng-template #content2 let-c="close" let-d="dismiss">
@@ -109,7 +109,7 @@
         
 
           <div class="text-center pt-4">
-              <button class="ft-button-primary"><a href="document">Upload</a></button>
+              <button class="ft-button-primary"><a (click)="close()">Upload</a></button>
           </div>
 
           <hr />

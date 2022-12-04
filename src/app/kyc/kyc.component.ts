@@ -20,6 +20,7 @@ export class KycComponent {
 		this.modalService.open(content);
 	}
 	close(){
+		this.modalService.dismissAll();
 		this.isdelete=!this.isdelete
 	  }
 
