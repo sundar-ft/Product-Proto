@@ -131,6 +131,17 @@ body {
     margin-top: 16px;
 }
 
+.otp-input{
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 0px !important;
+    border: none !important;
+    text-align: center;
+    font-size: 21px !important;
+    color: #686868 !important;
+    border-bottom: solid 1px #8950fc !important;
+}
+
 .ft-dot{
     font-size:30px;
     color: #0070E0;
