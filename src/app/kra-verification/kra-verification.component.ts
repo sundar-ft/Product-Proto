@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgbModalConfig, NgbModal, } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-kra-verification',
@@ -6,6 +6,7 @@ import { NgbModalConfig, NgbModal, } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./kra-verification.component.css']
 })
 export class KraVerificationComponent {
+  @Input() showstepper : boolean = true;
   isdelete: boolean = false;
   isdelete1: boolean = false;
   identify:boolean=false;

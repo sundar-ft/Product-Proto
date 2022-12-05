@@ -74,6 +74,7 @@ body {
     flex: 1;
     text-align: center;
 }
+/* Before */
 .c-stepper__item:before {
     --size: 3rem;
     content: "";
@@ -87,7 +88,7 @@ body {
     margin: 0 auto 1rem;
 }
 
-.c-stepper__item.active:before {
+.c-stepper__item.status-active:before {
     --size: 3rem;
     content: "";
     display: block;
@@ -95,11 +96,52 @@ body {
     height: 15px;
     border-radius: 50%;
     /* background-color: rgba(111, 111, 111, 0.75); */
-    background-color: red;
-    opacity: 0.5;
+    background-color: #5729b2;
+    opacity: 0.8;
+    margin: 0 auto 1rem;
+}
+.c-stepper__item.status-completed:before {
+    --size: 3rem;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* background-color: rgba(111, 111, 111, 0.75); */
+    background-color: #7537f1;
+    opacity: 0.8;
+    margin: 0 auto 1rem;
+}
+.c-stepper__item.status-inactive:before {
+    --size: 3rem;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* background-color: rgba(111, 111, 111, 0.75); */
+    background-color: #4e4e4e;
+    opacity: 0.8;
     margin: 0 auto 1rem;
 }
 
+/* after */
+
+.c-stepper__item.status-completed:after {
+    background-color: #9d7fd8 !important;
+}
+
+/* TEXT */
+.c-stepper__item.status-active h3 {
+    color: #8950FC !important;
+}
+.c-stepper__item.status-completed h3 {
+    color: #8950FC !important;
+}
+
+
+
+/*  */
 
 
 .c-stepper__item:not(:last-child):after {
@@ -118,7 +160,7 @@ body {
     font-weight: bold;
     font-size: clamp(1rem, 4vw, 1.25rem);
     margin-bottom: 0.5rem;
-    color: #8950FC;
+    color: #444444;
     font-size: 14px;
 }
 .c-stepper__desc {
@@ -235,11 +277,16 @@ button a:hover {
     flex-grow: 1;
 }
 
-.mat-mdc-tab-body-content {
+/* .mat-mdc-tab-body-content {
     height: 67vh !important;
     overflow-y: auto !important;
     width: 100% !important;
     overflow-x: hidden !important;
+} */
+
+.mat-mdc-tab-body-content {
+    height: 100%;
+    overflow: hidden !important;
 }
 
 
