@@ -41,4 +41,7 @@ export class KraVerificationComponent {
 	  open(content:any) {
 		this.modalService.open(content);
 	}
+  closeModel(){
+    this.modalService.dismissAll();
+  }
 }

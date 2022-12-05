@@ -28,6 +28,7 @@ import {TabModule} from 'angular-tabs-component';
 import { BrowserAnimationsModule } from 
 '@angular/platform-browser/animations';
 import { ViewComponent } from './view/view.component';
+import { ModalpopupComponent } from './modalpopup/modalpopup.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { ViewComponent } from './view/view.component';
     FormValidationComponent,
     ApplicationQuickViewComponent,
     ViewComponent,
+    ModalpopupComponent,
   ],
   imports: [
     BrowserModule,

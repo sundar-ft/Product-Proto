@@ -15,7 +15,7 @@
             <h3 class="c-stepper__title">Kyc</h3>
 
         </li>
-        <li class="c-stepper__item">
+        <li class="c-stepper__item active">
             <h3 class="c-stepper__title">Profile</h3>
 
         </li>
@@ -27,6 +27,14 @@
 </div>
 
 
+<!-- 
+
+.stage
+.stage-completed
+.stage-active
+
+ -->
+
   <div class="row justify-content-center page-container">
     <div class="col-md-10 border-0 card ft-card-center p-0" style="margin-top:20px;">
         <div class="card-body mb-3">
@@ -34,7 +42,8 @@
                 PROFILE
             </div>
 
-            <mat-tab-group animationDuration="0ms" class="pt-3">
+            <mat-tab-group animationDuration="0ms" class="pt-3" [selectedIndex]="selectedIndex">
+
                 <mat-tab label="OCCUPATION, EDUCATION & INCOME"> 
 
                     <div class="ft-desc text-center pt-3">
@@ -45,7 +54,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  GROSS ANNUAL INCOME (IN INR)<span class="red-required text-danger"> *</span></div>
+                                        <div class="ft-input-label">  GROSS ANNUAL INCOME (IN INR)<span class="red-required text-danger"> *</span></div>
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select1">
@@ -59,7 +68,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md"> AS ON (NOT OLDER THAN 1 YEAR) <span class="red-required text-danger"> *</span>
+                                        <div class="ft-input-label"> AS ON (NOT OLDER THAN 1 YEAR) <span class="red-required text-danger"> *</span>
                                         </div>
                                         <div class="ft-input-edit ft-form-value">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -71,7 +80,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md"> SOURCE OF FUNDS<span class="red-required text-danger">
+                                        <div class="ft-input-label"> SOURCE OF FUNDS<span class="red-required text-danger">
                                                 *</span> </div>
                                                 <div class="ft-input-edit">
                                                     <div class="row">
@@ -98,7 +107,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">EDUCATIONAL QUALIFICATION<span class="red-required text-danger"> *</span></div>
+                                        <div class="ft-input-label">EDUCATIONAL QUALIFICATION<span class="red-required text-danger"> *</span></div>
                                        
                                         <div class="ft-input-edit">
                                             <div class="row">
@@ -121,7 +130,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md">  NET WORTH (IN INR) <span class="red-required text-danger"> *</span>
+                                        <div class="ft-input-label">  NET WORTH (IN INR) <span class="red-required text-danger"> *</span>
                                         </div>
                                         <div class="ft-input-edit ft-form-value">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -133,7 +142,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md"> AS ON (NOT OLDER THAT 1 YEAR) <span class="red-required text-danger">
+                                        <div class="ft-input-label"> AS ON (NOT OLDER THAT 1 YEAR) <span class="red-required text-danger">
                                                 *</span> </div>
                                                 <div class="ft-input-edit ft-form-value">
                                                     <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -148,7 +157,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  BRIEF DETAILS OF OCCUPATION <span class="red-required text-danger"> *</span></div>
+                                        <div class="ft-input-label">  BRIEF DETAILS OF OCCUPATION <span class="red-required text-danger"> *</span></div>
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select1">
@@ -164,7 +173,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md"> OCCUPATIONAL INDUSTRY<span class="red-required text-danger">
+                                        <div class="ft-input-label"> OCCUPATIONAL INDUSTRY<span class="red-required text-danger">
                                                 *</span> </div>
                                                 <div class="ft-input-edit">
                                                     <div class="row">
@@ -191,10 +200,9 @@
                     </div>
 
                    
-        
-                   
+                          
                     <div class="row pt-3 m-auto">
-                        <div class="col-md-2 ft-heading-md">
+                        <div class="col-md-2 ft-input-label">
                             POLITICALLY EXPOSED <span class="red-requide text-danger"> *</span>
                         </div>
         
@@ -226,7 +234,7 @@
 
 
                     <div class="row pt-3 m-auto">
-                        <div class="col-md-2 ft-heading-md">
+                        <div class="col-md-2 ft-input-label">
                             EMPLOYEMENT STATUS <span class="red-requide text-danger"> *</span>
                         </div>
         
@@ -260,7 +268,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  EMPLOYER NAME <span class="red-required text-danger"> *</span></div>
+                                        <div class="ft-input-label">  EMPLOYER NAME <span class="red-required text-danger"> *</span></div>
                                        
                                         <div class="ft-input-edit ft-form-value">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -271,7 +279,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md">   ESTABLISHMENT NAME
+                                        <div class="ft-input-label">   ESTABLISHMENT NAME
                                         </div>
                                         <div class="ft-input-edit ft-form-value">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -283,7 +291,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md">   NATURE OF BUSINESS  </div>
+                                        <div class="ft-input-label">   NATURE OF BUSINESS  </div>
                                                 <div class="ft-input-edit ft-form-value">
                                                     <input class="col-md-12  upper-case ft-input-value" type="text" />
                                                 </div>
@@ -297,7 +305,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  INDUSTRY</div>
+                                        <div class="ft-input-label">  INDUSTRY</div>
                                        
                                         <div class="ft-input-edit ft-form-value">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -308,7 +316,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md">   OFFICE ADDRESS 
+                                        <div class="ft-input-label">   OFFICE ADDRESS 
                                         </div>
                                         <div class="ft-input-edit ft-form-value">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -320,7 +328,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md">    PIN CODE   </div>
+                                        <div class="ft-input-label">    PIN CODE   </div>
                                                 <div class="ft-input-edit ft-form-value">
                                                     <input class="col-md-12  upper-case ft-input-value" type="text" />
                                                 </div>
@@ -335,7 +343,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">    COUNTRY</div>
+                                        <div class="ft-input-label">    COUNTRY</div>
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select1">
@@ -349,7 +357,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md">STATE
+                                        <div class="ft-input-label">STATE
                                         </div>
                                         <div class="ft-input-edit ft-form-value">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -361,7 +369,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md">  CITY / TOWN / VILLAGE  </div>
+                                        <div class="ft-input-label">  CITY / TOWN / VILLAGE  </div>
                                                 <div class="ft-input-edit ft-form-value">
                                                     <input class="col-md-12  upper-case ft-input-value" type="text" />
                                                 </div>
@@ -376,7 +384,7 @@
         
                         <div class="col-md-4">
                             <div class="group">
-                                <div class="ft-heading-md">MOBILE NUMBER</div>
+                                <div class="ft-input-label">MOBILE NUMBER</div>
                                         <div class="ft-input-edit">
                                             <div class="row">
                                                <div class="col-md-4">
@@ -397,7 +405,7 @@
 
                         <div class="col-md-4">
                             <div class="group">
-                                <div class="ft-heading-md">   TEL (OFF)  </div>
+                                <div class="ft-input-label">   TEL (OFF)  </div>
                                         <div class="ft-input-edit ft-form-value">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
                                         </div>
@@ -413,14 +421,15 @@
                   
         
                     <div class="text-center pt-4">
-                        <button class="ft-button-primary">Save & Next</button>
+                        <button class="ft-button-primary" (click)="selectTab(1)" >Save & Next</button>
                     </div>
 
 
                 </mat-tab>
+
                 <mat-tab label="FATCA"> 
                     
-                    <div class="ft-desc pt-3">
+                    <div class="ft-desc pt-3 text-center">
                         Complete the FATCA Information pretaining to your tax residency status. It is mandatory for Investor’s to disclose any 
                         foreign citizenship, contact information, and/or foreign tax residency details for this investment
                     </div>
@@ -428,14 +437,15 @@
                     <div class="ft-sub-heading">
                         PART - A
                     </div>
-                    <hr />
+
+                    <div class="seperator"></div>
 
 
                     <div class="row  pt-3">
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  ADDRESS FOR TAX RESIDENCE <span class="red-required text-danger"> *</span> </div>
+                                        <div class="ft-input-label">  ADDRESS FOR TAX RESIDENCE <span class="red-required text-danger"> *</span> </div>
                                        
                                         <div class="ft-input-edit ft-form-value">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -446,7 +456,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md">  AS ON (NOT OLDER THAN 1 YEAR)  <span class="red-required text-danger"> *</span>
+                                        <div class="ft-input-label">  AS ON (NOT OLDER THAN 1 YEAR)  <span class="red-required text-danger"> *</span>
                                         </div>
                                         <div class="ft-input-edit ft-form-value">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -461,7 +471,7 @@
                     </div>
         
                     <div class="row pt-3 m-auto">
-                        <div class="col-md-8 ft-heading-md">
+                        <div class="col-md-8 ft-input-label">
                             Are you Citizen of any other country other than India(dual/multiple)?[including Greencard]  <span class="red-requide text-danger"> *</span>
                         </div>
             
@@ -485,7 +495,7 @@
                     </div>
         
                     <div class="row pt-3 m-auto">
-                        <div class="col-md-8 ft-heading-md">
+                        <div class="col-md-8 ft-input-label">
                             Is your Country of Birth any country other than India?  <span class="red-requide text-danger"> *</span>
                         </div>
             
@@ -509,7 +519,7 @@
                     </div>
 
                     <div class="row pt-3 m-auto">
-                        <div class="col-md-8 ft-heading-md">
+                        <div class="col-md-8 ft-input-label">
                             Are you a Tax Resident of any country other than India? <span class="red-requide text-danger"> *</span>
                         </div>
             
@@ -534,7 +544,7 @@
         
 
                     <div class="row pt-3 m-auto">
-                        <div class="col-md-8 ft-heading-md">
+                        <div class="col-md-8 ft-input-label">
                             Do you have a POA/mandate holder who had an address outside of India? <span class="red-requide text-danger"> *</span>
                         </div>
             
@@ -559,7 +569,7 @@
         
                    
                     <div class="row pt-3 m-auto">
-                        <div class="col-md-8 ft-heading-md">
+                        <div class="col-md-8 ft-input-label">
                             Is your Address/Telephone Number outside of India?  <span class="red-requide text-danger"> *</span>
                         </div>
             
@@ -591,14 +601,14 @@
                     <div class="ft-sub-heading">
                         PART - B
                     </div>
-                    <hr />
+                    <div class="seperator"></div>
 
                     <div class="row  pt-3">
 
                         <div class="col-md-4">
                            
                             <div class="group">
-                                <div class="ft-heading-md">  SOURCE OF WEALTH   <span class="red-required text-danger">*</span>
+                                <div class="ft-input-label">  SOURCE OF WEALTH   <span class="red-required text-danger">*</span>
                                 </div>
                                 <div class="ft-input-edit ft-form-value">
                                     <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -609,7 +619,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  NATIONALITY  <span class="red-required text-danger">*</span></div>
+                                        <div class="ft-input-label">  NATIONALITY  <span class="red-required text-danger">*</span></div>
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select1">
@@ -625,7 +635,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md">  PLACE OF BIRTH    <span class="red-required text-danger">*</span></div>
+                                        <div class="ft-input-label">  PLACE OF BIRTH    <span class="red-required text-danger">*</span></div>
                                                 <div class="ft-input-edit ft-form-value">
                                                     <input class="col-md-12  upper-case ft-input-value" type="text" />
                                                 </div>
@@ -641,7 +651,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  COUNTRY OF BIRTH  <span class="red-required text-danger">*</span></div>
+                                        <div class="ft-input-label">  COUNTRY OF BIRTH  <span class="red-required text-danger">*</span></div>
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select1">
@@ -669,9 +679,9 @@
                    
         
                     <div class="ft-sub-heading">
-                        OTHER DETAILS <span class='material-icons' style="float: right;">add</span>
+                        OTHER DETAILS <span class='material-icons add_btn' style="float: right;">add</span>
                     </div>
-                    <hr />
+                    <div class="seperator"></div>
         
                     <div class="ft-desc-option">
                         Option 1 <span class='material-icons' style="float: right;">delete</span>
@@ -682,7 +692,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  COUNTRY OF TAX RESIDENCE <span class="red-required text-danger">*</span></div>
+                                        <div class="ft-input-label">  COUNTRY OF TAX RESIDENCE <span class="red-required text-danger">*</span></div>
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select1">
@@ -695,7 +705,7 @@
 
                         <div class="col-md-4">
                             <div class="group">
-                                <div class="ft-heading-md">  TAX ID NUMBER <span class="red-required text-danger">*</span></div>
+                                <div class="ft-input-label">  TAX ID NUMBER <span class="red-required text-danger">*</span></div>
                                
                                 <div class="ft-input-edit">
                                     <select class="ft-select1">
@@ -726,7 +736,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  COUNTRY OF TAX RESIDENCE <span class="red-required text-danger">*</span></div>
+                                        <div class="ft-input-label">  COUNTRY OF TAX RESIDENCE <span class="red-required text-danger">*</span></div>
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select1">
@@ -739,7 +749,7 @@
 
                         <div class="col-md-4">
                             <div class="group">
-                                <div class="ft-heading-md">  TAX ID NUMBER <span class="red-required text-danger">*</span></div>
+                                <div class="ft-input-label">  TAX ID NUMBER <span class="red-required text-danger">*</span></div>
                                
                                 <div class="ft-input-edit">
                                     <select class="ft-select1">
@@ -758,7 +768,7 @@
                     </div>
                    
         
-                    <hr />
+                    <div class="seperator"></div>
         
                     <div class="ft-desc ft-desc-option">
                         It is madatory to supply a TIN or functional equivalent (in case TIN not available) if the country in which you 
@@ -796,10 +806,10 @@
                  </div>
         
                  <div class="text-center pt-4">
-                    <button class="ft-button-primary">Save & Next</button>
+                    <button class="ft-button-primary" (click)="selectTab(2)">Save & Next</button>
                 </div>
         
-                <hr />
+                <div class="seperator"></div>
         
                 <div class="ft-note-heading">
                     Note:
@@ -810,19 +820,15 @@
                 
                 </mat-tab>
 
-
-
-
-
                 <mat-tab label="BANK DETAILS">
                     <div class="ft-desc text-center pt-3">
                         Provide the Bank account(s) details that will be used for this investment
                     </div>
         
                     <div class="ft-sub-heading">
-                        OTHER DETAILS <span class='material-icons' style="float: right;" (click)="open(content)">add</span>
+                        OTHER DETAILS <span class='material-icons add_btn' style="float: right;" (click)="open(content)">add</span>
                     </div>
-                    <hr />
+                    <div class="seperator"></div>
         
         
                     <table class="table">
@@ -868,7 +874,7 @@
         
                       <div class="row justify-content-center m-auto pt-3">
                         <div class="col-md-12 ft-checkbox">
-                               <label class="ft-desc pl-1">
+                               <label class="ft-desc pl-1 float-left">
                                        I hereby confirm / I am authorised to confirm that the bank account details provided by me,
                                         can be used  for processing /proceeding  any  payouts like redemptions, etc 
                                       <input type="checkbox" class="checkbox">
@@ -878,10 +884,10 @@
                  </div>
         
                  <div class="text-center pt-4">
-                    <button class="ft-button-primary" data-toggle="modal" data-target="#exampleModal">Save & Next</button>
+                    <button class="ft-button-primary" data-toggle="modal" data-target="#exampleModal" (click)="selectTab(3)">Save & Next</button>
                 </div>
         
-                <hr />
+                <div class="seperator"></div>
         
                 <div class="ft-note-heading">
                     Note:
@@ -893,15 +899,16 @@
         
                 
                 </mat-tab>
+
                 <mat-tab label="NOMINEE DETAILS"> 
-                    <div class="ft-desc pt-3">
+                    <div class="ft-desc pt-3 text-center">
                         Complete the nomination details for the Profile in the section below. 
                         Investor (s) have the option to choose multiple nominee for the profile
                     </div>
         
                     <div class="row pt-2">
-                        <div class="col-md-6 ft-heading-md">
-                            Is your Country of Birth any country other than India? <span class="red-requide text-danger"> *</span>
+                        <div class="col-md-6 ft-input-label">
+                              Is your Country of Birth any country other than India? <span class="red-requide text-danger"> *</span>
                         </div>
         
                         <div class="col-md-1">
@@ -924,9 +931,9 @@
                     </div>
         
                     <div class="ft-sub-heading">
-                        NOMINEE DETAILS <span class='material-icons' style="float: right;" (click)="open1(content1)">add</span>
+                        NOMINEE DETAILS <span class='material-icons add_btn' style="float: right;" (click)="open1(content1)">add</span>
                     </div>
-                    <hr />
+                    <div class="seperator"></div>
         
         
         
@@ -976,10 +983,10 @@
         
                       <div class="text-center pt-4">
                         <button class="ft-button-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            <a href="document">Next</a></button>
+                            <a href="document" >Next</a></button>
                     </div>
         
-                    <hr />
+                    <div class="seperator"></div>
         
                     <div class="ft-note-heading">
                         Note:
@@ -990,6 +997,7 @@
                     </div>
                 
                 </mat-tab>
+
               </mat-tab-group>
 
             <!-- <p-tabView>
@@ -1005,7 +1013,7 @@
 
                                     <div class="col-md-4">
                                                 <div class="group">
-                                                    <div class="ft-heading-md">  GROSS ANNUAL INCOME (IN INR)<span class="red-required text-danger"> *</span></div>
+                                                    <div class="ft-input-label">  GROSS ANNUAL INCOME (IN INR)<span class="red-required text-danger"> *</span></div>
                                                    
                                                     <div class="ft-input-edit">
                                                         <select class="ft-select1">
@@ -1019,7 +1027,7 @@
                                     <div class="col-md-4">
                                        
                                                 <div class="group">
-                                                    <div class="ft-heading-md"> AS ON (NOT OLDER THAN 1 YEAR) <span class="red-required text-danger"> *</span>
+                                                    <div class="ft-input-label"> AS ON (NOT OLDER THAN 1 YEAR) <span class="red-required text-danger"> *</span>
                                                     </div>
                                                     <div class="ft-input-edit ft-form-value">
                                                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1031,7 +1039,7 @@
                                     <div class="col-md-4">
                                        
                                                 <div class="group">
-                                                    <div class="ft-heading-md"> SOURCE OF FUNDS<span class="red-required text-danger">
+                                                    <div class="ft-input-label"> SOURCE OF FUNDS<span class="red-required text-danger">
                                                             *</span> </div>
                                                             <div class="ft-input-edit">
                                                                 <div class="row">
@@ -1058,7 +1066,7 @@
 
                                     <div class="col-md-4">
                                                 <div class="group">
-                                                    <div class="ft-heading-md">EDUCATIONAL QUALIFICATION<span class="red-required text-danger"> *</span></div>
+                                                    <div class="ft-input-label">EDUCATIONAL QUALIFICATION<span class="red-required text-danger"> *</span></div>
                                                    
                                                     <div class="ft-input-edit">
                                                         <div class="row">
@@ -1081,7 +1089,7 @@
                                     <div class="col-md-4">
                                        
                                                 <div class="group">
-                                                    <div class="ft-heading-md">  NET WORTH (IN INR) <span class="red-required text-danger"> *</span>
+                                                    <div class="ft-input-label">  NET WORTH (IN INR) <span class="red-required text-danger"> *</span>
                                                     </div>
                                                     <div class="ft-input-edit ft-form-value">
                                                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1093,7 +1101,7 @@
                                     <div class="col-md-4">
                                        
                                                 <div class="group">
-                                                    <div class="ft-heading-md"> AS ON (NOT OLDER THAT 1 YEAR) <span class="red-required text-danger">
+                                                    <div class="ft-input-label"> AS ON (NOT OLDER THAT 1 YEAR) <span class="red-required text-danger">
                                                             *</span> </div>
                                                             <div class="ft-input-edit ft-form-value">
                                                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1108,7 +1116,7 @@
 
                                     <div class="col-md-4">
                                                 <div class="group">
-                                                    <div class="ft-heading-md">  BRIEF DETAILS OF OCCUPATION <span class="red-required text-danger"> *</span></div>
+                                                    <div class="ft-input-label">  BRIEF DETAILS OF OCCUPATION <span class="red-required text-danger"> *</span></div>
                                                    
                                                     <div class="ft-input-edit">
                                                         <select class="ft-select1">
@@ -1124,7 +1132,7 @@
                                     <div class="col-md-4">
                                        
                                                 <div class="group">
-                                                    <div class="ft-heading-md"> OCCUPATIONAL INDUSTRY<span class="red-required text-danger">
+                                                    <div class="ft-input-label"> OCCUPATIONAL INDUSTRY<span class="red-required text-danger">
                                                             *</span> </div>
                                                             <div class="ft-input-edit">
                                                                 <div class="row">
@@ -1154,7 +1162,7 @@
                     
                                
                                 <div class="row pt-3 m-auto">
-                                    <div class="col-md-2 ft-heading-md">
+                                    <div class="col-md-2 ft-input-label">
                                         POLITICALLY EXPOSED <span class="red-requide text-danger"> *</span>
                                     </div>
                     
@@ -1186,7 +1194,7 @@
 
 
                                 <div class="row pt-3 m-auto">
-                                    <div class="col-md-2 ft-heading-md">
+                                    <div class="col-md-2 ft-input-label">
                                         EMPLOYEMENT STATUS <span class="red-requide text-danger"> *</span>
                                     </div>
                     
@@ -1220,7 +1228,7 @@
 
                                     <div class="col-md-4">
                                                 <div class="group">
-                                                    <div class="ft-heading-md">  EMPLOYER NAME <span class="red-required text-danger"> *</span></div>
+                                                    <div class="ft-input-label">  EMPLOYER NAME <span class="red-required text-danger"> *</span></div>
                                                    
                                                     <div class="ft-input-edit ft-form-value">
                                                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1231,7 +1239,7 @@
                                     <div class="col-md-4">
                                        
                                                 <div class="group">
-                                                    <div class="ft-heading-md">   ESTABLISHMENT NAME
+                                                    <div class="ft-input-label">   ESTABLISHMENT NAME
                                                     </div>
                                                     <div class="ft-input-edit ft-form-value">
                                                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1243,7 +1251,7 @@
                                     <div class="col-md-4">
                                        
                                                 <div class="group">
-                                                    <div class="ft-heading-md">   NATURE OF BUSINESS  </div>
+                                                    <div class="ft-input-label">   NATURE OF BUSINESS  </div>
                                                             <div class="ft-input-edit ft-form-value">
                                                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
                                                             </div>
@@ -1257,7 +1265,7 @@
 
                                     <div class="col-md-4">
                                                 <div class="group">
-                                                    <div class="ft-heading-md">  INDUSTRY</div>
+                                                    <div class="ft-input-label">  INDUSTRY</div>
                                                    
                                                     <div class="ft-input-edit ft-form-value">
                                                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1268,7 +1276,7 @@
                                     <div class="col-md-4">
                                        
                                                 <div class="group">
-                                                    <div class="ft-heading-md">   OFFICE ADDRESS 
+                                                    <div class="ft-input-label">   OFFICE ADDRESS 
                                                     </div>
                                                     <div class="ft-input-edit ft-form-value">
                                                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1280,7 +1288,7 @@
                                     <div class="col-md-4">
                                        
                                                 <div class="group">
-                                                    <div class="ft-heading-md">    PIN CODE   </div>
+                                                    <div class="ft-input-label">    PIN CODE   </div>
                                                             <div class="ft-input-edit ft-form-value">
                                                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
                                                             </div>
@@ -1295,7 +1303,7 @@
 
                                     <div class="col-md-4">
                                                 <div class="group">
-                                                    <div class="ft-heading-md">    COUNTRY</div>
+                                                    <div class="ft-input-label">    COUNTRY</div>
                                                    
                                                     <div class="ft-input-edit">
                                                         <select class="ft-select1">
@@ -1309,7 +1317,7 @@
                                     <div class="col-md-4">
                                        
                                                 <div class="group">
-                                                    <div class="ft-heading-md">STATE
+                                                    <div class="ft-input-label">STATE
                                                     </div>
                                                     <div class="ft-input-edit ft-form-value">
                                                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1321,7 +1329,7 @@
                                     <div class="col-md-4">
                                        
                                                 <div class="group">
-                                                    <div class="ft-heading-md">  CITY / TOWN / VILLAGE  </div>
+                                                    <div class="ft-input-label">  CITY / TOWN / VILLAGE  </div>
                                                             <div class="ft-input-edit ft-form-value">
                                                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
                                                             </div>
@@ -1336,7 +1344,7 @@
                     
                                     <div class="col-md-4">
                                         <div class="group">
-                                            <div class="ft-heading-md">MOBILE NUMBER</div>
+                                            <div class="ft-input-label">MOBILE NUMBER</div>
                                                     <div class="ft-input-edit">
                                                         <div class="row">
                                                            <div class="col-md-4">
@@ -1357,7 +1365,7 @@
 
                                     <div class="col-md-4">
                                         <div class="group">
-                                            <div class="ft-heading-md">   TEL (OFF)  </div>
+                                            <div class="ft-input-label">   TEL (OFF)  </div>
                                                     <div class="ft-input-edit ft-form-value">
                                                         <input class="col-md-12  upper-case ft-input-value" type="text" />
                                                     </div>
@@ -1389,14 +1397,14 @@
                     <div class="ft-sub-heading">
                         PART - A
                     </div>
-                    <hr />
+                    <div class="seperator"></div>
 
 
                     <div class="row  pt-3">
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  ADDRESS FOR TAX RESIDENCE <span class="red-required text-danger"> *</span> </div>
+                                        <div class="ft-input-label">  ADDRESS FOR TAX RESIDENCE <span class="red-required text-danger"> *</span> </div>
                                        
                                         <div class="ft-input-edit ft-form-value">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1407,7 +1415,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md">  AS ON (NOT OLDER THAN 1 YEAR)  <span class="red-required text-danger"> *</span>
+                                        <div class="ft-input-label">  AS ON (NOT OLDER THAN 1 YEAR)  <span class="red-required text-danger"> *</span>
                                         </div>
                                         <div class="ft-input-edit ft-form-value">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1422,7 +1430,7 @@
                     </div>
         
                     <div class="row pt-3 m-auto">
-                        <div class="col-md-8 ft-heading-md">
+                        <div class="col-md-8 ft-input-label">
                             Are you Citizen of any other country other than India(dual/multiple)?[including Greencard]  <span class="red-requide text-danger"> *</span>
                         </div>
             
@@ -1446,7 +1454,7 @@
                     </div>
         
                     <div class="row pt-3 m-auto">
-                        <div class="col-md-8 ft-heading-md">
+                        <div class="col-md-8 ft-input-label">
                             Is your Country of Birth any country other than India?  <span class="red-requide text-danger"> *</span>
                         </div>
             
@@ -1470,7 +1478,7 @@
                     </div>
 
                     <div class="row pt-3 m-auto">
-                        <div class="col-md-8 ft-heading-md">
+                        <div class="col-md-8 ft-input-label">
                             Are you a Tax Resident of any country other than India? <span class="red-requide text-danger"> *</span>
                         </div>
             
@@ -1495,7 +1503,7 @@
         
 
                     <div class="row pt-3 m-auto">
-                        <div class="col-md-8 ft-heading-md">
+                        <div class="col-md-8 ft-input-label">
                             Do you have a POA/mandate holder who had an address outside of India? <span class="red-requide text-danger"> *</span>
                         </div>
             
@@ -1520,7 +1528,7 @@
         
                    
                     <div class="row pt-3 m-auto">
-                        <div class="col-md-8 ft-heading-md">
+                        <div class="col-md-8 ft-input-label">
                             Is your Address/Telephone Number outside of India?  <span class="red-requide text-danger"> *</span>
                         </div>
             
@@ -1552,14 +1560,14 @@
                     <div class="ft-sub-heading">
                         PART - B
                     </div>
-                    <hr />
+                    <div class="seperator"></div>
 
                     <div class="row  pt-3">
 
                         <div class="col-md-4">
                            
                             <div class="group">
-                                <div class="ft-heading-md">  SOURCE OF WEALTH   <span class="red-required text-danger">*</span>
+                                <div class="ft-input-label">  SOURCE OF WEALTH   <span class="red-required text-danger">*</span>
                                 </div>
                                 <div class="ft-input-edit ft-form-value">
                                     <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1570,7 +1578,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  NATIONALITY  <span class="red-required text-danger">*</span></div>
+                                        <div class="ft-input-label">  NATIONALITY  <span class="red-required text-danger">*</span></div>
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select1">
@@ -1586,7 +1594,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-heading-md">  PLACE OF BIRTH    <span class="red-required text-danger">*</span></div>
+                                        <div class="ft-input-label">  PLACE OF BIRTH    <span class="red-required text-danger">*</span></div>
                                                 <div class="ft-input-edit ft-form-value">
                                                     <input class="col-md-12  upper-case ft-input-value" type="text" />
                                                 </div>
@@ -1602,7 +1610,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  COUNTRY OF BIRTH  <span class="red-required text-danger">*</span></div>
+                                        <div class="ft-input-label">  COUNTRY OF BIRTH  <span class="red-required text-danger">*</span></div>
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select1">
@@ -1632,7 +1640,7 @@
                     <div class="ft-sub-heading">
                         OTHER DETAILS <span class='material-icons' style="float: right;">add</span>
                     </div>
-                    <hr />
+                    <div class="seperator"></div>
         
                     <div class="ft-desc-option">
                         Option 1 <span class='material-icons' style="float: right;">delete</span>
@@ -1643,7 +1651,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  COUNTRY OF TAX RESIDENCE <span class="red-required text-danger">*</span></div>
+                                        <div class="ft-input-label">  COUNTRY OF TAX RESIDENCE <span class="red-required text-danger">*</span></div>
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select1">
@@ -1656,7 +1664,7 @@
 
                         <div class="col-md-4">
                             <div class="group">
-                                <div class="ft-heading-md">  TAX ID NUMBER <span class="red-required text-danger">*</span></div>
+                                <div class="ft-input-label">  TAX ID NUMBER <span class="red-required text-danger">*</span></div>
                                
                                 <div class="ft-input-edit">
                                     <select class="ft-select1">
@@ -1687,7 +1695,7 @@
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-heading-md">  COUNTRY OF TAX RESIDENCE <span class="red-required text-danger">*</span></div>
+                                        <div class="ft-input-label">  COUNTRY OF TAX RESIDENCE <span class="red-required text-danger">*</span></div>
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select1">
@@ -1700,7 +1708,7 @@
 
                         <div class="col-md-4">
                             <div class="group">
-                                <div class="ft-heading-md">  TAX ID NUMBER <span class="red-required text-danger">*</span></div>
+                                <div class="ft-input-label">  TAX ID NUMBER <span class="red-required text-danger">*</span></div>
                                
                                 <div class="ft-input-edit">
                                     <select class="ft-select1">
@@ -1719,7 +1727,7 @@
                     </div>
                    
         
-                    <hr />
+                    <div class="seperator"></div>
         
                     <div class="ft-desc ft-desc-option">
                         It is madatory to supply a TIN or functional equivalent (in case TIN not available) if the country in which you 
@@ -1760,7 +1768,7 @@
                     <button class="ft-button-primary">Save & Next</button>
                 </div>
         
-                <hr />
+                <div class="seperator"></div>
         
                 <div class="ft-note-heading">
                     Note:
@@ -1783,7 +1791,7 @@
                     <div class="ft-sub-heading">
                         OTHER DETAILS <span class='material-icons' style="float: right;" (click)="open(content)">add</span>
                     </div>
-                    <hr />
+                    <div class="seperator"></div>
         
         
                     <table class="table table- ">
@@ -1842,7 +1850,7 @@
                     <button class="ft-button-primary" data-toggle="modal" data-target="#exampleModal">Save & Next</button>
                 </div>
         
-                <hr />
+                <div class="seperator"></div>
         
                 <div class="ft-note-heading">
                     Note:
@@ -1866,7 +1874,7 @@
                     </div>
         
                     <div class="row pt-2">
-                        <div class="col-md-6 ft-heading-md">
+                        <div class="col-md-6 ft-input-label">
                             Is your Country of Birth any country other than India? <span class="red-requide text-danger"> *</span>
                         </div>
         
@@ -1892,7 +1900,7 @@
                     <div class="ft-sub-heading">
                         NOMINEE DETAILS <span class='material-icons' style="float: right;" (click)="open1(content1)">add</span>
                     </div>
-                    <hr />
+                    <div class="seperator"></div>
         
         
         
@@ -1944,7 +1952,7 @@
                         <button class="ft-button-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Next</button>
                     </div>
         
-                    <hr />
+                    <div class="seperator"></div>
         
                     <div class="ft-note-heading">
                         Note:
@@ -1980,7 +1988,7 @@
 
             <div class="col-md-4">
                         <div class="group">
-                            <div class="ft-heading-md">   FIRST BENEFICIARY NAME  <span class="red-required text-danger"> *</span> </div>
+                            <div class="ft-input-label">   FIRST BENEFICIARY NAME  <span class="red-required text-danger"> *</span> </div>
                            
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1991,7 +1999,7 @@
             <div class="col-md-4">
                
                         <div class="group">
-                            <div class="ft-heading-md">  SECOND BENEFICIARY NAME  <span class="red-required text-danger"> *</span>
+                            <div class="ft-input-label">  SECOND BENEFICIARY NAME  <span class="red-required text-danger"> *</span>
                             </div>
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2002,7 +2010,7 @@
 
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-heading-md">  ACCOUNT TYPE   <span class="red-required text-danger"> *</span>
+                    <div class="ft-input-label">  ACCOUNT TYPE   <span class="red-required text-danger"> *</span>
                     </div>
                     <div class="ft-input-edit ft-form-value">
                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2016,7 +2024,7 @@
 
             <div class="col-md-4">
                         <div class="group">
-                            <div class="ft-heading-md">   ACCOUNT NUMBER   <span class="red-required text-danger"> *</span> </div>
+                            <div class="ft-input-label">   ACCOUNT NUMBER   <span class="red-required text-danger"> *</span> </div>
                            
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2027,7 +2035,7 @@
             <div class="col-md-4">
                
                         <div class="group">
-                            <div class="ft-heading-md">   IFSC CODE   <span class="red-required text-danger"> *</span>
+                            <div class="ft-input-label">   IFSC CODE   <span class="red-required text-danger"> *</span>
                             </div>
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2038,7 +2046,7 @@
 
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-heading-md">   MICR NUMBER      <span class="red-required text-danger"> *</span>
+                    <div class="ft-input-label">   MICR NUMBER      <span class="red-required text-danger"> *</span>
                     </div>
                     <div class="ft-input-edit ft-form-value">
                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2053,7 +2061,7 @@
 
             <div class="col-md-4">
                         <div class="group">
-                            <div class="ft-heading-md">  BANK NAME   <span class="red-required text-danger"> *</span> </div>
+                            <div class="ft-input-label">  BANK NAME   <span class="red-required text-danger"> *</span> </div>
                            
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2064,7 +2072,7 @@
             <div class="col-md-4">
                
                         <div class="group">
-                            <div class="ft-heading-md">   BANK BRANCH    <span class="red-required text-danger"> *</span>
+                            <div class="ft-input-label">   BANK BRANCH    <span class="red-required text-danger"> *</span>
                             </div>
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2075,7 +2083,7 @@
 
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-heading-md">   BANK ADDRESS  <span class="red-required text-danger"> *</span>
+                    <div class="ft-input-label">   BANK ADDRESS  <span class="red-required text-danger"> *</span>
                     </div>
                     <div class="ft-input-edit ft-form-value">
                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2114,7 +2122,7 @@
 
             <div class="col-md-4">
                         <div class="group">
-                            <div class="ft-heading-md">  FULL NAME   <span class="red-required text-danger"> *</span> </div>
+                            <div class="ft-input-label">  FULL NAME   <span class="red-required text-danger"> *</span> </div>
                            
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2125,7 +2133,7 @@
             <div class="col-md-4">
                
                         <div class="group">
-                            <div class="ft-heading-md">   RELATIONSHIP   <span class="red-required text-danger"> *</span>
+                            <div class="ft-input-label">   RELATIONSHIP   <span class="red-required text-danger"> *</span>
                             </div>
                             <div class="ft-input-edit">
                                 <select class="ft-select1">
@@ -2140,7 +2148,7 @@
 
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-heading-md">   DATE OF BIRTH   <span class="red-required text-danger"> *</span>
+                    <div class="ft-input-label">   DATE OF BIRTH   <span class="red-required text-danger"> *</span>
                     </div>
                     <div class="ft-input-edit ft-form-value">
                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2155,7 +2163,7 @@
 
             <div class="col-md-4">
                         <div class="group">
-                            <div class="ft-heading-md">  ADDRESS LINE 1    <span class="red-required text-danger"> *</span> </div>
+                            <div class="ft-input-label">  ADDRESS LINE 1    <span class="red-required text-danger"> *</span> </div>
                            
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2165,7 +2173,7 @@
 
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-heading-md">  ADDRESS LINE 2     <span class="red-required text-danger"> *</span> </div>
+                    <div class="ft-input-label">  ADDRESS LINE 2     <span class="red-required text-danger"> *</span> </div>
                    
                     <div class="ft-input-edit ft-form-value">
                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2175,7 +2183,7 @@
 
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-heading-md">   COUNTRY   <span class="red-required text-danger"> *</span>
+                    <div class="ft-input-label">   COUNTRY   <span class="red-required text-danger"> *</span>
                     </div>
                     <div class="ft-input-edit ft-form-value">
                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2189,7 +2197,7 @@
 
             <div class="col-md-4">
                         <div class="group">
-                            <div class="ft-heading-md">   PIN CODE     <span class="red-required text-danger"> *</span> </div>
+                            <div class="ft-input-label">   PIN CODE     <span class="red-required text-danger"> *</span> </div>
                            
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2199,7 +2207,7 @@
 
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-heading-md">      STATE / UT     <span class="red-required text-danger"> *</span> </div>
+                    <div class="ft-input-label">      STATE / UT     <span class="red-required text-danger"> *</span> </div>
                    
                     <div class="ft-input-edit ft-form-value">
                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2209,7 +2217,7 @@
 
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-heading-md">   CITY/TOWN/VILLAGE   <span class="red-required text-danger"> *</span>
+                    <div class="ft-input-label">   CITY/TOWN/VILLAGE   <span class="red-required text-danger"> *</span>
                     </div>
                     <div class="ft-input-edit ft-form-value">
                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -2225,7 +2233,7 @@
                     
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-heading-md">MOBILE NUMBER <span class="red-required text-danger"> *</span></div>
+                    <div class="ft-input-label">MOBILE NUMBER <span class="red-required text-danger"> *</span></div>
                             <div class="ft-input-edit">
                                 <div class="row">
                                    <div class="col-md-4">
@@ -2246,7 +2254,7 @@
 
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-heading-md">     EMAIL ADDRESS <span class="red-required text-danger"> *</span>  </div>
+                    <div class="ft-input-label">     EMAIL ADDRESS <span class="red-required text-danger"> *</span>  </div>
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
                             </div>
@@ -2255,7 +2263,7 @@
 
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-heading-md">     ALLOCATION <span class="red-required text-danger"> *</span>  </div>
+                    <div class="ft-input-label">     ALLOCATION <span class="red-required text-danger"> *</span>  </div>
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
                             </div>

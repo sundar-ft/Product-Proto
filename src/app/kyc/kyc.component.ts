@@ -8,6 +8,7 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class KycComponent {
 	isdelete: boolean = false;
+	selectedIndex = 0;
 
 
 	constructor(config: NgbModalConfig, private modalService: NgbModal) {
@@ -15,6 +16,10 @@ export class KycComponent {
 		config.backdrop = 'static';
 		config.keyboard = false;
 	}
+
+	selectTab(index: number): void {
+		this.selectedIndex = index;
+	  }
 
 	open(content:any) {
 		this.modalService.open(content);
