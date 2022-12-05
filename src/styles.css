@@ -498,8 +498,9 @@ input{
     /* top: 10px; */
     margin-top: 32px;
     width: 275px;
-    height:80px;
+    height: auto;
     position: absolute;
+    padding: 10px 5px;
 }
 .search-input{
     background-color: #EEE5FF;
@@ -511,9 +512,14 @@ input{
     width: 275px;
     padding-left: 10px;
 }
-.pending{
+.search-result-message{color:#828282;}
+.hyperlink{
     color: #1883f5 !important;
+    /* text-decoration: none !important; */
+    cursor: pointer;
+    font-weight: 400 !important;
 }
+
 .ft-share{
     margin-left: 229px !important;
 }

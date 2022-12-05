@@ -30,11 +30,14 @@
             </div>
 
             <div class="searchbox" *ngIf="search">
-                  <div class="" style="margin-left: 10px;padding-top: 10px;">
-                    <a href="basicdetail" class="pending"> Investor not found.</a>
+                  <div class="" style="margin-left: 10px;padding: 10px 5px;">
+                    <span class="search-result-message">Investor not found.</span>
+                    <!-- <a href="basicdetail" class="pending"> </a> -->
                   </div>
                   <div class="float-right mr-2">
-                    <a href="permission" class="pending">Add Investor</a>
+                    <a href="basicdetail" class="hyperlink">Add Investor</a>
+                    <br>
+                    <a href="permission" class="hyperlink" >Verify Investor</a>
                   </div>
             </div>
       
