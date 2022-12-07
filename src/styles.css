@@ -1,5 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+    background-color: #F2F2F2;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+}
+
 a {
     color: #000000 !important;
     text-decoration: none;
@@ -13,18 +20,6 @@ a:hover {
     cursor: pointer;
 }
 
-
-
-html,
-body {
-    height: 100%;
-  
-
-}
-
-body {
-    background-color: #F2F2F2;
-}
 .card-body{
     padding: 30px;
 }
@@ -316,7 +311,6 @@ button a:hover {
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -324,7 +318,6 @@ button a:hover {
     color:#8950FC;
   }
   .ft-desc{
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -413,7 +406,7 @@ button a:hover {
 }
 
 /* icon styles */
-.sidenav-iocn{
+.sidenav-icon{
     color: white;
     font-size: 27px;
     margin-left: -20px;
@@ -484,6 +477,9 @@ td:nth-child(2) {
     text-transform: uppercase;
 }
 
+.dataTable th {
+    font-size: 12px;
+}
 .dataTables_filter input {
     margin-left: 10px;
 }
@@ -707,7 +703,7 @@ input{
 
 /* note heading */
 .ft-note-heading {
-    font-family: 'Roboto', sans-serif;
+
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -727,7 +723,7 @@ input{
 /* radio button */
 
 .ft-radio-custom{
-    font-family: 'Roboto', sans-serif;
+    
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -737,7 +733,7 @@ input{
 }
 
 .ft-input-label{
-    font-family: 'Roboto', sans-serif;
+    
     font-style: normal;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.56);
@@ -747,7 +743,7 @@ input{
     padding-left: 5px;
 }
 .ft-form-value{
-    font-family: 'Roboto', sans-serif;
+    
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
