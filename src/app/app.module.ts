@@ -29,6 +29,7 @@ import { BrowserAnimationsModule } from
 '@angular/platform-browser/animations';
 import { ViewComponent } from './view/view.component';
 import { ModalpopupComponent } from './modalpopup/modalpopup.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { ModalpopupComponent } from './modalpopup/modalpopup.component';
     ApplicationQuickViewComponent,
     ViewComponent,
     ModalpopupComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,

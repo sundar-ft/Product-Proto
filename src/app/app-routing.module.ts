@@ -4,6 +4,7 @@ import { ApplicationDashboardComponent } from './application-dashboard/applicati
 import { ApplicationQuickViewComponent } from './application-quick-view/application-quick-view.component';
 import { BasicdetailComponent } from './basicdetail/basicdetail.component';
 import { DocumentComponent } from './document/document.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormValidationComponent } from './form-validation/form-validation.component';
 import { HeadernavbarComponent } from './headernavbar/headernavbar.component';
@@ -79,6 +80,10 @@ const routes: Routes = [
   {
     path:"view",
     component:ViewComponent
+  },
+  {
+    path:"drop",
+    component:DropdownComponent
   }
 
 ];

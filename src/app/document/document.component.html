@@ -26,20 +26,20 @@
 
 <!-- Stepper close -->
 
-<div class="row justify-content-center page-container">
+<div class="row justify-content-center ft-portlet-body">
     <div class="col-md-8 border-0 card ft-card-center p-0" style="margin-top:20px;">
         <div class="card-body mb-3">
  
-            <div class="text-center  ft-head">
+            <div class="text-center  ft-portlet-title">
                 DOCUMENTS
             </div>
 
-            <div class="ft-desc text-center">
+            <div class="ft-portlet-title-desc text-center">
                 This section allows you to upload any documents associated to the customer profile.
             </div>
 
 
-            <div class="ft-sub-heading">
+            <div class="ft-section-heading">
                 DOCUMENT UPLOAD
                 <span class='material-icons add_btn' style="float: right;" (click)="open2(content2)">add</span>
             </div>
@@ -49,55 +49,63 @@
 
             <table class="table table- ">
                 <thead>
-                  <tr class="table-head">
-                    <th scope="col">DOCUMENT TYPE</th>
-                    <th scope="col">ID/NUMBER</th>
-                    <th scope="col">EXPIRY DATE</th>
-                    <th scope="col"> ACTIONS</th>
+                  <tr class="ft-table-head">
+                    <th scope="col">Document Type</th>
+                    <th scope="col">ID/Number</th>
+                    <th scope="col">Expiry Date</th>
+                    <th scope="col">Actions</th>
                   </tr>
                 </thead>
                 <tbody class="table-group-divider">
 
-                  <tr class="table-body">
+                  <tr class="ft-table-body">
                     <th scope="row">PAN <span class="red-required text-danger"></span></th>
                     <td>FCVPR6576M</td>
                     <td>N/A</td>
-                    <td><span>
-                        <select class="ft-action">
-                            <option>Action</option>
-                            <option>Action</option>
-                            <option>Action</option>
-                        </select>
-                    </span></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Action
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">view</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                    </td>
                   </tr>
 
 
-                  <tr class="table-body">
+                  <tr class="ft-table-body">
                     <th scope="row">POI</th>
                     <td>773JHH2H2H2</td>
                     <td>N/A</td>
-                    <td><span>
-                        <select class="ft-action">
-                            <option>Action</option>
-                            <option>Action</option>
-                            <option>Action</option>
-                        </select>
-                    </span></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Action
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">view</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                    </td>
                   </tr>
                  
                 </tbody>
               </table>
 
               <div class="text-center pt-4">
-                <button class="ft-button-primary" ><a href="quickview">Next</a></button>
+                <button class="btn-primary" ><a href="quickview">Next</a></button>
             </div>
 
             <div class="seperator"></div>
 
-            <div class="ft-note-heading">
+            <div class="ft-note">
                 Note:
             </div>
-            <div class="ft-note-desc1">
+            <div class="ft-note-desc">
                 Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
             </div>
 
@@ -108,7 +116,7 @@
 
 <ng-template #content2 let-c="close" let-d="dismiss">
     <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel" class="ft-sub-heading">DOCUMENT UPLOAD</h5>
+        <h5 class="modal-title" id="exampleModalLabel" class="ft-section-heading">DOCUMENT UPLOAD</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
           <span aria-hidden="true" (click)="close()">&times;</span>
         </button>
@@ -119,10 +127,10 @@
       <div class="row pt-3 justify-content-center">
         <div class="col-md-4">
             <div class="group">
-                <div class="ft-input-label">  BRIEF DETAILS OF OCCUPATION <span class="red-required text-danger"> *</span></div>
+                <div class="ft-input-label"> Brief Detail of Occupation <span class="red-required text-danger"> *</span></div>
                
                 <div class="ft-input-edit">
-                    <select class="ft-select1">
+                    <select class="ft-select">
                         <option>5 - 10 LACS</option>
                         <option>4- 10 LACS</option>
                     </select>
@@ -135,15 +143,15 @@
         
 
           <div class="text-center pt-4">
-              <button class="ft-button-primary"><a (click)="close()">Upload</a></button>
+              <button class="btn-primary"><a (click)="close()">Upload</a></button>
           </div>
 
           <div class="seperator"></div>
 
-          <div class="ft-note-heading">
+          <div class="ft-note">
             Note:
         </div>
-        <div class="ft-note-desc1">
+        <div class="ft-note-desc">
             Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
         </div>
           

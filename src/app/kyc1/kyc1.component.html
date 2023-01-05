@@ -27,17 +27,17 @@
 
   
 
-<div class="row justify-content-center page-container">
+<div class="row justify-content-center ft-portlet-body">
     <div class="col-md-8 border-0 card ft-card-center p-0" style="margin-top:20px;">
         <div class="card-body">
-            <div class="text-center  ft-head">
+            <div class="text-center  ft-portlet-title">
                KYC
             </div>
-            <div class="text-center pt-2 ft-desc">
+            <div class="text-center pt-2 ft-portlet-title-desc">
                 KYC is done to verify the identity of an investor before onboarding with AMC(s) for any financial investments.
             </div>
 
-            <div class="ft-sub-heading">
+            <div class="ft-section-heading">
                 MODE OF FETCH
             </div>
             <div class="seperator"></div>
@@ -46,7 +46,7 @@
 
             <table class="table table- ">
                 <thead>
-                  <tr class="table-head">
+                  <tr class="ft-table-head">
                     <th scope="col">TYPE</th>
                     <th scope="col">PAN</th>
                     <th scope="col">HOLDER NAME</th>
@@ -57,84 +57,83 @@
                 </thead>
                 <tbody class="table-group-divider">
 
-                  <tr class="table-body">
+                  <tr class="ft-table-body">
                     <th scope="row">KYC<span class="red-required text-danger"></span></th>
                     <td>FCVPR6576M</td>
                     <td>SUNDAR</td>
                     <td>20-05-1996</td>
                     <td><a href="kra"  class="hyperlink">PENDING</a></td>
-                    <td><span>
-                        <select class="ft-action">
-                            <option>Action</option>
-                            <option>Action</option>
-                            <option>Action</option>
-                        </select>
-                    </span></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Action
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">view</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                    </td>
                   </tr>
 
 
-                  <tr class="table-body">
+                  <tr class="ft-table-body">
                     <th scope="row">CKYC<span class="red-required text-danger"></span></th>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td><a>[COMING SOON]</a></td>
-                    <td><span>
-                        <select class="ft-action">
-                            <option>Action</option>
-                            <option>Action</option>
-                            <option>Action</option>
-                        </select>
-                    </span></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Action
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">view</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                    </td>
                   </tr>
 
-                  <tr class="table-body">
+                  <tr class="ft-table-body">
                     <th scope="row">CKYC<span class="red-required text-danger"></span></th>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td><a>[COMING SOON]</a></td>
-                    <td><span>
-                        <select class="ft-action">
-                            <option>Action</option>
-                            <option>Action</option>
-                            <option>Action</option>
-                        </select>
-                    </span></td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Action
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">view</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                    </td>
                   </tr>
                  
                 </tbody>
               </table>
 
             <div class="text-center pt-4">
-                <button class="ft-button-primary"><a>Proceed</a></button>
+                <button class="btn-primary"><a>Proceed</a></button>
             </div>
 
             <div class="seperator"></div>
 
-            <div class="ft-note-heading">
+            <div class="ft-note">
                 Note:
             </div>
-            <div class="row pt-2">
-                <div class="col-md-1">
-                    &#9679; 
-                </div>
-                <div class="col-md-11 ft-note-desc">
-                    KRA fetch using K1 Widget (Default) 
-                   
-                </div>
-            </div>
-
-          
-            <div class="row pt-1">
-                <div class="col-md-1">
-                    &#9679; 
-                </div>
-                <div class="col-md-11 ft-note-desc">
-                   More than one KRA fetch is permitted
-                </div>
-            </div>
-
+           
+                <ul class="ft-note-desc" style="padding-left: 18px;">
+                    <li>   KRA fetch using K1 Widget (Default) </li>
+                    <li>  More than one KRA fetch is permitted</li>
+                </ul>
+              
+           
 
         </div>
     </div>

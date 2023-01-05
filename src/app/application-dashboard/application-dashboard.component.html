@@ -4,28 +4,20 @@
 
 
 
-<div class="row justify-content-center page-container">
+<div class="row justify-content-center ft-portlet-body">
     <div class="col-md-10 border-0 card ft-card-center p-0" style="margin-top:20px;">
        
         <div class="card-body">
-             <div class="text-center ft-head">
+             <div class="text-center ft-portlet-title">
                 My Investor 
              </div>
-             <div class="text-center ft-desc mb-3 pt-3">
+             <div class="text-center ft-portlet-title-desc mb-3 pt-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae quam euismod, imperdiet erat et, placerat augue. Morbi risus massa, viverra quis elit eu, porttitor hendrerit lectus. Integer suscipit nisl sed purus
             </div>
 
-            <!-- <input list="brow" class="ft-search-input">
-            <datalist id="brow">
-              <option value="Internet Explorer">
-              <option value="Firefox">
-              <option value="Chrome">
-              <option value="Opera">
-              <option value="Safari">
-            </datalist>  -->
 
             <div class="search" (click)="searchbox()">
-                <input type="search" class="search-input" placeholder="Enter Pan Number"/>
+                <input type="search" class="search-input" placeholder="Enter Pan to Add Investor"/>
                 <span class="material-icons search-icon">search</span>
             </div>
 
@@ -34,10 +26,10 @@
                     <span class="search-result-message">Investor not found.</span>
                     <!-- <a href="basicdetail" class="pending"> </a> -->
                   </div>
-                  <div class="float-right mr-2">
-                    <a href="basicdetail" class="hyperlink">Add Investor</a>
+                  <div class="float-right">
+                    <a href="basicdetail" class="hyperlink float-end px-3">Add Investor</a>
                     <br>
-                    <a href="permission" class="hyperlink" >Verify Investor</a>
+                    <a href="permission" class="hyperlink float-end px-2" >Verify Investor</a>
                   </div>
             </div>
       
@@ -48,8 +40,8 @@
 
             <table  id="example" class="display nowrap table pb-3" style="width:100%">
     <thead>
-        <tr>
-            <th>Pan</th>
+        <tr class="datatable-head">
+            <th>PAN</th>
             <th>Name</th>
             <th>Start Date</th>
             <th>Rel.Status</th>
@@ -58,804 +50,1032 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td class="name">System Architect</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge in-progress">Progress</span></td>
             <!-- <td><span class="badge completed">Completed</span></td> -->
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td class="name">Accountant</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td class="name">Junior Technical Author</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td class="name">Senior Javascript Developer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Accountant</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Integration Specialist</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Sales Assistant</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Integration Specialist</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Javascript Developer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Software Engineer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Office Manager</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Support Lead</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Regional Director</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Senior Marketing Designer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Regional Director</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Marketing Designer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Chief Financial Officer (CFO)</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Systems Administrator</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Software Engineer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Personnel Lead</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Development Lead</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Chief Marketing Officer (CMO)</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Pre-Sales Support</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Sales Assistant</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Chief Executive Officer (CEO)</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Developer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Regional Director</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Software Engineer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Chief Operating Officer (COO)</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Regional Marketing</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Integration Specialist</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Developer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Technical Author</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Team Leader</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Post-Sales support</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Marketing Designer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Office Manager</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Secretary</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Financial Controller</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Office Manager</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Director</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Support Engineer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Software Engineer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Support Engineer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Developer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Support Engineer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Data Coordinator</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Software Engineer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Software Engineer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge completed">Completed</span></td>
             <td><span class="badge completed">Completed</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Junior Javascript Developer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Sales Assistant</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Regional Director</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Systems Administrator</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Developer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Regional Director</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
             <td><span class="badge in-progress">In-Progress</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Javascript Developer</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
-        <tr>
+        <tr class="datatable-body">
             <td>CURPA1355D</td>
             <td>Customer Support</td>
             <td><span>25-11-2022</span></td>
             <td><span class="badge approved">Approved</span></td>
             <td><span class="badge approved">Approved</span></td>
-            <td><span>
-                <select class="ft-action">
-                    <option>Action</option>
-                    <option>Action</option>
-                    <option>Action</option>
-                </select>
-            </span></td>
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Action
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">view</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+            </td>
         </tr>
     </tbody>
    
