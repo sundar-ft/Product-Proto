@@ -30,6 +30,7 @@ import { BrowserAnimationsModule } from
 import { ViewComponent } from './view/view.component';
 import { ModalpopupComponent } from './modalpopup/modalpopup.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     ViewComponent,
     ModalpopupComponent,
     DropdownComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
