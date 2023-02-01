@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModalConfig, NgbModal,ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-application-dashboard',
@@ -9,6 +9,7 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ApplicationDashboardComponent {
    search:boolean=false
+   isdelete: boolean = false;
   constructor(config: NgbModalConfig, private modalService: NgbModal) {
 		// customize default values of modals used by this component tree
 		config.backdrop = 'static';
@@ -22,5 +23,13 @@ export class ApplicationDashboardComponent {
 	searchbox(){
 		this.search=!this.search
 	}
+	open2(content2:any) {
+		this.modalService.open(content2);
+		
+	}
+	close(){
+		this.modalService.dismissAll();
+		this.isdelete=!this.isdelete
+	  }
 
 }

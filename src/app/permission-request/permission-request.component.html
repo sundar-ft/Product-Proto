@@ -3,7 +3,7 @@
 
 
 <div class="row justify-content-center ft-portlet-body">
-    <div class="col-md-8 border-0 card ft-card-center p-0" style="margin-top:20px;">
+    <div class="col-md-8 border-0 card ft-card-center p-0" >
         <div class="card-body mb-3">
               
             <div class="row col-md-12">
@@ -135,11 +135,12 @@
                 </label>
               </div>
 
-                <div class="text-center pt-4 pb-3">
-                    <button class="btn-primary">Send OTP</button>
+                <div class="text-center " >
+                    <button class="btn-primary" (click)="sendotp()" style="margin-top: 28px;">Send OTP</button>
                 </div>
 
-                <div class="text-info">
+                <div *ngIf="otp">
+                <div class="text-info pt-2">
                     Please enter OTP shared by your Investor.
                 </div>
                 
@@ -149,6 +150,8 @@
 
                 <div class="text-center pt-3">
                     <button class="btn-primary">Verify OTP</button>
+                </div>
+
                 </div>
 
                 </div>

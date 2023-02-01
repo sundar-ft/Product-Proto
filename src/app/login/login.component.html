@@ -1,7 +1,14 @@
+
+
+ 
+
 <div class="row justify-content-center ft_login_wrapper">
     <div class="border-0 card ft-card-center p-0 ft_login_container" >
         <div class="login-body mb-3">
-            <div class="text-center ft-portlet-title">
+          <div class="text-center pt-3">
+            <img class="" src="../../../assets/images/logo.png" alt="loading.." />
+          </div>
+            <div class="text-center pt-3 ft-portlet-title">
                Login 
               </div>
 
@@ -12,22 +19,37 @@
               <div class="row justify-content-center pt-3">
 
                 <div class="col-md-8">
-                    <input type="text" placeholder="Email"  class="ft-input-value" />
+                    <input type="text" placeholder="Email Address"  class="ft-input-value" />
+                    <span class="material-icons edit-icon">edit</span>
                 </div>
 
                 <div class="col-md-8 pt-4" *ngIf="password">
                     <input type="text" placeholder="Password" class="ft-input-value" />
-                   
+                    <a href="permission" class="forget_link  px-2" style="float: right;"
+                    >Forgot Password?</a
+                  >
                 </div>
-                <span class="material-icons edit-icon">edit</span>
+               
+               
                 
 
               </div>
 
               <div class="text-center pt-4">
-                <button  (click)="Password()" class="btn-primary">Proceed</button>
+                <button  (click)="Password()" class="btn-primary">Next</button>
              </div>
               
+             <!-- <div class="ft-portlet-login-desc pt-3">
+              New Here? <span><a href="#" class="hyperlink">Create an Account </a></span> 
+             </div>
+
+             <div class="ft-portlet-login-desc">Or</div> -->
+
+             <div class="ft-portlet-shortlink-desc pt-3">
+              Don’t have an account yet? <span><a href="#" class="forget_link">Register here</a></span>
+             </div>
+             
+             
             
         </div>
     </div>

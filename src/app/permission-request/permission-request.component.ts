@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./permission-request.component.css']
 })
 export class PermissionRequestComponent {
+  otp:boolean=false;
 
+  sendotp(){
+    this.otp=!this.otp
+    }
 }
+
+
+
