@@ -1,0 +1,105 @@
+
+<div class="row justify-content-center ft-portlet-body">
+    <div class="col-md-6 border-0 card ft-card-center p-0">
+        <div class="card-body">
+
+            <div class="text-center  ft-portlet-title">
+                OTP Login
+            </div>
+            <div class="text-center pt-2 ft-portlet-title-desc">
+                You / your advisor has initiated a new application. Prior to submitting the application, you need to complete a few additional steps at your end. To begin this process, identify yourself by providing the appropriate
+                details in the text boxes below:
+            </div>
+
+            <div class="row m-auto pt-4">
+                <div class="col-md-6 border p-2">
+                    <div class="ft-input-label pb-1">
+                        Application Id
+                    </div>
+                </div>
+                <div class="col-md-6 border p-2">
+                    <div class="ft-portlet-title-desc pb-1">
+                        WERTYUIJN345678
+                    </div>
+                </div>
+                <div class="col-md-6 border p-2">
+                    <div class="ft-input-label pb-1">
+                        Application Type
+                    </div>
+                </div>
+                <div class="col-md-6 border p-2">
+                    <div class="ft-portlet-title-desc pb-1">
+                        DFGHJK0987654
+                    </div>
+                </div>
+                <div class="col-md-6 border p-2">
+                    <div class="ft-input-label pb-1">
+                        No. of Investors
+                    </div>
+                </div>
+                <div class="col-md-6 border p-2">
+                    <div class="ft-portlet-title-desc pb-1">
+                        2 (DFGHJKKM)
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-3 ft-portlet-title-desc">
+                Verify your Name & Contact Details below and click 'Send OTP' to login
+            </div>
+
+            <div class="row m-auto pt-4">
+                <div class="col-md-6 border p-2">
+                    <div class="ft-input-label pb-1">
+                        Holder Name
+                    </div>
+                </div>
+                <div class="col-md-6 border p-2">
+                    <div class="ft-portlet-title-desc pb-1">
+                      Sunder
+                    </div>
+                </div>
+                <div class="col-md-6 border p-2">
+                    <div class="ft-input-label pb-1">
+                        Application Type
+                    </div>
+                </div>
+                <div class="col-md-6 border p-2">
+                    <div class="ft-portlet-title-desc pb-1">
+                      Fintuple@gmail.com
+                    </div>
+                </div>
+                <div class="col-md-6 border p-2">
+                    <div class="ft-input-label pb-1">
+                        Mobile Number
+                    </div>
+                </div>
+                <div class="col-md-6 border p-2">
+                    <div class="ft-portlet-title-desc pb-1">
+                      9988776655
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" *ngIf="!sendotp">
+                <button (click)="otp()"  class="btn-primary landing-button">Send OTP</button>
+            </div>
+
+
+            <div *ngIf="sendotp">
+            <div class="row justify-content-center pt-4">
+                <div class="col-md-6">
+                    <input class="col-md-12 ft-input-value upper-case"   type="text"  />
+                </div>
+            </div>
+
+           
+              <div class="text-center">
+                <button  class="btn-primary landing-button">Verify OTP</button>
+            </div>
+            </div>
+           
+
+        </div>
+    </div>
+</div>

@@ -31,6 +31,9 @@ import { ViewComponent } from './view/view.component';
 import { ModalpopupComponent } from './modalpopup/modalpopup.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { LoginComponent } from './login/login.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { SilentloginlandingComponent } from './silentloginlanding/silentloginlanding.component';
+import { SilentloginotpComponent } from './silentloginotp/silentloginotp.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +55,9 @@ import { LoginComponent } from './login/login.component';
     ModalpopupComponent,
     DropdownComponent,
     LoginComponent,
+    ChangePasswordComponent,
+    SilentloginlandingComponent,
+    SilentloginotpComponent,
   ],
   imports: [
     BrowserModule,
