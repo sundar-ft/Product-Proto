@@ -163,9 +163,9 @@ body {
     font-weight: normal;
 }
 
-.in-progress{background-color: #3d3de7; color: #fff;}
+.Created{background-color: #3d3de7; color: #fff;}
 .completed{background-color: rgb(4, 167, 4); color: #fff;}
-.approved{background-color: #614003; color: #fff;}
+.auth-pending{background-color: #ff0000; color: #fff;}
 
 .mdc-text-field--invalid:not(.mdc-text-field--disabled) .mdc-floating-label {
     color: black !important;
