@@ -882,7 +882,22 @@ input{
     height: 400px;
     box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5);
 }
-
+.per_25{
+    color: white;
+    background-color: brown;
+}
+.per_50{
+    color: white;
+    background-color: #ffba00;
+}
+.per_75{
+    color: white;
+    background-color: blue;
+}
+.per_100{
+    color: white;
+    background-color: green;
+}
 /* footer */
 .ft-footer {
     justify-content: center;
