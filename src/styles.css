@@ -897,12 +897,16 @@ input{
 }
 .heart_icon{
     position: absolute;
-    right: 9px;
-    top: 13px;
+    right: 65px;
+    top: 18px;
 }
 .heart-icon{
-    color: red !important;
-    font-size: 28px !important;
+    color: #848484 !important;
+    font-size: 22px !important;
+}
+.heart-icon-filled{
+    color: #ff0000 !important;
+    font-size: 22px !important;
 }
 .close{
     border: none;
