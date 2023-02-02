@@ -10,6 +10,7 @@ import { NgbModalConfig, NgbModal,ModalDismissReasons } from '@ng-bootstrap/ng-b
 export class ApplicationDashboardComponent {
    search:boolean=false
    isdelete: boolean = false;
+   heart:boolean=false;
   constructor(config: NgbModalConfig, private modalService: NgbModal) {
 		// customize default values of modals used by this component tree
 		config.backdrop = 'static';
@@ -26,6 +27,9 @@ export class ApplicationDashboardComponent {
 	open2(content2:any) {
 		this.modalService.open(content2);
 		
+	}
+	setheart(){
+		this.heart=!this.heart
 	}
 	close(){
 		this.modalService.dismissAll();

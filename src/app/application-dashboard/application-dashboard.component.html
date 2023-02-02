@@ -1858,10 +1858,18 @@
 
 <ng-template #content2 let-c="close" let-d="dismiss">
 
-      <h5 class="modal-title" id="exampleModalLabel" class="ft-section-heading"></h5>
-      <button type="button" class="close close_button" data-dismiss="modal" aria-label="Close" >
-<span aria-hidden="true" (click)="close()">&times;</span>
+  <h5 class="modal-title" id="exampleModalLabel" class="ft-section-heading"></h5>
+      <button type="button" class=" close close_button" style="right: 45px;" data-dismiss="modal" aria-label="Close" >
+       <span aria-hidden="true"  (click)="close()">&times;</span>
+      
       </button>
+
+      <div class="d-flex heart_icon">
+        <span class="material-icons heart-icon" *ngIf="!heart" (click)="setheart()">favorite_border</span>
+        <span class="material-icons heart-icon" (click)="setheart()" *ngIf="heart">favorite</span>
+       </div>
+   
+    
 
 
     <div class="modal-body">

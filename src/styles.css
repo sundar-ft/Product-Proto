@@ -895,7 +895,15 @@ input{
     color: white;
     font-size: 14px;
 }
-
+.heart_icon{
+    position: absolute;
+    right: 9px;
+    top: 13px;
+}
+.heart-icon{
+    color: red !important;
+    font-size: 28px !important;
+}
 .close{
     border: none;
     /* font-size: 0px; */
@@ -903,6 +911,7 @@ input{
     border-radius: 5px;
     background-color:  #eff2f5 ;
     font-size: 20px;
+    /* right: 45px; */
 }
 
 
