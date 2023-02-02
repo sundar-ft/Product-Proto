@@ -19,6 +19,7 @@ import { PermissionRequestComponent } from './permission-request/permission-requ
 import { SidenavbarComponent } from './sidenavbar/sidenavbar.component';
 import { SilentloginlandingComponent } from './silentloginlanding/silentloginlanding.component';
 import { SilentloginotpComponent } from './silentloginotp/silentloginotp.component';
+import { VerifyloginComponent } from './verifylogin/verifylogin.component';
 import { ViewComponent } from './view/view.component';
 
 
@@ -75,6 +76,10 @@ const routes: Routes = [
   {
     path:"silentlogin",
     component : SilentloginlandingComponent
+  },
+  {
+    path:"verifylogin",
+    component : VerifyloginComponent
   },
   {
     path:"silentloginotp",

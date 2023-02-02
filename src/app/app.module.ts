@@ -34,6 +34,7 @@ import { LoginComponent } from './login/login.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { SilentloginlandingComponent } from './silentloginlanding/silentloginlanding.component';
 import { SilentloginotpComponent } from './silentloginotp/silentloginotp.component';
+import { VerifyloginComponent } from './verifylogin/verifylogin.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { SilentloginotpComponent } from './silentloginotp/silentloginotp.compone
     ChangePasswordComponent,
     SilentloginlandingComponent,
     SilentloginotpComponent,
+    VerifyloginComponent,
   ],
   imports: [
     BrowserModule,
