@@ -663,6 +663,7 @@ input{
     position: absolute;
     padding: 10px 5px;
 }
+
 .close_button{
     width: 33px;
     height: auto;
@@ -686,6 +687,21 @@ input{
     text-decoration: none !important;
     cursor: pointer;
     font-weight: 400 !important;
+}
+.eye-icon{
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 9px;
+    font-size: 15px;
+}
+.delete-icon{
+    position: absolute;
+    margin-left: -31px;
+    margin-top: 3px;
+    font-size: 25px;
+}
+.landing-button{
+    margin-top: 27px;
 }
 .forget_link{
     color: #004a80 !important;

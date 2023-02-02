@@ -23,23 +23,27 @@
           placeholder="Enter PAN"
         />
         <span class="material-icons search-icon">person_add_alt_1</span>
+
+        <div class="searchbox" *ngIf="search">
+          <div class="" style="margin-left: 10px; padding: 10px 5px">
+            <span class="search-result-message">Investor not found.</span>
+            <!-- <a href="basicdetail" class="pending"> </a> -->
+          </div>
+          <div class="float-right" (click)="open2(content2)">
+            <div  class="hyperlink float-end px-3"
+              >Add Investor</div
+            >
+            <br />
+            <a href="permission" class="hyperlink float-end px-2"
+              >Verify Investor</a
+            >
+          </div>
+        </div>
+
+
       </div>
 
-      <div class="searchbox" *ngIf="search">
-        <div class="" style="margin-left: 10px; padding: 10px 5px">
-          <span class="search-result-message">Investor not found.</span>
-          <!-- <a href="basicdetail" class="pending"> </a> -->
-        </div>
-        <div class="float-right" (click)="open2(content2)">
-          <div  class="hyperlink float-end px-3"
-            >Add Investor</div
-          >
-          <br />
-          <a href="permission" class="hyperlink float-end px-2"
-            >Verify Investor</a
-          >
-        </div>
-      </div>
+      
 
       <hr />
 

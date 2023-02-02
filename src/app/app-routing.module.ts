@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ApplicationDashboardComponent } from './application-dashboard/application-dashboard.component';
 import { ApplicationQuickViewComponent } from './application-quick-view/application-quick-view.component';
 import { BasicdetailComponent } from './basicdetail/basicdetail.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 import { DocumentComponent } from './document/document.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,6 +17,8 @@ import { LoginComponent } from './login/login.component';
 import { ModalpopupComponent } from './modalpopup/modalpopup.component';
 import { PermissionRequestComponent } from './permission-request/permission-request.component';
 import { SidenavbarComponent } from './sidenavbar/sidenavbar.component';
+import { SilentloginlandingComponent } from './silentloginlanding/silentloginlanding.component';
+import { SilentloginotpComponent } from './silentloginotp/silentloginotp.component';
 import { ViewComponent } from './view/view.component';
 
 
@@ -64,6 +67,18 @@ const routes: Routes = [
   {
     path:"document",
     component : DocumentComponent
+  },
+  {
+    path:"changepassword",
+    component : ChangePasswordComponent
+  },
+  {
+    path:"silentlogin",
+    component : SilentloginlandingComponent
+  },
+  {
+    path:"silentloginotp",
+    component : SilentloginotpComponent
   },
   {
     path:"form",
