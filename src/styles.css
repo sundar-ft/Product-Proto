@@ -325,7 +325,7 @@ body {
 }
 .btn-primary {
     border: none;
-    background-color: #004a80;
+    background-color: #004a80 !important; 
     border-radius: 0.45rem;
     color: white;
     padding: 5px;
@@ -601,8 +601,7 @@ input{
     font-size: 12px;
     color: #3F4254;
     margin-bottom: 3px;
-    /* color: rgba(0, 0, 0, 0.56); */
-    color: black;
+    /* color: black; */
     font-weight: 500;
     /* padding-left: 5px; */
 }
@@ -732,9 +731,16 @@ input{
    /* box-shadow: 0px 0px 1px 1px #8080807d; */
 }
 
+.btn-primary:focus, .btn-primary:hover  {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    box-shadow: 0px 0px 0px 1px rgb(49 132 253 / 50%);
+}
+
 .btn-primary{
     border: none;
-    background-color: #004a80;
+    background-color: #004a80 !important;
     border-radius: 0.45rem;
     color: white;
     padding: 5px;
@@ -927,8 +933,7 @@ input{
     font-size: 22px !important;
 }
 .heart-icon-filled{
-    color: #ff0000 !important;
-    font-size: 22px !important;
+   width: 19px;
 }
 .close{
     border: none;

@@ -19,13 +19,15 @@
               <div class="row justify-content-center pt-3">
 
                 <div class="col-md-8">
-                    <input type="text" placeholder="Email Address"  class="ft-input-value" />
+                  <div class="ft-input-label">Email Address</div>
+                    <input type="text"   class="ft-input-value" />
                     <span class="material-icons edit-icon">edit</span>
                 </div>
 
                 <div class="col-md-8 pt-4" *ngIf="password">
-                    <input type="text" placeholder="Password" class="ft-input-value" />
-                    <a href="permission" class="forget_link  px-2" style="float: right;"
+                  <div class="ft-input-label">Password</div>
+                    <input type="text"  class="ft-input-value" />
+                    <a href="changepassword" class="forget_link  px-2" style="float: right;"
                     >Forgot Password?</a
                   >
                 </div>
