@@ -90,7 +90,14 @@ body {
     font-weight: 500;
     /* border-bottom: 1px solid #EEE5FF; */
 }
-
+.ft-popup-heading{
+    color: #004a80 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+.btn-primary{
+    background-color: #004a80 !important;
+}
 .add_btn{
     background: #ffffff;
     border-radius: 5px;
