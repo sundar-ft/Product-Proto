@@ -825,6 +825,10 @@ input{
     outline: 0;
     right: -184px;
 }
+.search-result-message{color:#ffc107;margin-left: 7px;}
+.warning-icon{
+    color:#ffc107;
+}
 
 /* note heading */
 .ft-note {
