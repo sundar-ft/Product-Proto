@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   password:boolean=false;
+  loader:boolean=false;
 
 
   Password(){
 		this.password=!this.password
 	  }
+    spinner(){
+      this.loader=!this.loader
+    }
 }

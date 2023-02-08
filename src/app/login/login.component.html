@@ -1,10 +1,21 @@
 
 
- 
+<!-- <div data-ng-app="Test" data-ng-controller="TestController as vm">
+	<div class="input-header">
+	</div>
+	
+	<div class="loader-overlay" data-ng-hide="vm.hideLoader">
+		<div class="spin-loader" 
+				 data-ng-class="{'shrink': vm.shrinkOnHide, 'expand': !vm.shrinkOnHide}"></div>
+	</div>
+</div> -->
+
+
 
 <div class="row justify-content-center ft_login_wrapper">
     <div class="border-0 card ft-card-center p-0 ft_login_container" >
         <div class="login-body mb-3">
+          <app-dropdown *ngIf="loader"></app-dropdown>
           <div class="text-center pt-3">
             <img class="" src="../../../assets/images/logo.png" alt="loading.." />
           </div>
@@ -54,6 +65,10 @@
 
              <div class="ft-portlet-shortlink-desc pt-3">
               Don’t have an account yet? <span><a href="#" class="forget_link">Register here</a></span>
+             </div>
+
+             <div class="text-center pt-3 forget_link" (click)="spinner()" >
+                   Text Loader
              </div>
              
              

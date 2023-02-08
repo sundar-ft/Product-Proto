@@ -1,20 +1,9 @@
 <div data-ng-app="Test" data-ng-controller="TestController as vm">
 	<div class="input-header">
-		<!-- <button class="btn btn-primary" data-ng-click="vm.toggle()">
-			<span data-ng-show="vm.hideLoader">Show Loader</span>
-			<span data-ng-hide="vm.hideLoader">Hide Loader</span>
-		</button> -->
-		<!-- <button class="btn btn-default" data-ng-click="vm.switchStyle()">
-			Current Style:
-			<span data-ng-show="vm.shrinkOnHide">Shrink</span>
-			<span data-ng-hide="vm.shrinkOnHide">Expand</span>
-		</button> -->
 	</div>
 	
 	<div class="loader-overlay" data-ng-hide="vm.hideLoader">
 		<div class="spin-loader" 
 				 data-ng-class="{'shrink': vm.shrinkOnHide, 'expand': !vm.shrinkOnHide}"></div>
 	</div>
-	
-	
 </div>
