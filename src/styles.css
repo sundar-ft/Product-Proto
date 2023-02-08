@@ -546,7 +546,25 @@ label{
     border-bottom: solid #004a80 1px;
     border-radius: 0px;
 }
+<<<<<<< Updated upstream
 
+=======
+.dataTables_filter label {
+   /* display: none !important; */
+}
+/* .dataTables_length {
+    word-wrap: normal;
+    position: absolute;
+    bottom: 32px;
+    right: 247px;
+    border: none;
+    border-radius: 5px;
+    padding: 1px;
+    color: #004a80;
+    background-color: #EEE5FF;
+    outline: none;
+} */
+>>>>>>> Stashed changes
 .dataTables_length {
     outline: none;
     position: absolute;
@@ -772,6 +790,14 @@ input{
 .warning-icon{
     color:#ffc107;
     margin-top: 8px;
+}
+
+.dataTables_length label{
+    float: right;
+    margin-right: 10px;
+    margin-bottom: -13px;
+    color: #004a80 ;
+
 }
 
 /* note heading */
@@ -1022,4 +1048,60 @@ a{
     margin-left: 70px;
 }
 
+<<<<<<< Updated upstream
 .pl-0{padding-left: 0px;}
+=======
+
+  .spin-loader {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-left: -60px;
+    height: 80px;
+    width: 80px;
+    background: transparent;
+    border: 3px solid;
+    border-color: #18bc9c #18bc9c #18bc9c #07342b;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.23, 0.78, 0.69, 0.84);
+    animation: spin 0.75s infinite linear;
+}
+.loader-overlay {
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    -moz-transition: opacity 0.3s cubic-bezier(0.23, 0.78, 0.69, 0.84);
+    -o-transition: opacity 0.3s cubic-bezier(0.23, 0.78, 0.69, 0.84);
+    -webkit-transition: opacity 0.3s cubic-bezier(0.23, 0.78, 0.69, 0.84);
+    transition: opacity 0.3s cubic-bezier(0.23, 0.78, 0.69, 0.84);
+}
+.loader-overlay.ng-hide {
+    opacity: 0;
+}
+.loader-overlay.ng-hide .spin-loader.shrink {
+    top: calc(25% + 60px);
+    margin-left: 0;
+    width: 10px;
+    height: 10px;
+}
+.loader-overlay.ng-hide .spin-loader.expand {
+    top: calc(25% - 100px);
+    margin-left: -200px;
+    width: 400px;
+    height: 400px;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+   }
+    100% {
+        transform: rotate(360deg);
+   }
+}
+
+
+    
+>>>>>>> Stashed changes
