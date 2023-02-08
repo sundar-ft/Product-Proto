@@ -646,7 +646,9 @@ input{
 .ft-form-value{
     color: #5E6278;
  }
-
+.pl-0{
+    padding-left:0px !important;
+}
 .search{
     text-align: center;
 }
