@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class LoginComponent {
   password:boolean=false;
   loader:boolean=false;
+  loaderbutton:boolean=false;
 
 
   Password(){
@@ -15,5 +16,8 @@ export class LoginComponent {
 	  }
     spinner(){
       this.loader=!this.loader
+    }
+    Loader(){
+      this.loaderbutton=!this.loaderbutton
     }
 }

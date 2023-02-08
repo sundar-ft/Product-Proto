@@ -49,12 +49,12 @@
               </div>
 
               <div class="text-center pt-4">
-                <button class="btn btn-primary" type="button" disabled>
+                <button class="btn btn-primary" *ngIf="loaderbutton" type="button" disabled>
                   <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                   Loading...
                 </button>
-<!--                 
-                <button  (click)="Password()" class="btn-primary brand-bg-primary">Next</button> -->
+                
+                <button  (click)="Loader()" *ngIf="!loaderbutton" class="btn-primary brand-bg-primary">Next</button>
              </div>
               
              <!-- <div class="ft-portlet-login-desc pt-3">
@@ -68,7 +68,7 @@
              </div>
 
              <div class="text-center pt-3 forget_link" (click)="spinner()" >
-                   Text Loader
+                   Test Page Loader
              </div>
              
              
