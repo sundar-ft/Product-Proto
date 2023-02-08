@@ -8,8 +8,8 @@
     style="margin-top: 20px"
   >
     <div class="card-body">
-      <div class="text-center ft-portlet-title">My Investor</div>
-      <div class="text-center ft-portlet-title-desc mb-3 pt-3">
+      <div class="text-center ft-portlet-title brand-text-color">My Investor</div>
+      <div class="text-center ft-portlet-title-desc brand-text-desc-color  mb-3 pt-3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
         quam euismod, imperdiet erat et, placerat augue. Morbi risus massa,
         viverra quis elit eu, porttitor hendrerit lectus. Integer suscipit nisl
@@ -1853,15 +1853,14 @@
 
 <ng-template #content2 let-c="close" let-d="dismiss">
 
-  <h5 class="modal-title" id="exampleModalLabel" class="ft-section-heading"></h5>
+  <h5 class="modal-title" id="exampleModalLabel" class="ft-section-heading brand-text-color"></h5>
       <button type="button" class=" close close_button"  data-dismiss="modal" aria-label="Close" >
        <span aria-hidden="true"  (click)="close()">&times;</span>
       
       </button>
 
       <div class="d-flex heart_icon">
-        <!-- <span class="material-icons heart-icon" *ngIf="!heart" (click)="setheart()">star_border</span> -->
-        <!-- <span class="material-icons heart-icon-filled" (click)="setheart()" *ngIf="heart">star</span> -->
+
         <img src="../../assets/images/star-fill.png" class="material-icons heart-icon-filled" (click)="setheart()" *ngIf="heart" alt="loading.." >
          <img src="../../assets/images/star.png" class="material-icons heart-icon-filled" *ngIf="!heart" (click)="setheart()" alt="loading.." >
        </div>
@@ -1871,14 +1870,12 @@
 
     <div class="modal-body">
 
-      
-            <!-- <div class="col-md-8 border-0 card ft-card-center p-0" style="margin-top:80px;"> -->
             <div class="">
     
-                <div class="text-center  ft-portlet-title">
+                <div class="text-center  ft-portlet-title brand-text-color">
                     Basic Details
                 </div>
-                <div class="text-center pt-2 ft-portlet-title-desc">
+                <div class="text-center pt-2 ft-portlet-title-desc brand-text-desc-color">
                     Fill the Basic Information to begin with Investor Profile.
                 </div>
     
@@ -1945,9 +1942,13 @@
               <div class="ft-input-label"> Gender <span class="red-required text-danger"> *</span>
               </div>
               <div class="ft-input-edit">
-                  <input class="col-md-12  upper-case ft-input-value" type="text" />
-              </div>
-        
+                <select class="col-md-12 ft-select">
+                  <option></option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+                      
           </div>
       </div>
 
@@ -1957,15 +1958,15 @@
                                     <div class="ft-input-label">Mobile Number (registered with Aadhaar) <span class="red-required text-danger"> *</span></div>
                                    
                                     <div class="ft-input-edit row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                            <select class="col-md-12 ft-select">
-                                            <option>IND +91</option>
-                                            <option>ENG +00</option>
-                                            <option>USA +04</option>
+                                            <option>+91</option>
+                                            <option>+00</option>
+                                            <option>+04</option>
                                            </select>
                                         </div>
                                        
-                                        <div class="col-md-8 pl-2">
+                                        <div class="col-md-9 pl-0">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
                                         </div>
                                        
@@ -1993,24 +1994,25 @@
                 </div>
     
     
-                <div class="text-center pt-4">
-                   <a href="kyc1"><button  class="btn-primary">Save & Next</button></a>
+             <div class="note-section pt-2">
+                <div class="ft-note brand-text-color">Note:</div> 
+                <ul class="ft-note-desc brand-text-desc-color" style="padding-left: 18px;"> 
+                    <li> Enter the Investor(s) Mobile Number that is registered with Aadhaar (UIDAI).</li>
+                    <li> Enter Date of Birth as per PAN.</li>
+                    <li>  Email Address cannot be changed for currently logged in users.</li>
+                    <li> All other Investor Profile-related communication will be sent to the given Email
+                        Address and Mobile Number. These details cannot be changed once the application is filled and pushed to the next.</li>
+                </ul>
+             </div>
+         
+
+                <div class="text-center pt-1">
+                   <a href="kyc1"><button  class="btn-primary brand-bg-primary">Save & Next</button></a>
                 </div>
     
                 
     
              
-                    <div class="ft-note">
-                        Note:
-                    </div>
-                    <ul class="ft-note-desc" style="padding-left: 18px;"> 
-                        <li> Enter the Investor(s) Mobile Number that is registered with Aadhaar (UIDAI).</li>
-                        <li> Enter Date of Birth as per PAN.</li>
-                        <li>  Email Address cannot be changed for currently logged in users.</li>
-                        <li> All other Investor Profile-related communication will be sent to the given Email
-                            Address and Mobile Number. These details cannot be changed once the application is filled and pushed to the next.</li>
-                    </ul>
-               
                
     
            

@@ -1,15 +1,8 @@
-<!-- <app-headernavbar></app-headernavbar>
-<app-sidenavbar></app-sidenavbar> -->
-
 <!-- Stepper Start -->
 
 <div class="stepper">
   <div class="wrapper option-1 option-1-1">
     <ol class="c-stepper">
-        <!-- <li class="c-stepper__item status-completed">
-            <h3 class="c-stepper__title">Basic Details</h3>
-
-        </li> -->
         <li class="c-stepper__item status-active">
             <h3 class="c-stepper__title">KYC</h3>
 
@@ -32,16 +25,16 @@
     <div class="col-md-8 border-0 card ft-card-center p-0" style="margin-top:20px;">
         <div class="card-body mb-3">
  
-            <div class="text-center  ft-portlet-title">
+            <div class="text-center  ft-portlet-title brand-text-color">
                 DOCUMENTS
             </div>
 
-            <div class="ft-portlet-title-desc text-center">
+            <div class="ft-portlet-title-desc brand-text-desc-color text-center">
                 This section allows you to upload any documents associated to the customer profile.
             </div>
 
 
-            <div class="ft-section-heading">
+            <div class="ft-section-heading brand-text-color">
                 DOCUMENT UPLOAD
                 <span class='material-icons add_btn' style="float: right;" (click)="open2(content2)">add</span>
             </div>
@@ -109,15 +102,15 @@
               </table>
 
               <div class="text-center pt-4">
-                <a href="quickview"> <button class="btn-primary" >Next</button></a>
+                <a href="quickview"> <button class="btn-primary brand-bg-primary" >Next</button></a>
             </div>
 
             <div class="seperator"></div>
 
-            <div class="ft-note">
+            <div class="ft-note brand-text-color">
                 Note:
             </div>
-            <div class="ft-note-desc">
+            <div class="ft-note-desc brand-text-desc-color">
                 Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
             </div>
 
@@ -128,7 +121,7 @@
 
 <ng-template #content2 let-c="close" let-d="dismiss">
     <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel" class="ft-popup-heading">DOCUMENT UPLOAD</h5>
+        <h5 class="modal-title" id="exampleModalLabel" class="ft-popup-heading brand-text-color">DOCUMENT UPLOAD</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
  <span aria-hidden="true" (click)="close()">&times;</span>
         </button>
@@ -160,10 +153,10 @@
 
           <div class="seperator"></div>
 
-          <div class="ft-note">
+          <div class="ft-note brand-text-color">
             Note:
         </div>
-        <div class="ft-note-desc">
+        <div class="ft-note-desc brand-text-desc-color">
             Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
         </div>
           

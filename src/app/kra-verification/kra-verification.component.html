@@ -32,69 +32,64 @@
     <div class="col-md-8 border-0 card ft-card-center p-0" style="margin-top:20px;">
         <div class="card-body">
 
-            <div class="text-center  ft-portlet-title">
+            <div class="text-center  ft-portlet-title brand-text-color">
                 KRA Verification
             </div>
-            <div class="text-center pt-2 ft-portlet-title-desc">
+            <div class="text-center pt-2 ft-portlet-title-desc brand-text-desc-color">
                 Begin your KYC verification process by consenting to fetch any KYC data that is available
                  with the bank or from KYC Registered Agency
             </div>
 
-            <!-- <div class="col-md-7 mx-auto bg-light mt-2 mb-2"> -->
-                <div class="row justify-content-center pt-3">
+            <div class="justify-content-center pt-2 pb-2">
+                <div class="row col-md-6 m-auto pb-2 ">
            
-                    <div class="col-md-4 ft-input-label">
+                    <div class="col-md-6 ft-input-label">
                         PAN <span class="red-required text-danger"> *</span>
                     </div>
-                    <div class="col-md-4 ft-form-value">
+                    <div class="col-md-6 ft-form-value">
                       FGH34567MVB
                     </div>
                 </div>
     
-                <div class="row justify-content-center pt-3 pb-2">
+                <div class="row col-md-6 m-auto  ">
               
-                    <div class="col-md-4 ft-input-label">
+                    <div class="col-md-6 ft-input-label">
                         Date of Birth<span class="red-required text-danger"> *</span>
                     </div>
-                    <div class="col-md-4 ft-form-value">
+                    <div class="col-md-6 ft-form-value">
                        20-05-1996
                     </div>
                 </div>
-            <!-- </div> -->
-
-           
-           
-            <!-- <div class="row justify-content-center pt-3">
-                <div class="col-md-12">
-                       <label class="ft-checkbox-consent pl-1">
-                              I acknowledge that the ‘Person/Individual’ in the PAN card proof uploaded is me and the information extracted is correct. Also, I acknowledge that the aforesaid details are correct.
-                              <input type="checkbox" class="checkbox" >
-                              <span class="checkmark" ></span>
-                       </label>
             </div>
-            </div> -->
 
+           <div class="row">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label ft-checkbox-consent" for="flexCheckDefault">
+                <label class="form-check-label ft-checkbox-consent brand-text-desc-color" for="flexCheckDefault">
                     I acknowledge that the ‘Person/Individual’ in the PAN card proof uploaded is me and the information extracted is correct. Also, I acknowledge that the aforesaid details are correct.
                 </label>
               </div>
+           </div>
              
-       
+              <div class="">
+                <div class="note-section pt-3">
+                    <div class="ft-note brand-text-color">
+                        Note:
+                    </div>
+                    <div class="ft-note-desc brand-text-desc-color">
+                        To Know more about the process, <span><a href="#" class="hyperlink">click here</a></span>
+                    </div>
+                  </div>
+              </div>
+            
 
-         <div class="text-center pt-4">
+         <div class="text-center pt-3">
             <a (click)="open(content)"><button class="btn-primary">Select</button></a>
         </div>
 
        
 
-         <div class="ft-note">
-            Note:
-        </div>
-        <div class="ft-note-desc">
-            To Know more about the process, <span><a href="#" class="hyperlink">click here</a></span>
-        </div>
+         
 
         <!-- <select class="form-control custom-select"
           style="width:150px;" id="mySelect">
@@ -130,16 +125,16 @@
         <span class="ft-incomplete-dot">●</span>
      </div>
 
-      <div class="text-center  ft-portlet-title">
+      <div class="text-center  ft-portlet-title brand-text-color">
         KYC Information 
     </div>
-    <div class="ft-portlet-title-desc pt-3">
+    <div class="ft-portlet-title-desc brand-text-desc-color pt-3">
         Please complete the details given below. If the data is already retrived from
          the KYC database, kindly review the data, and make any necessary changes before proceeding further.
     </div>
 
     <div *ngIf="!identify">
-     <div class="ft-section-heading pb-2">
+     <div class="ft-section-heading brand-text-color pb-2">
         IDENTITY DETAILS<span class='material-icons' style="float: right;" >edit</span>
      </div>
 
@@ -147,23 +142,20 @@
      <div class="row  pt-3">
 
         <div class="col-md-4">
-                    <div class="group">
-                        <div class="ft-input-label">PAN <span class="red-required text-danger"> *</span></div>
-                       
-                        <div class="ft-input-edit ft-form-value">
-                            FGH34567MVB
-                        </div>
+            <div class="group">
+                <div class="ft-input-label">PAN <span class="red-required text-danger"> *</span></div>
+                <div class="ft-input-edit ft-form-value">
+                    FGH34567MVB
+                </div>
             </div>
         </div>
 
         <div class="col-md-4">
-           
-                    <div class="group">
-                        <div class="ft-input-label">Date of Birth <span class="red-required text-danger"> *</span>
-                        </div>
-                        <div class="ft-input-edit ft-form-value">
-                           20-05-1996
-                        </div>
+           <div class="group">
+                <div class="ft-input-label">Date of Birth <span class="red-required text-danger"> *</span></div>
+                <div class="ft-input-edit ft-form-value">
+                    20-05-1996
+                </div>
                   
             </div>
         </div>
@@ -272,7 +264,7 @@
     </div>
  
     <div class="text-center pt-3" (click)="close()">
-        <button type="next" class="btn-primary"  (click)="Addressdetail()">NEXT</button>
+        <button type="next" class="btn-primary brand-bg-primary"  (click)="Addressdetail()">NEXT</button>
     </div>
    
     </div>
@@ -287,22 +279,22 @@
         <span class="ft-incomplete-dot">●</span>
      </div>
 
-      <div class="text-center  ft-portlet-title">
+      <div class="text-center  ft-portlet-title brand-text-color">
         KYC Information
     </div>
-    <div class="ft-portlet-title-desc pt-3">
+    <div class="ft-portlet-title-desc brand-text-desc-color pt-3">
         Please complete the details given below. If the data is already retrived from
          the KYC database, kindly review the data, and make any necessary changes before proceeding further.
     </div>
 
   
-    <div class="ft-section-heading pb-2" style="border-bottom:1px solid #EEE5FF;">
+    <div class="ft-section-heading brand-text-color pb-2" style="border-bottom:1px solid #EEE5FF;">
         ADDRESS DETAILS<span class='material-icons' style="float: right;font-size: 20px;" >edit</span>
      </div>
 
   
 
-     <div class="ft-section-heading pb-2">
+     <div class="ft-section-heading brand-text-color pb-2">
         CORRESPONDENCE ADDRESS<span class='material-icons' style="float: right;font-size: 20px;">edit</span>
      </div>
 
@@ -314,7 +306,7 @@
         <div class="col-md-3 text-center ">
             <div class="form-check form-check-inline"> 
                 <input  class="form-check-input ft-radio-value" type="radio" value="FIRSTHOLDER" >
-                <label class="form-check-label ft-radio-value "> Residential</label><br />
+                <label class="form-check-label ft-radio-value brand-text-desc-color"> Residential</label><br />
             </div>
           
         </div>
@@ -322,7 +314,7 @@
         <div class="col-md-3 text-center">
             <div class="form-check form-check-inline"> 
                 <input  class="form-check-input ft-radio-value" type="radio" value="ONEHOLDER"  >
-                <label class="form-check-label ft-radio-value ">
+                <label class="form-check-label ft-radio-value brand-text-desc-color">
                      Office/Business
                 </label>
             </div> 
@@ -455,8 +447,8 @@
 
     <div class="col-md-3 text-center ">
         <div class="form-check form-check-inline"> 
-            <input  class="form-check-input ft-radio-value" type="radio" value="FIRSTHOLDER" >
-            <label class="form-check-label ft-radio-value ">Residential</label><br />
+            <input  class="form-check-input ft-radio-value " type="radio" value="FIRSTHOLDER" >
+            <label class="form-check-label ft-radio-value brand-text-desc-color">Residential</label><br />
         </div>
       
     </div>
@@ -464,7 +456,7 @@
     <div class="col-md-3 text-center">
         <div class="form-check form-check-inline"> 
             <input  class="form-check-input ft-radio-value" type="radio" value="ONEHOLDER"  >
-            <label class="form-check-label ft-radio-value ">
+            <label class="form-check-label ft-radio-value brand-text-desc-color">
               Office/Business
             </label>
         </div> 
@@ -472,7 +464,7 @@
 
 </div>
 
-    <div class="ft-section-heading pb-2">
+    <div class="ft-section-heading brand-text-color pb-2">
         PERMANENT ADDRESS<span class='material-icons' style="float: right;">edit</span>
      </div>
 
@@ -580,7 +572,7 @@
  
 
       <div class="text-center pt-3" (click)="close1()"  >
-        <button type="next" class="btn-primary" (click)="Contact()">NEXT</button>
+        <button type="next" class="btn-primary brand-bg-primary" (click)="Contact()">NEXT</button>
     </div>
 
     </div>
@@ -596,16 +588,16 @@
         <span class="ft-dot" >●</span>
      </div>
 
-      <div class="text-center  ft-portlet-title">
+      <div class="text-center  ft-portlet-title brand-text-color">
         KYC Information
     </div>
-    <div class="ft-portlet-title-desc pt-3">
+    <div class="ft-portlet-title-desc brand-text-desc-color pt-3">
         Please complete the details given below. If the data is already retrived from
          the KYC database, kindly review the data, and make any necessary changes before proceeding further.
     </div>
 
   <div *ngIf="contact">
-    <div class="ft-section-heading pb-2" style="border-bottom:1px solid #EEE5FF;">
+    <div class="ft-section-heading brand-text-color pb-2" style="border-bottom:1px solid #EEE5FF;">
         CONTACT DETAILS<span class='material-icons' style="float: right;" >edit</span>
      </div>
 
@@ -700,24 +692,21 @@
 
      </div>
 
+     <div class="note-section pt-0">
+        <div class="ft-note brand-text-color">
+            Note:
+        </div>
+        <div class="ft-note-desc brand-text-desc-color">
+            Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
+        </div>
+    </div>
    
 
     <div class="text-center pt-4"  (click)="close1()">
-        <button class="btn-primary" ><a href="kyc">Save & Next</a></button>
+        <button class="btn-primary brand-bg-primary" ><a href="kyc">Save & Next</a></button>
     </div>
 
 </div>
-
-
-        <div class="seperator"></div>
-
-        <div class="ft-note">
-          Note:
-      </div>
-      <div class="ft-note-desc">
-          Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
-      </div>
-        
 
    
   </div>
