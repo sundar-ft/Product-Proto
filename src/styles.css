@@ -867,7 +867,7 @@ ul.ft-note-desc {
 }
 .per_25{
     color: white;
-    background-color: brown;
+    background-color: #a52a2a;
 }
 .per_50{
     color: white;
@@ -1044,6 +1044,7 @@ a{
 }
 
 
+/* Spinner CSS */
   .spin-loader {
     position: fixed;
     top: 45%;
@@ -1053,11 +1054,12 @@ a{
     width: 50px;
     background: transparent;
     border: 3px solid;
-    border-color: #18bc9c #18bc9c #18bc9c #07342b;
+    border-color: #004a80 #004a80 #004a80 #96969680;
     border-radius: 50%;
     transition: all 0.3s cubic-bezier(0.23, 0.78, 0.69, 0.84);
     animation: spin 0.75s infinite linear;
 }
+
 .loader-overlay {
     position: fixed;
     top: 0px;
@@ -1082,8 +1084,8 @@ a{
 .loader-overlay.ng-hide .spin-loader.expand {
     top: calc(25% - 100px);
     margin-left: -200px;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 @keyframes spin {
     0% {
@@ -1095,4 +1097,53 @@ a{
 }
 
 
-    
+
+/* PROGRESS BAR */
+
+
+.radialProgressBar {
+    border-radius: 50%;
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    background: #ddd;
+    margin: -12px 0px;
+    float: left;
+  }
+  .radialProgressBar .overlay {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+    padding-top: 13%;
+    font-size: 9px;
+  }
+  
+  .progress-30 {
+    background-image: -webkit-linear-gradient(108deg, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #a52a2a 50%, #ddd 50%);
+    background-image: linear-gradient(-18deg, #ddd 50%, transparent 50%), linear-gradient(90deg, #a52a2a 50%, #ddd 50%);
+  }
+/*demo purpose*/
+.rt-container{
+    padding-right: 10px;
+   padding-left: 10px;
+   margin-right: auto;
+   margin-left: auto;
+ }
+ /* @media (min-width: 768px) {
+   .rt-container {
+     width: 768px;
+   }
+ }
+ 
+ @media (min-width: 1024px) {
+   .rt-container {
+     width: 1000px;
+   }
+ }   */
