@@ -649,6 +649,11 @@ input{
 .pl-0{
     padding-left:0px !important;
 }
+.dash-starfill-icon{
+    position: absolute;
+    top: 212px;
+    left: 8px;
+}
 .search{
     text-align: center;
 }
