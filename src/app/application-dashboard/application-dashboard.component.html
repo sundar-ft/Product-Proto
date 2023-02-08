@@ -8,12 +8,9 @@
     style="margin-top: 20px"
   >
     <div class="card-body">
-      <div class="text-center ft-portlet-title brand-text-color">My Investor</div>
+      <div class="text-center ft-portlet-title brand-text-color">My Investors</div>
       <div class="text-center ft-portlet-title-desc brand-text-desc-color  mb-3 pt-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
-        quam euismod, imperdiet erat et, placerat augue. Morbi risus massa,
-        viverra quis elit eu, porttitor hendrerit lectus. Integer suscipit nisl
-        sed purus
+        The “My Investors” dashboard provides a comprehensive list of investors under your purview. You can view/edit details of existing investors and add new investors.
       </div>
 
       <div class="search" (click)="searchbox()">
@@ -32,13 +29,12 @@
       <div class="searchbox" *ngIf="search">
         <div class="d-flex" style="margin-left: 10px; padding: 10px 5px">
           <span class="material-icons warning-icon">warning</span>
-          <span class="search-result-message">Investor not found.</span>
+          <span class="search-result-message">Investor Profile has not been found. Please click on ‘Add Investor Profile’ to create a new profile.</span>
           <!-- <a href="basicdetail" class="pending"> </a> -->
         </div>
-        <div class="float-right" (click)="open2(content2)">
-          <div  class="hyperlink float-end px-3"
-            >Add Investor</div
-          >
+        <div class="float-right">
+          <a href="basicdetail" class="hyperlink float-end px-3">Add Investor Profile</a>
+          <!-- <div  class="hyperlink float-end px-3">Add Investor Profile</div> -->
           <br />
           <!-- <a href="permission" class="hyperlink float-end px-2"
             >Verify Investor</a
@@ -58,7 +54,7 @@
         <thead>
           <tr class="datatable-head">
             <th>PAN</th>
-            <th>Investor Full Name</th>
+            <th>Full Name</th>
             <th>Status</th>
             <th>Progress</th>
             <th>Action</th>
@@ -97,9 +93,11 @@
                 >
                 <span class="material-icons dot-icon">more_horiz</span>
                 </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">view</a></li>
-                  <li><a class="dropdown-item" href="#">Delete</a></li>
+                <ul class="dropdown-menu action">
+                  <li><a class="dropdown-item" href="#">View/Edit Profile</a></li>
+                  <li><a class="dropdown-item" href="#">OTP Authorisation</a></li>
+                  <li><a class="dropdown-item" href="#">Remove from My Investors</a></li>
+                  <li><a class="dropdown-item" href="#">Workflow History</a></li>
                 </ul>
               </div>
             </td>
@@ -1878,8 +1876,6 @@
                 <div class="text-center pt-2 ft-portlet-title-desc brand-text-desc-color">
                     Fill the Basic Information to begin with Investor Profile.
                 </div>
-    
-    
                 <div class="row  pt-3">
 
                   <div class="col-md-4">
@@ -1919,8 +1915,6 @@
     
                   
                 </div>
-    
-    
                 <div class="row  pt-3">
                  
           
@@ -1992,8 +1986,6 @@
               
         </div>
                 </div>
-    
-    
              <div class="note-section pt-2">
                 <div class="ft-note brand-text-color">Note:</div> 
                 <ul class="ft-note-desc brand-text-desc-color" style="padding-left: 18px;"> 
@@ -2004,19 +1996,10 @@
                         Address and Mobile Number. These details cannot be changed once the application is filled and pushed to the next.</li>
                 </ul>
              </div>
-         
-
                 <div class="text-center pt-1">
                    <a href="kyc1"><button  class="btn-primary brand-bg-primary">Save & Next</button></a>
                 </div>
-    
-                
-    
-             
-               
-    
-           
-    </div>
+           </div>
         
 
     </div>

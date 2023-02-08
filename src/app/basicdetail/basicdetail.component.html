@@ -1,106 +1,164 @@
+
+<!-- Stepper -->
+
+<div class="stepper-section">
+    <div class="row col-md-5 d-flex m-auto stepper_btn">
+       <div class="col-md-3">
+            <a href="basicdetail">
+                <button type="button" class="btn btn-stepper stepper-active">
+                    Basic Details
+                </button>
+            </a>
+       </div>
+       <div class="col-md-3">
+            <a href="kyc1">
+                <button type="button" class="btn btn-stepper">
+                    KYC
+                </button>
+            </a>
+        </div>
+       <div class="col-md-3">
+            <a href="kyc">
+                <button type="button" class="btn btn-stepper">
+                    Profile
+                </button>
+            </a>
+            
+      </div>
+       <div class="col-md-3">
+        <a href="document">
+            <button type="button" class="btn btn-stepper">
+                Document
+            </button>
+        </a>
+       </div>
+    </div>
+</div>
+
+
 <div class="row justify-content-center ft-portlet-body">
     <div class="col-md-8 border-0 card ft-card-center p-0">
         <div class="card-body">
-
-            <div class="text-center  ft-portlet-title brand-text-color">
-                Basic Details
-            </div>
-            <div class="text-center pt-2 ft-portlet-title-desc brand-text-desc-color">
-                Fill the Basic Information to begin with Investor Profile.
-            </div>
-
-
-            <div class="row  pt-3">
-
-                <div class="col-md-4">
-                            <div class="group">
-                                <div class="ft-input-label">PAN <span class="red-required text-danger"> *</span></div>
-                              
-                                <div class="ft-input-edit">
-                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                </div>
-                    </div>
+            <div class="">
+    
+                <div class="text-center  ft-portlet-title brand-text-color">
+                    Basic Details
                 </div>
-
-                <div class="col-md-4">
-                   
-                            <div class="group">
-                                <div class="ft-input-label"> Full Name <span class="red-required text-danger"> *</span>
-                                </div>
-                                <div class="ft-input-edit">
-                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                </div>
-                          
-                    </div>
+                <div class="text-center pt-2 ft-portlet-title-desc brand-text-desc-color">
+                    Fill the Basic Information to begin with Investor Profile.
                 </div>
+                <div class="row  pt-3">
 
-                <div class="col-md-4">
-                   
-                            <div class="group">
-                                <div class="ft-input-label">Date of Birth <span class="red-required text-danger">
-                                        *</span> </div>
-                                <div class="ft-input-edit">
-                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                </div>
-                            </div>
-                      
-                </div>
+                  <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-input-label"> Type<span class="red-required text-danger"> *</span></div>
+                       
+                        <div class="ft-input-edit">
+                            <select class="col-md-12 ft-select" disabled>
+                                <option>Resident Individual</option>
+                                <!-- <option>Non-Editable</option> -->
+                            </select>
+                        </div>
             </div>
-
-
-            <div class="row  pt-3">
-
-                <div class="col-md-4">
-                   
-                            <div class="group">
-                                <div class="ft-input-label">Mobile Number  <span class="red-required text-danger"> *</span></div>
-                               
-                                <div class="ft-input-edit row">
-                                    <div class="col-md-4">
-                                       <select class="col-md-12 ft-select">
-                                        <option>IND</option>
-                                        <option>ENG</option>
-                                        <option>USA</option>
-                                       </select>
+        </div>
+    
+                    <div class="col-md-4">
+                                <div class="group">
+                                    <div class="ft-input-label">PAN <span class="red-required text-danger"> *</span></div>
+                                  
+                                    <div class="ft-input-edit">
+                                        <input class="col-md-12  upper-case ft-input-value " type="text" disabled/>
                                     </div>
-                                   
-                                    <div class="col-md-8 pl-2">
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                       
+                                <div class="group">
+                                    <div class="ft-input-label"> Name as per PAN <span class="red-required text-danger"> *</span>
+                                    </div>
+                                    <div class="ft-input-edit">
                                         <input class="col-md-12  upper-case ft-input-value" type="text" />
                                     </div>
-                                   
-                                </div>
-                          
+                              
+                        </div>
                     </div>
+    
+                  
                 </div>
+                <div class="row  pt-3">
+                 
+          
+                  <div class="col-md-4">
+                       
+                    <div class="group">
+                        <div class="ft-input-label">Date of Birth <span class="red-required text-danger">
+                                *</span> </div>
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                    </div>
+              
+        </div>
 
-                <div class="col-md-4">
-                   
-                            <div class="group">
-                                <div class="ft-input-label"> Email Address  <span class="red-required text-danger"> *</span>
-                                </div>
-                                <div class="ft-input-edit">
-                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                </div>
-                            </div>
+        <div class="col-md-4">
+                       
+          <div class="group">
+              <div class="ft-input-label"> Gender <span class="red-required text-danger"> *</span>
+              </div>
+              <div class="ft-input-edit">
+                <select class="col-md-12 ft-select">
+                  <option></option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
                       
+          </div>
+      </div>
+
+                    <div class="col-md-4">
+                       
+                                <div class="group">
+                                    <div class="ft-input-label">Mobile Number (registered with Aadhaar) <span class="red-required text-danger"> *</span></div>
+                                   
+                                    <div class="ft-input-edit row">
+                                        <div class="col-md-3">
+                                           <select class="col-md-12 ft-select">
+                                            <option>+91</option>
+                                            <option>+00</option>
+                                            <option>+04</option>
+                                           </select>
+                                        </div>
+                                       
+                                        <div class="col-md-9 pl-0">
+                                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                        </div>
+                                       
+                                    </div>
+                              
+                        </div>
+                    </div>
+    
+                  
+    
+                  
                 </div>
-
-                <div class="col-md-4">
-                   
+                <div class="row pt-3">
+                  <div class="col-md-4">
+                       
+                    <div class="group">
+                        <div class="ft-input-label"> Email Address  <span class="red-required text-danger"> *</span>
+                        </div>
+                        <div class="ft-input-edit">
+                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        </div>
+                    </div>
+              
+        </div>
                 </div>
-            </div>
-
-
-            <div class="text-center pt-4">
-               <a href="kyc1"><button  class="btn-primary brand-bg-primary">Save & Next</button></a>
-            </div>
-
-            
-
-         
-                <div class="ft-note brand-text-color">
-                    Note:
-                </div>
+             <div class="note-section pt-2">
+                <div class="ft-note brand-text-color">Note:</div> 
                 <ul class="ft-note-desc brand-text-desc-color" style="padding-left: 18px;"> 
                     <li> Enter the Investor(s) Mobile Number that is registered with Aadhaar (UIDAI).</li>
                     <li> Enter Date of Birth as per PAN.</li>
@@ -108,13 +166,11 @@
                     <li> All other Investor Profile-related communication will be sent to the given Email
                         Address and Mobile Number. These details cannot be changed once the application is filled and pushed to the next.</li>
                 </ul>
-           
-           
-           
-           
-           
-      
-            
+             </div>
+                <div class="text-center pt-1">
+                   <a href="kyc1"><button  class="btn-primary brand-bg-primary">Save & Next</button></a>
+                </div>
+           </div>
 
             
 
