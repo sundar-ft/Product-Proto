@@ -1176,3 +1176,7 @@ a{
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+  .dash-icon{
+    font-size: 20px;
+    margin: auto;
+  }
