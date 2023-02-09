@@ -1117,8 +1117,8 @@ a{
     transform: translate(50%, 50%);
     display: -webkit-box;
     display: -ms-flexbox;
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
     display: flex;
     background: #ddd;
     margin: -12px 0px;
@@ -1126,12 +1126,12 @@ a{
   }
   .radialProgressBar .overlay {
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     margin: auto;
     background: #fff;
     text-align: center;
-    padding-top: 13%;
+    padding-top: 19%;
     font-size: 9px;
   }
   
@@ -1151,14 +1151,28 @@ a{
    margin-right: auto;
    margin-left: auto;
  }
- /* @media (min-width: 768px) {
-   .rt-container {
-     width: 768px;
-   }
- }
- 
- @media (min-width: 1024px) {
-   .rt-container {
-     width: 1000px;
-   }
- }   */
+ .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
