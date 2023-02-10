@@ -191,7 +191,7 @@ button.btn.btn-stepper.stepper-active {
     border: solid #004a80 1px;
 }
 .add_btn:hover{
-    background: #7537f1;
+    background: #004a80;
     border-radius: 5px;
     color: #fff !important;
     padding: 3px;
@@ -204,6 +204,10 @@ button.btn.btn-stepper.stepper-active {
 .ft-portlet-titleer__brand-logo{
     margin-left: 74px;
     color: white;
+}
+.document-icon{
+    font-size: 20px;
+    margin-left:10px;
 }
 
 

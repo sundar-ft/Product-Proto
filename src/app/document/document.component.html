@@ -42,19 +42,22 @@
         <div class="card-body mb-3">
  
             <div class="text-center  ft-portlet-title brand-text-color">
-                DOCUMENTS
+              Documents
             </div>
 
             <div class="ft-portlet-title-desc brand-text-desc-color text-center">
-                This section allows you to upload any documents associated to the customer profile.
+              This section allows you to upload any 
+              documents required/related to the Investor 
+              to complete their Investor Profile.
+              
             </div>
 
 
             <div class="ft-section-heading brand-text-color">
-                DOCUMENT UPLOAD
+              Document Upload 
                 <span class='material-icons add_btn' style="float: right;" (click)="open2(content2)">add</span>
             </div>
-            <div class="seperator"></div>
+         
 
 
 
@@ -63,8 +66,8 @@
                   <tr class="ft-table-head">
                     <th scope="col">Document Type</th>
                     <th scope="col">ID/Number</th>
-                    <th scope="col">Expiry Date</th>
-                    <th scope="col">Actions</th>
+                  
+                    <th scope="col" style="width:14%;">Actions</th>
                   </tr>
                 </thead>
                 <tbody class="table-group-divider">
@@ -72,9 +75,9 @@
                   <tr class="ft-table-body">
                     <th scope="row">PAN <span class="red-required text-danger"></span></th>
                     <td>FCVPR6576M</td>
-                    <td>N/A</td>
+                  
                     <td>
-                      <div class="btn-group">
+                      <!-- <div class="btn-group">
                         <button
                           type="button"
                           class="btn btn-danger dropdown-toggle"
@@ -87,6 +90,11 @@
                           <li><a class="dropdown-item" href="#">view</a></li>
                           <li><a class="dropdown-item" href="#">Delete</a></li>
                         </ul>
+                      </div> -->
+                      <div class="d-flex">
+                        <span class="material-icons action-icon">remove_red_eye</span>
+                        <span class="material-icons action-icon">edit</span>
+                        <span class="material-icons action-icon">delete</span>
                       </div>
                     </td>
                   </tr>
@@ -95,9 +103,9 @@
                   <tr class="ft-table-body">
                     <th scope="row">POI</th>
                     <td>773JHH2H2H2</td>
-                    <td>N/A</td>
+              
                     <td>
-                      <div class="btn-group">
+                      <!-- <div class="btn-group">
                         <button
                           type="button"
                           class="btn btn-danger dropdown-toggle"
@@ -110,6 +118,11 @@
                           <li><a class="dropdown-item" href="#">view</a></li>
                           <li><a class="dropdown-item" href="#">Delete</a></li>
                         </ul>
+                      </div> -->
+                      <div class="d-flex">
+                        <span class="material-icons action-icon">remove_red_eye</span>
+                        <span class="material-icons action-icon">edit</span>
+                        <span class="material-icons action-icon">delete</span>
                       </div>
                     </td>
                   </tr>
@@ -118,16 +131,18 @@
               </table>
 
               <div class="text-center pt-4">
-                <a href="quickview"> <button class="btn-primary brand-bg-primary" >Next</button></a>
+                <a href="quickview"> <button class="btn-primary brand-bg-primary" >Proceed</button></a>
             </div>
 
-            <div class="seperator"></div>
+           
 
             <div class="ft-note brand-text-color">
                 Note:
             </div>
             <div class="ft-note-desc brand-text-desc-color">
-                Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
+              Upload a clear image/PDF such that 
+              relevant details and document is clearly 
+              visible
             </div>
 
         </div>
@@ -137,15 +152,19 @@
 
 <ng-template #content2 let-c="close" let-d="dismiss">
     <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel" class="ft-popup-heading brand-text-color">DOCUMENT UPLOAD</h5>
+        <h5 class="modal-title" id="exampleModalLabel" class="ft-popup-heading text-center brand-text-color">DOCUMENT UPLOAD</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
- <span aria-hidden="true" (click)="close()">&times;</span>
+     <span aria-hidden="true" (click)="close()">&times;</span>
         </button>
       </div>
 
       <div class="modal-body">
-
-      <div class="row pt-3 justify-content-center">
+        <div
+        class="text-center pt-2 ft-portlet-title-desc brand-text-desc-color"
+      >
+        Enter the preliminary information to initiate the Investor’s Profile
+      </div>
+      <!-- <div class="row pt-3 justify-content-center">
         <div class="col-md-4">
             <div class="group">
                 <div class="ft-input-label"> Brief Detail of Occupation <span class="red-required text-danger"> *</span></div>
@@ -159,11 +178,11 @@
     </div>
 </div>
         
-      </div>
+      </div> -->
 
         
 
-          <div class="text-center pt-4">
+          <!-- <div class="text-center pt-4">
               <button class="btn-primary"><a (click)="close()">Upload</a></button>
           </div>
 
@@ -174,7 +193,7 @@
         </div>
         <div class="ft-note-desc brand-text-desc-color">
             Upload a clear image/PDF such that relevant details and document is clearly visible. The size of the document should not be more than # KB/MB.
-        </div>
+        </div> -->
           
  
       </div>
