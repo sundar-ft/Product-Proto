@@ -126,21 +126,22 @@
                    </div>
            
              </div> -->
-
-             <div class="form-check pt-3">
+            <div class="row">
+             <div class="form-check  pt-3">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                 <label class="form-check-label ft-checkbox-consent" for="flexCheckDefault">
                     I am hereby authorised by the investor to have access to there profile and permitted to 
                     use the profile for financial investment purposes
                 </label>
               </div>
+            </div>
 
-                <div class="text-center " >
+                <div class="text-center " *ngIf="!otp">
                     <button class="btn-primary brand-bg-primary" (click)="sendotp()" style="margin-top: 28px;">Send OTP</button>
                 </div>
 
-                <div *ngIf="otp">
-                <div class="text-info pt-2">
+                <div class="" *ngIf="otp">
+                <div class="text-info pt-3">
                     Please enter OTP shared by your Investor.
                 </div>
                 
