@@ -898,6 +898,7 @@ ul.ft-note-desc {
     background-color: #4b4b4b;
     color: white;
     font-size: 14px;
+    z-index: 1;
 }
 .heart_icon{
     position: absolute;
@@ -1056,9 +1057,9 @@ a{
     position: fixed;
     top: 45%;
     left: 50%;
-    margin-left: -60px;
-    height: 50px;
-    width: 50px;
+    margin-left:    60px;
+    height: 40px;
+    width: 40px;
     background: transparent;
     border: 3px solid;
     border-color: #004a80 #004a80 #004a80 #96969680;
@@ -1175,8 +1176,4 @@ a{
   /* Show the tooltip text when you mouse over the tooltip container */
   .tooltip:hover .tooltiptext {
     visibility: visible;
-  }
-  .dash-icon{
-    font-size: 20px;
-    margin: auto;
   }

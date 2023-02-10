@@ -72,7 +72,7 @@
     <div class="col-md-10 border-0 card ft-card-center p-0" style="margin-top:20px;">
         <div class="card-body mb-3">
             <div class="text-center  ft-portlet-title brand-text-color">
-                PROFILE
+                Profile Details
             </div>
 
             <mat-tab-group animationDuration="0ms" class="pt-3" [selectedIndex]="selectedIndex">
@@ -80,14 +80,14 @@
                 <mat-tab label="OCCUPATION, EDUCATION & INCOME"> 
 
                     <div class="ft-portlet-title-desc brand-text-desc-color text-center pt-3">
-                        Complete the Investor’s Occupation, Education & Income Details
+                        Complete the Investor’s Occupation, Education and Income details
                     </div>
 
                     <div class="row  pt-3">
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-input-label">Gross Annual Income (IN INR)<span class="red-required text-danger"> *</span></div>
+                                        <div class="ft-input-label">Gross Annual Income (in INR)<span class="red-required text-danger"> *</span></div>
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select">
@@ -95,7 +95,7 @@
                                                 <option>1-5 lacs</option>
                                                 <option>5-10 lacs</option>
                                                 <option>10-25 lacs</option>
-                                                <option>25-1 lacs</option>
+                                                <option>25-1 C</option>
                                             </select>
                                         </div>
                             </div>
@@ -104,7 +104,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-input-label">As On (Not Older Than 1 Year)<span class="red-required text-danger"> *</span>
+                                        <div class="ft-input-label">As On (Not older than 1 year)<span class="red-required text-danger"> *</span>
                                         </div>
                                         <div class="ft-input-edit">
                                             <input class="col-md-12  upper-case ft-input-value" placeholder="DD-MM-YYYY" type="text" />
@@ -117,19 +117,22 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-input-label"> Source of Funds<span class="red-required text-danger">
-                                                *</span> </div>
+                                        <div class="ft-input-label">Source of Funds<span class="red-required text-danger">*</span> </div>
                                                 <div class="ft-input-edit">
                                                     <div class="row">
                                                        <div class="col-md-3">
                                                         <select class="ft-select">
-                                                            <option>YES</option>
-                                                            <option>NO</option>
+                                                            <option>Savings</option>
+                                                            <option>Investments</option>
+                                                            <option>Business</option>
+                                                            <option>Gift</option>
+                                                            <option>Professional income</option>
+                                                            <option>Others</option>
                                                         </select>
                                                        </div>
                                                        
                                                       <div class="col-md-9">
-                                                           <input type="text" class="col-md-12 ft-input-value"/>
+                                                           <input type="text" class="col-md-12 ft-input-value" placeholder="Specify">
                                                       </div>
                                                     </div>
                                                    
@@ -150,13 +153,16 @@
                                             <div class="row">
                                                <div class="col-md-4">
                                                 <select class="ft-select">
-                                                    <option>YES</option>
-                                                    <option>NO</option>
+                                                    <option>Undergraduate</option>
+                                                    <option>Graduate</option>
+                                                    <option>Postgraduate</option>
+                                                    <option>Non-Graduate</option>
+                                                    <option>Others</option>
                                                 </select>
                                                </div>
                                                
                                               <div class="col-md-8">
-                                                   <input type="text" class="col-md-12 ft-input-value"/>
+                                                   <input type="text" class="col-md-12 ft-input-value" placeholder="Specify">
                                               </div>
                                             </div>
                                            
@@ -167,7 +173,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-input-label">Net Worth (IN INR)<span class="red-required text-danger"> *</span>
+                                        <div class="ft-input-label">Net Worth (in INR)<span class="red-required text-danger"> *</span>
                                         </div>
                                         <div class="ft-input-edit">
                                             <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -179,28 +185,35 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-input-label"> As On (Not Older That 1 Year) <span class="red-required text-danger">
+                                        <div class="ft-input-label">As On (Not older than 1 year)<span class="red-required text-danger">
                                                 *</span> </div>
-                                                <div class="ft-input-edit">
-                                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                                </div>
+                                            <div class="ft-input-edit">
+                                                <input class="col-md-12  upper-case ft-input-value" placeholder="DD-MM-YYYY" type="text" />
+                                                <span class="material-icons delete-icon">date_range</span>
+                                            </div>
                                     </div>
                               
                         </div>
+                       
                     </div>
         
 
                     <div class="row  pt-3">
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">Any Other Information?</div>
+                                        <div class="ft-input-edit">
+                                            <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                        </div>
+                            </div>
+                        </div>
 
                         <div class="col-md-4">
                                     <div class="group">
-                                        <div class="ft-input-label">  Brief Details of Occupation <span class="red-required text-danger"> *</span></div>
+                                        <div class="ft-input-label">Brief Details of Occupation<span class="red-required text-danger"> *</span></div>
                                        
                                         <div class="ft-input-edit">
-                                            <select class="ft-select">
-                                                <option>5 - 10 LACS</option>
-                                                <option>4- 10 LACS</option>
-                                            </select>
+                                            <input class="col-md-12  upper-case ft-input-value" type="text" />
                                         </div>
                             </div>
                         </div>
@@ -210,29 +223,41 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-input-label"> Occupational Industry<span class="red-required text-danger">
+                                        <div class="ft-input-label">Occupation Industry <span class="red-required text-danger">
                                                 *</span> </div>
                                                 <div class="ft-input-edit">
                                                     <div class="row">
                                                        <div class="col-md-4">
                                                         <select class="ft-select">
-                                                            <option>YES</option>
-                                                            <option>NO</option>
+                                                            <option>Private Sector service</option>
+                                                            <option>Public Sector</option>
+                                                            <option>Government Service</option>
+                                                            <option>Professional</option>
+                                                            <option>Forex Dealer</option>
+                                                            <option>Retired</option>
+                                                            <option>Housewife</option>
+                                                            <option>Student</option>
+                                                            <option>Business</option>
+                                                            <option>Agriculturist</option>
+                                                            <option>Others</option>
                                                         </select>
                                                        </div>
                                                        
                                                       <div class="col-md-8">
-                                                           <input type="text" class="col-md-12 ft-input-value"/>
+                                                           <input type="text" class="col-md-12 ft-input-value" placeholder="Specify">
                                                       </div>
                                                     </div>
                                                    
                                                 </div>
                                     </div>
-
-
-                              <div class="col-md-4">
-
-                              </div>
+                                    <!-- <div class="col-md-4">
+                                        <div class="group">
+                                            <div class="ft-input-label">Politically Exposed</div>
+                                                <div class="ft-input-edit">
+                                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                                </div>
+                                            </div>
+                                    </div> -->
                         </div>
                     </div>
 
@@ -243,17 +268,17 @@
                             Politically Exposed <span class="red-requide text-danger"> *</span>
                         </div>
         
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-check form-check-inline"> 
                                 <input  class="form-check-input ft-radio-value" type="radio" value="FIRSTHOLDER" >
-                                <label class="form-check-label ft-radio-value brand-text-desc-color"> Politically Exposed Person</label><br />
+                                <label class="form-check-label ft-radio-value brand-text-desc-color">Politically Exposed Person</label><br />
                             </div>
                           
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-check form-check-inline"> 
                                 <input  class="form-check-input ft-radio-value" type="radio" value="FIRSTHOLDER" >
-                                <label class="form-check-label ft-radio-value brand-text-desc-color">Related to Politically Exposed</label><br />
+                                <label class="form-check-label ft-radio-value brand-text-desc-color">Related to Politically Exposed Person</label><br />
                             </div>
                           
                         </div>
@@ -262,7 +287,7 @@
                             <div class="form-check form-check-inline"> 
                                 <input  class="form-check-input ft-radio-value" type="radio" value="ONEHOLDER"  >
                                 <label class="form-check-label ft-radio-value brand-text-desc-color">
-                                     Not Applicable
+                                    Not Applicable
                                 </label>
                             </div> 
                         </div>
@@ -275,17 +300,18 @@
                            Employement Status <span class="red-requide text-danger"> *</span>
                         </div>
         
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-check form-check-inline"> 
                                 <input  class="form-check-input ft-radio-value" type="radio" value="FIRSTHOLDER" >
-                                <label class="form-check-label ft-radio-value brand-text-desc-color"> Employed</label><br />
+                                <label class="form-check-label ft-radio-value brand-text-desc-color">Employed</label><br />
                             </div>
                           
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-check form-check-inline"> 
                                 <input  class="form-check-input ft-radio-value" type="radio" value="FIRSTHOLDER" >
-                                <label class="form-check-label ft-radio-value brand-text-desc-color">Self Employed / Business / Prof / Others</label><br />
+                                <label class="form-check-label ft-radio-value brand-text-desc-color">Self Employed / Business / 
+                                    Professional / Others</label><br />
                             </div>
                           
                         </div>
@@ -301,164 +327,224 @@
                    
                     </div>
 
+                    <div  class="ft-section-heading brand-text-color"> SECTION A </div>
+
                     <div class="row  pt-3">
 
                         <div class="col-md-4">
-                                    <div class="group">
-                                        <div class="ft-input-label">Employer Name <span class="red-required text-danger"> *</span></div>
-                                       
-                                        <div class="ft-input-edit">
-                                            <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                        </div>
+                            <div class="group">
+                                <div class="ft-input-label">Employer Name<span class="red-required text-danger"> *</span></div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
                             </div>
                         </div>
-        
                         <div class="col-md-4">
-                           
-                                    <div class="group">
-                                        <div class="ft-input-label">Establishment Name
-                                        </div>
-                                        <div class="ft-input-edit">
-                                            <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                        </div>
-                                  
+                            <div class="group">
+                                <div class="ft-input-label">Office Address Line 1 </div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
                             </div>
                         </div>
-        
                         <div class="col-md-4">
-                           
-                                    <div class="group">
-                                        <div class="ft-input-label"> Nature of Business  </div>
-                                                <div class="ft-input-edit">
-                                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                                </div>
-                                    </div>
-                              
+                            <div class="group">
+                                <div class="ft-input-label">Office Address Line 2 </div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
                         </div>
+                       
                     </div>
 
+                    <div class="row pt-3">
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">Office Address Line 3 </div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">Country <span class="red-required text-danger"> *</span></div>
+                                <div class="ft-input-edit">
+                                    <select class="ft-select">
+                                        <option>* Country Names</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">Pin Code<span class="red-required text-danger"> *</span></div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <div class="row pt-3">
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">City/Town/Village<span class="red-required text-danger"> *</span></div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">State/UT<span class="red-required text-danger"> *</span></div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">Mobile Number</div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-3">
+                            <div class="group">
+                                <div class="ft-input-label">Tel. Number</div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <div  class="ft-section-heading brand-text-color"> SECTION B </div>
+
+
+                    <div class="row pt-3">
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">Establishment Name <span class="red-requide text-danger"> *</span> </div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">Nature of Business
+                                </div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">Industry
+                                </div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+               
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">Office Address Line 1 </div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">Office Address Line 2 </div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">Office Address Line 3 </div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
                     <div class="row  pt-3">
-
                         <div class="col-md-4">
-                                    <div class="group">
-                                        <div class="ft-input-label"> Industry</div>
-                                       
-                                        <div class="ft-input-edit">
-                                            <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                        </div>
+                            <div class="group">
+                                <div class="ft-input-label">Country <span class="red-required text-danger"> *</span></div>
+                                <div class="ft-input-edit">
+                                    <select class="ft-select">
+                                        <option>* Country Names</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-        
                         <div class="col-md-4">
-                           
-                                    <div class="group">
-                                        <div class="ft-input-label"> Office Address 
-                                        </div>
-                                        <div class="ft-input-edit">
-                                            <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                        </div>
-                                  
+                            <div class="group">
+                                <div class="ft-input-label">Pin Code<span class="red-required text-danger"> *</span></div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
                             </div>
                         </div>
-        
                         <div class="col-md-4">
-                           
-                                    <div class="group">
-                                        <div class="ft-input-label"> PinCode  </div>
-                                                <div class="ft-input-edit">
-                                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                                </div>
-                                    </div>
-                              
+                            <div class="group">
+                                <div class="ft-input-label">City/Town/Village<span class="red-required text-danger"> *</span></div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
                         </div>
                     </div>
         
-        
-        
                     <div class="row  pt-3">
-
                         <div class="col-md-4">
-                                    <div class="group">
-                                        <div class="ft-input-label">  Country </div>
-                                       
-                                        <div class="ft-input-edit">
-                                            <select class="ft-select">
-                                                <option>IND</option>
-                                                <option>ENG</option>
-                                            </select>
-                                        </div>
+                            <div class="group">
+                                <div class="ft-input-label">State/UT<span class="red-required text-danger"> *</span></div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
                             </div>
                         </div>
-        
                         <div class="col-md-4">
-                           
-                                    <div class="group">
-                                        <div class="ft-input-label"> State
-                                        </div>
-                                        <div class="ft-input-edit">
-                                            <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                        </div>
-                                  
+                            <div class="group">
+                                <div class="ft-input-label">Mobile Number</div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
                             </div>
                         </div>
-        
                         <div class="col-md-4">
-                           
-                                    <div class="group">
-                                        <div class="ft-input-label">  City/Town/Village  </div>
-                                                <div class="ft-input-edit">
-                                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                                </div>
-                                    </div>
-                              
+                            <div class="group">
+                                <div class="ft-input-label">Tel. Number</div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                    
         
-                    <div class="row  pt-3">
-        
-                        <div class="col-md-4">
-                            <div class="group">
-                                <div class="ft-input-label">Mobile Number</div>
-                                        <div class="ft-input-edit">
-                                            <div class="row">
-                                               <div class="col-md-4">
-                                                <select class="ft-select">
-                                                    <option>+91</option>
-                                                    <option></option>
-                                                </select>
-                                               </div>
-                                               
-                                              <div class="col-md-8">
-                                                   <input type="text" class="col-md-12 ft-input-value"/>
-                                              </div>
-                                            </div>
-                                           
-                                        </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="group">
-                                <div class="ft-input-label">Tel (off)  </div>
-                                        <div class="ft-input-edit">
-                                            <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                        </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-
-                        </div>
-
-                       
-                    </div>
                   
-        
                     <div class="text-center pt-4">
-                        <button class="btn-primary brand-bg-primary" (click)="selectTab(1)" >Save & Next</button>
+                        <button class="btn-primary brand-bg-primary" (click)="selectTab(1)" >Proceed</button>
                     </div>
 
 
