@@ -1050,21 +1050,21 @@
                 
                 </mat-tab>
 
-                <mat-tab label="BANK DETAILS">
+                <mat-tab label="Bank or Bank Account">
                     <div class="ft-portlet-title-desc brand-text-desc-color text-center pt-3">
-                        Provide the Bank account(s) details that will be used for this investment
+                        Provide the bank account(s) details that will be used during the investment
                     </div>
         
                     <div class="ft-section-heading brand-text-color">
-                        OTHER DETAILS <span class='material-icons add_btn' style="float: right;" (click)="open(content)">add</span>
+                        Bank Account Details <span class='material-icons add_btn' style="float: right;" (click)="open(content)">add</span>
                     </div>
-                    <div class="seperator"></div>
+                
         
         
                     <table class="table">
                         <thead>
                           <tr class="ft-table-head">
-                            <th scope="col">Name</th>
+                            <th scope="col">  Full Name</th>
                             <th scope="col">Account Number</th>
                             <th scope="col">IFSC Code</th>
                             <th scope="col">Bank Name</th>
@@ -1078,7 +1078,7 @@
                             <td>IDIB000A009</td>
                             <td>@Indian Bank</td>
                             <td>
-                                <div class="btn-group">
+                                <!-- <div class="btn-group">
                                   <button
                                     type="button"
                                     class="btn btn-danger dropdown-toggle"
@@ -1091,7 +1091,12 @@
                                     <li><a class="dropdown-item" href="#">view</a></li>
                                     <li><a class="dropdown-item" href="#">Delete</a></li>
                                   </ul>
-                                </div>
+                                </div> -->
+                                <div class="d-flex">
+                                    <span class="material-icons action-icon">remove_red_eye</span>
+                                    <span class="material-icons action-icon">edit</span>
+                                    <span class="material-icons action-icon">delete</span>
+                                  </div>
                               </td>
                           </tr>
                           <tr class="ft-table-body">
@@ -1100,7 +1105,7 @@
                             <td>IDIB000A009</td>
                             <td>Kotak Mahindra Bank</td>
                             <td>
-                                <div class="btn-group">
+                                <!-- <div class="btn-group">
                                   <button
                                     type="button"
                                     class="btn btn-danger dropdown-toggle"
@@ -1113,7 +1118,12 @@
                                     <li><a class="dropdown-item" href="#">view</a></li>
                                     <li><a class="dropdown-item" href="#">Delete</a></li>
                                   </ul>
-                                </div>
+                                </div> -->
+                                <div class="d-flex">
+                                    <span class="material-icons action-icon">remove_red_eye</span>
+                                    <span class="material-icons action-icon">edit</span>
+                                    <span class="material-icons action-icon">delete</span>
+                                  </div>
                               </td>
                           </tr>
                          
@@ -1122,27 +1132,27 @@
         
                    
 
-                 <div class="form-check pt-3">
+                 <!-- <div class="form-check pt-3">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label ft-checkbox-consent brand-text-desc-color" for="flexCheckDefault">
                         I hereby confirm / I am authorised to confirm that the bank account details provided by me,
                         can be used  for processing /proceeding  any  payouts like redemptions, etc 
                     </label>
-                  </div>
+                  </div> -->
         
                  <div class="text-center pt-4">
-                    <button class="btn-primary brand-bg-primary" data-toggle="modal" data-target="#exampleModal" (click)="selectTab(3)">Save & Next</button>
+                    <button class="btn-primary brand-bg-primary" data-toggle="modal" data-target="#exampleModal" (click)="selectTab(3)">Proceed</button>
                 </div>
         
-                <div class="seperator"></div>
+              
         
-                <div class="ft-note brand-text-color">
+                <!-- <div class="ft-note brand-text-color">
                     Note:
                 </div>
                 <div class="ft-note-desc brand-text-desc-color">
                     The Investor must be the first/second beneficiary of the bank account shared. 
                     The bank account will be verified using a penny drop validation. More than one bank account can be added
-                </div>
+                </div> -->
         
                 
                 </mat-tab>
@@ -1161,7 +1171,7 @@
 
   <ng-template #content let-c="close" let-d="dismiss">
     <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel" class="ft-popup-heading brand-text-color">BANK ACCOUNT DETAILS</h5>
+        <h5 class="modal-title" id="exampleModalLabel" class="ft-popup-heading brand-text-color">Bank Account Details</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="close()">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -1173,7 +1183,7 @@
 
             <div class="col-md-4">
                         <div class="group">
-                            <div class="ft-input-label">First beneficiary Name  <span class="red-required text-danger"> *</span> </div>
+                            <div class="ft-input-label">First Name (First Beneficiary Name) <span class="red-required text-danger"> *</span> </div>
                            
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1184,7 +1194,7 @@
             <div class="col-md-4">
                
                         <div class="group">
-                            <div class="ft-input-label">  Second beneficiary Name  <span class="red-required text-danger"> *</span>
+                            <div class="ft-input-label">  Middle Name (First Beneficiary Name)  
                             </div>
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1193,7 +1203,20 @@
                 </div>
             </div>
 
+
             <div class="col-md-4">
+               
+                <div class="group">
+                    <div class="ft-input-label">  Last Name (First Beneficiary Name)
+                    </div>
+                    <div class="ft-input-edit ft-form-value">
+                        <input class="col-md-12  upper-case ft-input-value" type="text" />
+                    </div>
+              
+        </div>
+    </div>
+
+            <!-- <div class="col-md-4">
                 <div class="group">
                     <div class="ft-input-label">  Account Type   <span class="red-required text-danger"> *</span>
                     </div>
@@ -1202,10 +1225,66 @@
                     </div>
               
         </div>
+            </div> -->
+
+
+        </div>
+
+
+        <div class="row  pt-3">
+
+            <div class="col-md-4">
+                        <div class="group">
+                            <div class="ft-input-label">First Name (Second Beneficiary Name) </div>
+                           
+                            <div class="ft-input-edit ft-form-value">
+                                <input class="col-md-12  upper-case ft-input-value" type="text" />
+                            </div>
+                </div>
             </div>
+
+            <div class="col-md-4">
+               
+                        <div class="group">
+                            <div class="ft-input-label">  Middle Name (Second Beneficiary Name)  
+                            </div>
+                            <div class="ft-input-edit ft-form-value">
+                                <input class="col-md-12  upper-case ft-input-value" type="text" />
+                            </div>
+                      
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+               
+                <div class="group">
+                    <div class="ft-input-label">  Last Name (Second Beneficiary Name)
+                    </div>
+                    <div class="ft-input-edit ft-form-value">
+                        <input class="col-md-12  upper-case ft-input-value" type="text" />
+                    </div>
+              
+        </div>
+    </div>
+
         </div>
            
         <div class="row  pt-3">
+
+              <div class="col-md-4">
+                <div class="group">
+                    <div class="ft-input-label">Account Type<span class="red-required text-danger"> *</span>
+                    </div>
+                    <div class="ft-input-edit ft-form-value">
+                        <select class="col-md-12 ft-select">
+                            <option>Current</option>
+                            <option>Savings</option>
+                          </select>
+                    </div>
+              
+        </div>
+            </div>
 
             <div class="col-md-4">
                         <div class="group">
@@ -1229,9 +1308,77 @@
                 </div>
             </div>
 
+           
+        </div>
+
+
+
+        <div class="row  pt-3">
+
+             <div class="col-md-4">
+                <div class="group">
+                    <div class="ft-input-label">   MICR Number  
+                    </div>
+                    <div class="ft-input-edit ft-form-value">
+                        <input class="col-md-12  upper-case ft-input-value" type="text" />
+                    </div>
+              
+        </div>
+            </div>
+
+            <div class="col-md-4">
+                        <div class="group">
+                            <div class="ft-input-label">  Bank Name </div>
+                           
+                            <div class="ft-input-edit ft-form-value">
+                                <input class="col-md-12  upper-case ft-input-value" type="text" />
+                            </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+               
+                        <div class="group">
+                            <div class="ft-input-label">   Bank Branch   
+                            </div>
+                            <div class="ft-input-edit ft-form-value">
+                                <input class="col-md-12  upper-case ft-input-value" type="text" />
+                            </div>
+                      
+                </div>
+            </div>
+
+          
+        </div>
+
+
+        <div class="row  pt-3">
+
+            <div class="col-md-4">
+                        <div class="group">
+                            <div class="ft-input-label"> Bank Address Line 1  </div>
+                           
+                            <div class="ft-input-edit ft-form-value">
+                                <input class="col-md-12  upper-case ft-input-value" type="text" />
+                            </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+               
+                        <div class="group">
+                            <div class="ft-input-label"> Bank Address Line 2  
+                            </div>
+                            <div class="ft-input-edit ft-form-value">
+                                <input class="col-md-12  upper-case ft-input-value" type="text" />
+                            </div>
+                      
+                </div>
+            </div>
+
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-input-label">   MICR Number      <span class="red-required text-danger"> *</span>
+                    <div class="ft-input-label"> City/Town/Village
                     </div>
                     <div class="ft-input-edit ft-form-value">
                         <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1246,7 +1393,7 @@
 
             <div class="col-md-4">
                         <div class="group">
-                            <div class="ft-input-label">  Bank Name   <span class="red-required text-danger"> *</span> </div>
+                            <div class="ft-input-label"> Pin Code  </div>
                            
                             <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1256,33 +1403,37 @@
 
             <div class="col-md-4">
                
-                        <div class="group">
-                            <div class="ft-input-label">   Bank Branch    <span class="red-required text-danger"> *</span>
-                            </div>
-                            <div class="ft-input-edit ft-form-value">
-                                <input class="col-md-12  upper-case ft-input-value" type="text" />
-                            </div>
-                      
-                </div>
             </div>
 
             <div class="col-md-4">
-                <div class="group">
-                    <div class="ft-input-label">   Bank Address  <span class="red-required text-danger"> *</span>
-                    </div>
-                    <div class="ft-input-edit ft-form-value">
-                        <input class="col-md-12  upper-case ft-input-value" type="text" />
-                    </div>
               
-        </div>
             </div>
         </div>
          
 
-         
+        <div class="note-section pt-2">
+            <div class="ft-note brand-text-color">Note:</div>
+            <ul
+              class="ft-note-desc brand-text-desc-color"
+              style="padding-left: 18px"
+            >
+              <li>
+                The Investor must be the first/second 
+                beneficiary of the bank account shared
+              </li>
+              <li>More than one bank account can be 
+                added to the Investor Profile</li>
+              <li>
+                The bank account will be verified using 
+                a penny drop validation, based on the 
+                Bank Account selected for an 
+                application during an Onboarding Journey
+              </li>
+            </ul>
+          </div>
 
           <div class="text-center pt-4">
-              <button class="btn-primary brand-bg-primary"><a href="kyc">Verify</a></button>
+              <button class="btn-primary brand-bg-primary"><a href="kyc">Save</a></button>
           </div>
           
 
