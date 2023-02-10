@@ -934,13 +934,14 @@
                 
                 </mat-tab>
 
-                <mat-tab label="NOMINEE DETAILS"> 
+                <mat-tab label="Nomination"> 
                     <div class="ft-portlet-title-desc brand-text-desc-color pt-3 text-center">
-                        Complete the nomination details for the Profile in the section below. 
-                        Investor (s) have the option to choose multiple nominee for the profile
+                        Complete the nomination details for the profile in the section below. 
+                        User can add multiple nominees and guardians, as applicable.
+                        
                     </div>
         
-                    <div class="row pt-2">
+                    <!-- <div class="row pt-2">
                         <div class="col-md-6 ft-input-label">
                               Is your Country of Birth any country other than India? <span class="red-requide text-danger"> *</span>
                         </div>
@@ -962,23 +963,20 @@
                             </div> 
                         </div>
                    
-                    </div>
+                    </div> -->
         
                     <div class="ft-section-heading brand-text-color">
-                        NOMINEE DETAILS <span class='material-icons add_btn' style="float: right;" (click)="open1(content1)">add</span>
+                        Nominee Details<span class='material-icons add_btn' style="float: right;" (click)="open1(content1)">add</span>
                     </div>
-                    <div class="seperator"></div>
-        
-        
-        
+                 
                     <table class="table table- ">
                         <thead>
                           <tr class="ft-table-head">
                             <th scope="col">Nominee Name</th>
                             <th scope="col">Date of Birth</th>
                             <th scope="col">Guardian, If Minor</th>
-                            <th scope="col">Mobile Number</th>
-                            <th scope="col">Email Address</th>
+                            <!-- <th scope="col">Mobile Number</th>
+                            <th scope="col">Email Address</th> -->
                             <th scope="col">Actions</th>
                           </tr>
                         </thead>
@@ -987,10 +985,10 @@
                             <th scope="row">Ramesh</th>
                             <td>01-09-1995</td>
                             <td>N/A</td>
-                            <td>+91-9840934678</td>
-                            <td>Ramesh@gmail.com</td>
+                            <!-- <td>+91-9840934678</td>
+                            <td>Ramesh@gmail.com</td> -->
                             <td>
-                                <div class="btn-group">
+                                <!-- <div class="btn-group">
                                   <button
                                     type="button"
                                     class="btn btn-danger dropdown-toggle"
@@ -1003,17 +1001,22 @@
                                     <li><a class="dropdown-item" href="#">view</a></li>
                                     <li><a class="dropdown-item" href="#">Delete</a></li>
                                   </ul>
-                                </div>
+                                </div> -->
+                                <div class="d-flex">
+                                    <span class="material-icons action-icon">remove_red_eye</span>
+                                    <span class="material-icons action-icon">edit</span>
+                                    <span class="material-icons action-icon">delete</span>
+                                  </div>
                               </td>
                           </tr>
                           <tr class="ft-table-body">
                             <th scope="row">Ramesh</th>
                             <td>01-09-1995</td>
                             <td>N/A</td>
-                            <td>+91-9840934678</td>
-                            <td>Ramesh@gmail.com</td>
+                            <!-- <td>+91-9840934678</td>
+                            <td>Ramesh@gmail.com</td> -->
                             <td>
-                                <div class="btn-group">
+                                <!-- <div class="btn-group">
                                   <button
                                     type="button"
                                     class="btn btn-danger dropdown-toggle"
@@ -1026,7 +1029,12 @@
                                     <li><a class="dropdown-item" href="#">view</a></li>
                                     <li><a class="dropdown-item" href="#">Delete</a></li>
                                   </ul>
-                                </div>
+                                </div> -->
+                                <div class="d-flex">
+                                    <span class="material-icons action-icon">remove_red_eye</span>
+                                    <span class="material-icons action-icon">edit</span>
+                                    <span class="material-icons action-icon">delete</span>
+                                  </div>
                               </td>
                           </tr>
                          
@@ -1035,18 +1043,18 @@
         
                       <div class="text-center pt-4">
                         <a href="document" ><button class="btn-primary brand-bg-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            Next</button></a>
+                            Proceed</button></a>
                     </div>
         
-                    <div class="seperator"></div>
+                   
         
-                    <div class="ft-note brand-text-color">
+                    <!-- <div class="ft-note brand-text-color">
                         Note:
                     </div>
                     <div class="ft-note-desc brand-text-desc-color">
                         The Primary holder must be the first/second beneficiary of the bank account shared. 
                         The bank account will be verified using a penny drop validation.
-                    </div>
+                    </div> -->
                 
                 </mat-tab>
 
