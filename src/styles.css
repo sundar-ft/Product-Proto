@@ -671,9 +671,9 @@ input{
     top: 212px;
     left: 8px;
 }
-.search{
+/* .search{
     text-align: center;
-}
+} */
 .search-icon{
 
     position: absolute;
@@ -686,8 +686,9 @@ input{
     height: 50px;
     margin-top: 0px;
     width: 400px;
-    margin-left: 306px;
+    /* margin-left: 306px; */
     height: auto;
+    top: 137px;
     position: absolute;
     padding: 10px 5px;
     z-index: 1;
