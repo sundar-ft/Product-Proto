@@ -527,30 +527,43 @@
                 <mat-tab label="FATCA"> 
                     
                     <div class="ft-portlet-title-desc brand-text-desc-color pt-3 text-center">
-                        Complete the FATCA Information pretaining to your tax residency status. It is mandatory for Investor’s to disclose any 
-                        foreign citizenship, contact information, and/or foreign tax residency details for this investment
+                        Complete the FATCA information pertaining 
+                        to the Investor’s tax residency status. It is 
+                        mandatory for Investors to disclose any 
+                        foreign citizenship, contact information, and/or 
+                        foreign tax residency details for this 
+                        investment.
                     </div>
-        
+
                     <div class="ft-section-heading brand-text-color">
                         PART - A
                     </div>
-
-                    <div class="seperator"></div>
-
-
+                    <!-- <div class="seperator"></div> -->
                     <div class="row  pt-3">
-
                         <div class="col-md-4">
-                                    <div class="group">
-                                        <div class="ft-input-label">  Address For Tax Residence <span class="red-required text-danger"> *</span> </div>
-                                       
-                                        <div class="ft-input-edit">
-                                            <input class="col-md-12  upper-case ft-input-value" type="text" />
-                                        </div>
+                            <div class="group">
+                                <div class="ft-input-label">Address for Tax Residence<span class="red-required text-danger"> *</span> </div>
+                                <div class="ft-input-edit">
+                                    <input class="col-md-12  upper-case ft-input-value" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="group">
+                                <div class="ft-input-label">Address Type<span class="red-required text-danger"> *</span> </div>
+                                <div class="ft-input-edit">
+                                    <select class="ft-select">
+                                        <option>Residential/Business</option>
+                                        <option>Residential</option>
+                                        <option>Business</option>
+                                        <option>Registered Office</option>
+                                        <option>Unspecified</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
         
-                        <div class="col-md-4">
+                        <!-- <div class="col-md-4">
                            
                                     <div class="group">
                                         <div class="ft-input-label">  Aa On (Not Older Than 1 Year)  <span class="red-required text-danger"> *</span>
@@ -560,7 +573,7 @@
                                         </div>
                                   
                             </div>
-                        </div>
+                        </div> -->
         
                         <div class="col-md-4">
                               
@@ -569,7 +582,7 @@
         
                     <div class="row pt-3">
                         <div class="col-md-8 ft-input-label">
-                            Are you Citizen of any other country other than India(dual/multiple)?[including Greencard]  <span class="red-requide text-danger"> *</span>
+                            Are you citizen of any other country other than India (dual/multiple)? [including Green card]<span class="red-requide text-danger"> *</span>
                         </div>
             
                         <div class="col-md-2 text-center ">
@@ -593,7 +606,7 @@
         
                     <div class="row pt-3 ">
                         <div class="col-md-8 ft-input-label">
-                            Is your Country of Birth any country other than India?  <span class="red-requide text-danger"> *</span>
+                            Is your Country of Birth any country other than India? <span class="red-requide text-danger"> *</span>
                         </div>
             
                         <div class="col-md-2 text-center ">
@@ -667,7 +680,8 @@
                    
                     <div class="row pt-3">
                         <div class="col-md-8 ft-input-label">
-                            Is your Address/Telephone Number outside of India?  <span class="red-requide text-danger"> *</span>
+                            s your Address/Telephone Number outside of India?
+                        <span class="red-requide text-danger"> *</span>
                         </div>
             
                         <div class="col-md-2 text-center ">
@@ -698,14 +712,14 @@
                     <div class="ft-section-heading brand-text-color">
                         PART - B
                     </div>
-                    <div class="seperator"></div>
+                    <!-- <div class="seperator"></div> -->
 
                     <div class="row  pt-3">
 
                         <div class="col-md-4">
                            
                             <div class="group">
-                                <div class="ft-input-label"> Source Of Wealth  <span class="red-required text-danger">*</span>
+                                <div class="ft-input-label">Source of Wealth<span class="red-required text-danger">*</span>
                                 </div>
                                 <div class="ft-input-edit">
                                     <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -720,8 +734,7 @@
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select">
-                                                <option>IND</option>
-                                                <option>ENG</option>
+                                                <option>Country List</option>
                                             </select>
                                         </div>
                             </div>
@@ -732,7 +745,7 @@
                         <div class="col-md-4">
                            
                                     <div class="group">
-                                        <div class="ft-input-label">   Place of Birth    <span class="red-required text-danger">*</span></div>
+                                        <div class="ft-input-label">Place of Birth<span class="red-required text-danger">*</span></div>
                                                 <div class="ft-input-edit">
                                                     <input class="col-md-12  upper-case ft-input-value" type="text" />
                                                 </div>
@@ -747,15 +760,13 @@
                        
 
                         <div class="col-md-4">
-                                    <div class="group">
-                                        <div class="ft-input-label">  Country of Birth  <span class="red-required text-danger">*</span></div>
-                                       
-                                        <div class="ft-input-edit">
-                                            <select class="ft-select">
-                                                <option>IND</option>
-                                                <option>ENG</option>
-                                            </select>
-                                        </div>
+                            <div class="group">
+                                <div class="ft-input-label">  Country of Birth  <span class="red-required text-danger">*</span></div>
+                                <div class="ft-input-edit">
+                                    <select class="ft-select">
+                                        <option>Country List</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
 
@@ -770,18 +781,17 @@
                         </div>
                     </div>
         
-        
-                   
-        
-                   
+                    
         
                     <div class="ft-section-heading brand-text-color">
-                        OTHER DETAILS <span class='material-icons add_btn' style="float: right;">add</span>
+                        Tax ID Details<span class='material-icons add_btn' style="float: right;">add</span>
                     </div>
+                    
                     <div class="seperator"></div>
         
                     <div class="ft-portlet-title-desc-option">
-                        Option 1 <span class='material-icons' style="float: right;">delete</span>
+                        Tax ID #1 
+                        <!-- <span class='material-icons' style="float: right;">delete</span> -->
                     </div>
 
 
@@ -793,8 +803,7 @@
                                        
                                         <div class="ft-input-edit">
                                             <select class="ft-select">
-                                                <option>SELECT</option>
-                                                <option>ENG</option>
+                                                <option>Country List</option>
                                             </select>
                                         </div>
                             </div>
@@ -810,7 +819,7 @@
                                         <option>ENG</option>
                                     </select>
                                 </div>
-                    </div>
+                            </div>
                         </div>
                   
         
@@ -824,38 +833,39 @@
         
                 
         
-                    <div class="ft-portlet-title-desc-option pt-3">
-                        Option 2 <span class='material-icons' style="float: right;">delete</span>
+                    <div class="ft-portlet-title-desc-option">
+                        Tax ID #2 
+                        <!-- <span class='material-icons' style="float: right;">delete</span> -->
                     </div>
-        
+
                    
                     <div class="row  pt-3">
 
-                        <div class="col-md-4">
-                                    <div class="group">
-                                        <div class="ft-input-label"> Country of Tax Residence   <span class="red-required text-danger">*</span></div>
-                                       
-                                        <div class="ft-input-edit">
-                                            <select class="ft-select">
-                                                <option>SELECT</option>
-                                                <option>ENG</option>
-                                            </select>
-                                        </div>
-                            </div>
-                        </div>
-
+                       
                         <div class="col-md-4">
                             <div class="group">
-                                <div class="ft-input-label">Tax Id Number <span class="red-required text-danger">*</span></div>
+                                <div class="ft-input-label">  Country Of Tax Residence <span class="red-required text-danger">*</span></div>
                                
                                 <div class="ft-input-edit">
                                     <select class="ft-select">
-                                        <option>SELECT</option>
-                                        <option>ENG</option>
+                                        <option>Country List</option>
                                     </select>
                                 </div>
                     </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="group">
+                        <div class="ft-input-label"> Tax Id Number <span class="red-required text-danger">*</span></div>
+                       
+                        <div class="ft-input-edit">
+                            <select class="ft-select">
+                                <option>SELECT</option>
+                                <option>ENG</option>
+                            </select>
                         </div>
+                    </div>
+                </div>
                   
         
                         <div class="col-md-4">
@@ -868,9 +878,13 @@
                     <div class="seperator"></div>
         
                     <div class="ft-portlet-title-desc brand-text-desc-color pt-2">
-                        It is madatory to supply a TIN or functional equivalent (in case TIN not available) if the country in which you 
-                        are tax resident issues such identifiers. if no TIN / functional 
-                        equivalent is yet available  or has not yet been issued, please provide an explanation  below:
+                        It is mandatory to supply a TIN or functional 
+                        equivalent (in case TIN not available) if the 
+                        country in which you are tax resident issues 
+                        such identifiers. If no TIN /functional 
+                        equivalent is yet available or has not yet been 
+                        issued, please provide an explanation below:
+                        
                     </div>
         
                     <div class="ft-portlet-title-desc-border"></div>
@@ -901,18 +915,20 @@
                     </label>
                   </div>
         
+                  <div class="note-section pt-2">
+                    <div class="ft-note brand-text-color">
+                        Note:
+                    </div>
+                    <div class="ft-note-desc brand-text-desc-color">
+                        If the answer to any of the questions in Part A is ‘Yes’, complete Part B as well
+                    </div>
+                  </div>
+                  
+
                  <div class="text-center pt-4">
-                    <button class="btn-primary brand-bg-primary" (click)="selectTab(2)">Save & Next</button>
+                    <button class="btn-primary brand-bg-primary" (click)="selectTab(2)">Proceed</button>
                 </div>
-        
-                <div class="seperator"></div>
-        
-                <div class="ft-note brand-text-color">
-                    Note:
-                </div>
-                <div class="ft-note-desc brand-text-desc-color">
-                    If the answer to any of the questions in Part A is ‘Yes’, complete Part B as well.
-                </div>
+                  
                 
                 </mat-tab>
 
