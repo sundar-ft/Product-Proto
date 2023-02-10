@@ -179,8 +179,21 @@ button.btn.btn-stepper.stepper-active {
  }
 
 
-
-
+.D-th-pan{
+    width:20% !important;
+}
+.D-th-fullname{
+    width:35% !important;
+}
+.D-th-status{
+    width: 20% !important;
+}
+.D-th-progress{
+    width:10% !important;
+}
+.D-th-action{
+    width: 15% !important;
+}
 
 .add_btn{
     background: #ffffff;
