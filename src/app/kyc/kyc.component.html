@@ -1454,7 +1454,7 @@
 
  <ng-template #content1 let-c="close" let-d="dismiss">
     <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel" class="ft-popup-heading brand-text-color">ADD NOMINEE DETAILS</h5>
+        <h5 class="modal-title" id="exampleModalLabel" class="ft-popup-heading brand-text-color">Add Nominee Details</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="close()">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -1466,9 +1466,9 @@
 
             <div class="col-md-4">
                         <div class="group">
-                            <div class="ft-input-label">Full Name  <span class="red-required text-danger"> *</span> </div>
+                            <div class="ft-input-label">First Name <span class="red-required text-danger"> *</span> </div>
                            
-                            <div class="ft-input-edit ">
+                            <div class="ft-input-edit ft-form-value">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
                             </div>
                 </div>
@@ -1477,13 +1477,51 @@
             <div class="col-md-4">
                
                         <div class="group">
-                            <div class="ft-input-label">Relationship   <span class="red-required text-danger"> *</span>
+                            <div class="ft-input-label">  Middle Name 
+                            </div>
+                            <div class="ft-input-edit ft-form-value">
+                                <input class="col-md-12  upper-case ft-input-value" type="text" />
+                            </div>
+                      
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+               
+                <div class="group">
+                    <div class="ft-input-label">  Last Name 
+                    </div>
+                    <div class="ft-input-edit ft-form-value">
+                        <input class="col-md-12  upper-case ft-input-value" type="text" />
+                    </div>
+              
+        </div>
+    </div>
+        </div>
+
+        <div class="row  pt-3">
+
+
+            <div class="col-md-4">
+               
+                        <div class="group">
+                            <div class="ft-input-label">Relationship to Investor<span class="red-required text-danger"> *</span>
                             </div>
                             <div class="ft-input-edit">
                                 <select class="ft-select">
-                                    <option>MARRIED</option>
-                                    <option>UNMARRIED</option>
-                                    
+                                    <option>Father</option>
+                                    <option>Mother</option>
+                                    <option>Wife</option>
+                                    <option>Husband</option>
+                                    <option>Brother</option>
+                                    <option>Sister</option>
+                                    <option>Son</option>
+                                    <option>Daughter</option>
+                                    <option>Grandmother</option>
+                                    <option>Grandfather</option>
+                                    <option>Uncle</option>
+                                    <option>Aunty</option>
                                 </select>
                             </div>
                       
@@ -1496,10 +1534,23 @@
                     </div>
                     <div class="ft-input-edit ft-form-value">
                         <input class="col-md-12  upper-case ft-input-value" type="text" />
+                        <span class="material-icons delete-icon">date_range</span>
                     </div>
               
         </div>
             </div>
+
+            
+            <div class="col-md-4">
+                <div class="group">
+                    <div class="ft-input-label">Address Line 1  <span class="red-required text-danger"> *</span> </div>
+                   
+                    <div class="ft-input-edit ">
+                        <input class="col-md-12  upper-case ft-input-value" type="text" />
+                    </div>
+        </div>
+    </div>
+
         </div>
 
 
@@ -1507,7 +1558,7 @@
 
             <div class="col-md-4">
                         <div class="group">
-                            <div class="ft-input-label">Address Line `1   <span class="red-required text-danger"> *</span> </div>
+                            <div class="ft-input-label">Address Line 2   </div>
                            
                             <div class="ft-input-edit">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
@@ -1517,25 +1568,35 @@
 
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-input-label">  Address Line `2    <span class="red-required text-danger"> *</span> </div>
+                    <div class="ft-input-label">  Address Line 3   <span class="red-required text-danger"> *</span> </div>
                    
                     <div class="ft-input-edit">
                         <input class="col-md-12  upper-case ft-input-value" type="text" />
                     </div>
         </div>
-    </div>
-
-            <div class="col-md-4">
-                <div class="group">
-                    <div class="ft-input-label">   Country   <span class="red-required text-danger"> *</span>
-                    </div>
-                    <div class="ft-input-edit">
-                        <input class="col-md-12  upper-case ft-input-value" type="text" />
-                    </div>
-              
-        </div>
             </div>
+
+         <div class="col-md-4">
+            <div class="group">
+                <div class="ft-input-label">Country<span class="red-required text-danger"> *</span>
+                </div>
+                <div class="ft-input-edit">
+                    <select class="ft-select">
+                        <option>All Countries</option>  
+                    </select>
+                </div>
+        
+                </div>
+    
         </div>
+      
+        </div>
+       
+
+  
+      
+
+
            
         <div class="row  pt-3">
 
@@ -1577,7 +1638,7 @@
                     
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-input-label"> Mobile Number <span class="red-required text-danger"> *</span></div>
+                    <div class="ft-input-label"> Mobile Number </div>
                             <div class="ft-input-edit">
                                 <div class="row">
                                    <div class="col-md-4">
@@ -1598,21 +1659,21 @@
 
             <div class="col-md-4">
                 <div class="group">
-                    <div class="ft-input-label">  Email Address <span class="red-required text-danger"> *</span>  </div>
+                    <div class="ft-input-label">  Email Address </div>
                             <div class="ft-input-edit">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
                             </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                 <div class="group">
                     <div class="ft-input-label">     Allocation <span class="red-required text-danger"> *</span>  </div>
                             <div class="ft-input-edit">
                                 <input class="col-md-12  upper-case ft-input-value" type="text" />
                             </div>
                 </div>
-            </div>
+            </div> -->
 
            
         </div>
@@ -1622,7 +1683,7 @@
         
 
           <div class="text-center pt-4">
-              <button class="btn-primary brand-bg-primary"><a href="kyc">Add Details</a></button>
+              <button class="btn-primary brand-bg-primary"><a href="kyc">Save</a></button>
           </div>
           
 
