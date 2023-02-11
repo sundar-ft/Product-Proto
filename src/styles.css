@@ -178,15 +178,18 @@ button.btn.btn-stepper.stepper-active {
     text-align: center;
  }
 
-
+.D-th-star{
+   width: 5% !important;
+}
 .D-th-pan{
     width:20% !important;
 }
 .D-th-fullname{
-    width:35% !important;
+    width:30% !important;
 }
 .D-th-status{
     width: 20% !important;
+   
 }
 .D-th-progress{
     width:10% !important;
@@ -1149,11 +1152,6 @@ a{
     background-image: -webkit-linear-gradient(left, #04a704 50%, transparent 50%), -webkit-linear-gradient(right, #04a704 50%, #ddd 50%);
     background-image: linear-gradient(90deg, #04a704 50%, transparent 50%), linear-gradient(-90deg, #04a704 50%, #ddd 50%);
   }
-
-
-  
-
- 
 
   .action-icon {
     font-size: 18px;

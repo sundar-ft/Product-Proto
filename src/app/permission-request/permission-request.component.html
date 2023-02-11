@@ -5,7 +5,9 @@
 <div class="row justify-content-center ft-portlet-body">
     <div class="col-md-8 border-0 card ft-card-center p-0" >
         <div class="card-body mb-3">
-              
+            <div class="text-center ft-portlet-title brand-text-color">
+                Investor Profile Access
+              </div>
             <div class="row col-md-12">
 
                 <div class="col-md-6">
@@ -15,51 +17,14 @@
                 <div class="col-md-6 mt-5">
 
                       <div class="text-center ft-portlet-title brand-text-color">
-                        PERMISSION REQUEST
+                        Request Permission
                       </div>
                       <div class="ft-portlet-title-desc brand-text-desc-color pt-3 text-center">
-                        Review the basic investor details and request permission if required to get access to investor profile
+                        Review the investor’s basic details below, 
+and request permission to get access to their 
+profile
                       </div>
 
-                   <!-- <div class="row justify-content-center pt-3">
-                              
-                    <div class="col-md-4 ft-input-label">
-                        PAN
-                    </div>
-                    <div class="col-md-8">
-                        <input type="text" class="ft-input-value" />
-                    </div>
-                </div>
-
-                <div class="row justify-content-center pt-3">
-                              
-                    <div class="col-md-4 ft-input-label">
-                       Full Name
-                    </div>
-                    <div class="col-md-8">
-                        <input type="text" class="ft-input-value" />
-                    </div>
-                </div>
-    
-                <div class="row justify-content-center pt-3">
-                                  
-                    <div class="col-md-4 ft-input-label">
-                       Mobile Number
-                    </div>
-                    <div class="col-md-8">
-                        <input type="text" class="ft-input-value" />
-                    </div>
-                </div>
-    
-                <div class="row justify-content-center pt-3">
-                                  
-                    <div class="col-md-4 ft-input-label">
-                    Email Address
-                    </div>
-                    <div class="col-md-8">
-                        <input type="text" class="ft-input-value" />
-                    </div>
-                </div> -->
 
                 <div class="row  pt-3">
 
@@ -115,39 +80,50 @@
                    
                 </div>
 
-                <!-- <div class="row justify-content-center m-auto pt-3">
-                   <div class="ft-chechbox col-md-12">
-                           <label class="ft-checkbox-consent pl-1">
-                            I am hereby authorised by the investor to have access to there profile and permitted to 
-                            use the profile for financial investment purposes
-                                  <input type="checkbox" class="checkbox">
-                                  <span class="checkmark"></span>
-                           </label>
-                   </div>
-           
-             </div> -->
-            <div class="row m-auto">
+            <!-- <div class="row m-auto">
              <div class="form-check  pt-3">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label ft-checkbox-consent" for="flexCheckDefault">
+                <label class="form-check-label ft-checkbox-consent brand-text-desc-color" for="flexCheckDefault">
                     I am hereby authorised by the investor to have access to there profile and permitted to 
                     use the profile for financial investment purposes
                 </label>
               </div>
-            </div>
+            </div> -->
+
+            <div class="note-section pt-3">
+                <div class="ft-note brand-text-color">
+                    Note:
+                </div>
+                <div class="ft-note-desc brand-text-desc-color">
+                    Investors will receive an OTP via SMS/Email 
+                    which will be valid for 24 hours. This OTP 
+                    will need to be shared with the User 
+                    requesting permission, for them to be able to 
+                    get access to the completed investor profile.
+                </div>
+              </div>
 
                 <div class="text-center " *ngIf="!otp">
                     <button class="btn-primary brand-bg-primary" (click)="sendotp()" style="margin-top: 28px;">Send OTP</button>
                 </div>
 
                 <div class="" *ngIf="otp">
-                <div class="text-info pt-3">
+                <!-- <div class="text-info pt-3">
                     Please enter OTP shared by your Investor.
-                </div>
+                </div> -->
                 
-                <ng-otp-input #ngOtpInput [config]="{length:6}" class="otp-field">
+                <!-- <ng-otp-input #ngOtpInput [config]="{length:6}" class="otp-field">
               
-                </ng-otp-input>
+                </ng-otp-input> -->
+              <div class="row justify-content-center pt-3">
+                <div class="col-md-8">
+                    <input type="password" placeholder="OTP"  class="ft-input-value" />
+                    <span class="material-icons eye-icon">remove_red_eye</span>
+                    <a href="" class="forget_link  px-2" style="float: right;"
+                    >Re-send OTP</a
+                  >
+                </div>
+            </div>
 
                 <div class="text-center pt-3">
                     <button class="btn-primary brand-bg-primary">Verify OTP</button>
