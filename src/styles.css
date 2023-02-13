@@ -36,7 +36,8 @@ body {
 
 .brand-text-color{color: #004a80;}
 .brand-bg-primary{background-color: #004a80 !important;}
-.brand-text-desc-color{color:#a1a5b7;}
+.brand-text-desc-color{color:#303030;}
+
 .ft-section-heading{
     margin: 20px 0px;
     font-size: 14px;
@@ -61,7 +62,8 @@ body {
     justify-content: space-between;
     height:auto;
     transition: all 0.3s ease;
-    background-color: #004a80 !important;
+    /* background-color: #004a80 !important; */
+    background-image: linear-gradient(180deg, #BE2A2A, #EF7F1A);
     border-bottom: 1px solid #eff0f6;
     width: 100%;
     padding: 0px 40px;
@@ -96,7 +98,7 @@ body {
     text-align: center;
     cursor: pointer;
     outline: none !important;
-    background-color:#004a80 !important ;
+    background-color:#053C6D !important ;
 }
 
 /* .btn-primary:hover{
@@ -152,7 +154,7 @@ body {
     color: #004a80;
 }
 button.btn.btn-stepper.stepper-active {
-    background: #004a80;
+    background: #053C6D;
     color: #fff !important;
 }
 /* Button ENDS */
@@ -672,9 +674,9 @@ input{
     outline: none;
     width: 100%;
     padding-left: 4px;
-    border-bottom: solid #004a80 1px;
+    border-left: solid #E77817 2px;
     color: #5E6278 !important;
-    border-radius: 0px;
+    border-radius: 3px;
 }
 .ft-input-label{
     font-style: normal;
@@ -686,8 +688,8 @@ input{
 .ft-select{
     border: none;
     background-color: #f5f8fa;
-    border-bottom: solid #004a80 1px;
-    border-radius: 0px; 
+    border-left: solid #E77817 2px;
+    border-radius: 3px; 
     height: 32px;
     outline: none;
     width: 100%;
