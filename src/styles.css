@@ -192,10 +192,10 @@ button.btn.btn-stepper.stepper-active {
    
 }
 .D-th-progress{
-    width:10% !important;
+    width:15% !important;
 }
 .D-th-action{
-    width: 15% !important;
+    width: 10% !important;
 }
 
 .add_btn{
@@ -1157,9 +1157,10 @@ a{
     font-size: 18px;
     padding: 0px 5px;
     background: #f7f7f7;
-    margin: 0px 2px;
+    margin: 0px 7px;
+    margin-left: -3px;
     border-radius: 5px;
-  }
+}
 
 .d-inline-block{
     display: inline-block;
