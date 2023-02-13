@@ -32,12 +32,13 @@ body {
   .ft-header-navbar {
     display: flex;
     justify-content: space-between;
-    height: 55px;
+    height:auto;
     transition: all 0.3s ease;
     background-color: #004a80 !important;
     border-bottom: 1px solid #eff0f6;
     width: 100%;
     padding: 0px 40px;
+    z-index: 2;
   }
   .sidebar{
     position: fixed;
@@ -53,6 +54,7 @@ body {
 .stepper-section{
     margin-top: 28px;
     margin-left: 48px;
+    margin-top:90px;
 }
 
 /* BUTTON SECTIOn */
@@ -161,6 +163,7 @@ button.btn.btn-stepper.stepper-active {
     margin-bottom: 8px;
     margin-left: 75px;
     margin-right: 0px;
+    /* margin-top: 93px; */
 }
 
   .text-right{text-align: right;}
