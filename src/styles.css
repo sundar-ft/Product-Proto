@@ -63,7 +63,8 @@ body {
     height:auto;
     transition: all 0.3s ease;
     /* background-color: #004a80 !important; */
-    background-image: linear-gradient(180deg, #BE2A2A, #EF7F1A);
+    /* background-image: linear-gradient(180deg, #BE2A2A, #EF7F1A); */
+    background-image: linear-gradient(180deg, #EF7F1A, #BE2A2A);
     border-bottom: 1px solid #eff0f6;
     width: 100%;
     padding: 0px 40px;
@@ -870,12 +871,12 @@ ul.ft-note-desc {
 /* radio button */
 
 .ft-radio-value{
-   
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     padding-left: -10px;
     padding-right: -10px;
+    /* background-color:#E77817 !important ; */
 }
 
 /* checkbox */
