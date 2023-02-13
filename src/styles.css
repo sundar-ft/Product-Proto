@@ -1,9 +1,36 @@
 
+
+@font-face {
+    font-family: MulishSemibold;
+    src: url(fonts/Mulish-SemiBold.ttf);
+ }
+ @font-face {
+    font-family: MulishExtrabold;
+    src: url(fonts/Mulish-ExtraBold.ttf);
+ }
+
+ 
+/* @font-face {
+	font-family: 'Zurich';
+	src: url('fonts/ZurichLtBTLight.ttf'); 
+	src: 
+		local('Zurich Font'),
+		local('Zurich-Font'),
+		url('fonts/ZurichLtBTLight.ttf') 
+		format('opentype');
+} */
+
+
 html,
 body {
     background-color: #F2F2F2;
     font-size: 15px;
+    font-family: MulishSemibold;
 }
+/* b{font-family: MulishExtrabold;}
+ */
+
+
 
 /* DYNAMIC CSS  STARTS HERE*/
 
