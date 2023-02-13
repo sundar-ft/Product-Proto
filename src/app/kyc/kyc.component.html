@@ -94,7 +94,7 @@
                                         <div class="ft-input-label">Source of Funds<span class="red-required text-danger">*</span> </div>
                                                 <div class="ft-input-edit">
                                                     <div class="row">
-                                                       <div class="col-md-3">
+                                                       <div class="col-md-4">
                                                         <select class="ft-select">
                                                             <option>Savings</option>
                                                             <option>Investments</option>
@@ -105,7 +105,7 @@
                                                         </select>
                                                        </div>
                                                        
-                                                      <div class="col-md-9">
+                                                      <div class="col-md-8">
                                                            <input type="text" class="col-md-12 ft-input-value" placeholder="Specify">
                                                       </div>
                                                     </div>
@@ -1042,8 +1042,8 @@
                       </table>
         
                       <div class="text-center pt-4">
-                        <a href="document" ><button class="btn-primary brand-bg-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            Proceed</button></a>
+                      <button (click)="selectTab(3)" class="btn-primary brand-bg-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Proceed</button>
                     </div>
         
                    
@@ -1149,7 +1149,9 @@
                   </div> -->
         
                  <div class="text-center pt-4">
-                    <button class="btn-primary brand-bg-primary" data-toggle="modal" data-target="#exampleModal" (click)="selectTab(3)">Proceed</button>
+                    <a href="document">
+                        <button class="btn-primary brand-bg-primary" data-toggle="modal" data-target="#exampleModal" (click)="selectTab(3)">Proceed</button>
+                    </a>
                 </div>
         
               
